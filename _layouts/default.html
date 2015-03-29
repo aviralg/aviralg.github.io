@@ -1,6 +1,23 @@
----
-theme :
-  name : bootstrap-3
----
-{% include JB/setup %}
-{% include themes/bootstrap-3/default.html %}
+<!DOCTYPE html>
+<html>
+
+    {% include head.html %}
+
+    <body>
+
+        {% include header.html %}
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-2 hidden-xs">.col-md-1</div>
+                <div class="col-md-8">{{ content }}</div>
+                <div class="col-md-2 hidden-xs">.col-md-1</div>
+            </div>
+        </div>
+
+    {% include footer.html %}
+
+    </body>
+    <script>
+    </script>
+
+</html>
