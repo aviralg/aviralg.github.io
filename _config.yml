@@ -1,10 +1,9 @@
-# Site settings
-title: Fortress of Solitude
-email: goel.aviral@gmail.com
-description: "Aviral's Fortress of Solitude"
-baseurl: ""
-url: "http://aviral.io"
-
-# Build settings
+lsi: false
 markdown: kramdown
-permalink: pretty
+kramdown:
+  input: GFM
+  hard_wrap: false
+exclude: ["CNAME", "README.md", "Rakefile", "generate.rb", "Gemfile", "Gemfile.lock"]
+gems:
+  - jekyll-sitemap
+  - jekyll-feed

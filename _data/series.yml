@@ -1,0 +1,24 @@
+- name: Mathematics
+  desc: |
+    Notes on logic, sets, relations, functions, induction and other mathematical preliminaries
+  tag_name: mathematics
+
+- name: Shell Scripting
+  desc: |
+    Tips and tutorials on Linux terminal-fu
+  tag_name: shell_scripting
+
+- name: Emacs
+  desc: |
+    Cheatsheets and editing techniques for the extensible, customizable, self-documenting real-time display editor
+  tag_name: emacs
+
+- name: Linux
+  desc: |
+    Notes on the Unix-like and mostly POSIX-compliant computer operating system
+  tag_name: linux
+
+- name: Quotable Quotes
+  desc: |
+    Inspiring, though provoking and witty quotes
+  tag_name: quotable-quotes
