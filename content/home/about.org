@@ -1,0 +1,40 @@
++++
+# About/Biography widget.
+widget = "about"
+active = true
+date = "2017-12-22T00:00:00"
+
+# Order that this section will appear in.
+weight = 5
+
+# List your academic interests.
+[interests]
+  interests = [
+    "Program Analysis",
+    "Gradual Typing"
+  ]
+
+# List your qualifications (such as academic degrees).
+[[education.courses]]
+  course = "Ph.D. in Computer Science"
+  institution = "Northeastern University"
+  year = "2022 (Expected)"
+
+[[education.courses]]
+  course = "Bachelor of Engineering in Electronics and Communication Engineering"
+  institution = "Netaji Subhas Institute of Technology"
+  year = 2012
++++
+
+* **whoami**
+
+I am a second year [[http://www.ccis.northeastern.edu][Computer Science]] Ph.D. student at [[http://www.northeastern.edu/][Northeastern University]], 
+advised by [[http://www.janvitek.org/][Professor Jan Vitek]]. I am a member of the [[http://prl.ccs.neu.edu/][Programming Research Laboratory]].
+
+I am interested in the design and implementation of programming languages. Specifically, my research interests are gradual typing and compiler optimizations.
+
+Previously I worked at [[https://www.ncbs.res.in/][National Center for Biological Sciences]] under [[https://www.ncbs.res.in/faculty/bhalla][Professor Upinder S. Bhalla]], initially as a Programmer and subsequently as a Technology Manager. Before that, I worked at Yahoo! as a Software Developer.
+
+I live in [[https://www.google.com/maps/place/Malden,+MA/@42.4253421,-71.0603243,14.25z/data=!4m5!3m4!1s0x89e373d5cdc028c3:0x5e52fc1c1d5af24a!8m2!3d42.4250964!4d-71.066163][Malden, Massachusetts]].
+
+I love cooking and origami.
