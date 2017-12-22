@@ -13,6 +13,11 @@
     Cheatsheets and editing techniques for the extensible, customizable, self-documenting real-time display editor
   tag_name: emacs
 
+- name: Latex
+  desc: |
+    My adventures in the Latex land.
+  tag_name: latex
+
 - name: Linux
   desc: |
     Notes on the Unix-like and mostly POSIX-compliant computer operating system
