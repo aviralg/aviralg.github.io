@@ -26,7 +26,7 @@ weight = 5
   year = 2012
 +++
 
-* **whoami**
+* <strong>$ whoami</strong><strong id="blinking-cursor">_</strong>
 
 I am a second year [[http://www.ccis.northeastern.edu][Computer Science]] Ph.D. student at [[http://www.northeastern.edu/][Northeastern University]], 
 advised by [[http://www.janvitek.org/][Professor Jan Vitek]]. I am a member of the [[http://prl.ccs.neu.edu/][Programming Research Laboratory]].

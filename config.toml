@@ -1,5 +1,5 @@
 baseURL = "http://aviral.io/"
-title = "◎"
+title = "Aviral Goel"
 theme = "academic"
 copyright = "&copy; 2017 Aviral Goel"
 enableEmoji = true
@@ -30,6 +30,7 @@ defaultContentLanguageInSubdir = false
   smartypants = true  # `false` disables all smart punctuation substitutions (e.g. smart quotes, dashes, fractions).
 
 [params]
+  homeMarker = "~"
   # Color theme.
   #   Choose from `default`, `ocean`, `forest`, `coffee`, or `dark`.
   color_theme = "default"
