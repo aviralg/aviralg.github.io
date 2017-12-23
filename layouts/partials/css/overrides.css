@@ -92,3 +92,7 @@ a:hover {
 
     background-color: #F2F8FA;
 }
+
+#about-content {
+    text-align: justify;
+}

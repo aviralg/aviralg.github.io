@@ -37,7 +37,7 @@ defaultContentLanguageInSubdir = false
 
   # Font style.
   #   Choose from `default`, `classic`, or `playfair`.
-  font = "default"
+  font = "classic"
 
   # Your details.
   name = "Aviral Goel"
@@ -243,28 +243,28 @@ defaultContentLanguageInSubdir = false
   align_right = true
 
 #[[menu.main]]
-#  name = "Home"
-#  url = "#about"
+#  name = "#resume"
+#  url = "/data/resume.pdf"
 #  weight = 1
 
 #[[menu.main]]
-#  name = "Publications"
-#  url = "#publications_selected"
+#  name = "#projects"
+#  url = "#projects"
 #  weight = 2
 
 #[[menu.main]]
-#  name = "Posts"
-#  url = "#posts"
+#  name = "#blog"
+#  url = "#blog"
 #  weight = 3
 
 #[[menu.main]]
-#  name = "Projects"
-#  url = "#projects"
+#  name = "#origami"
+#  url = "#origami"
 #  weight = 4
 
 #[[menu.main]]
-#  name = "Teaching"
-#  url = "#teaching"
+#  name = "#courses"
+#  url = "#courses"
 #  weight = 5
 
 #[[menu.main]]
