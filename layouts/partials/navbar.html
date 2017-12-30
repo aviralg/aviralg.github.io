@@ -40,9 +40,9 @@
                     <ul class="dropdown-menu">
                         {{ range .Children }}
                         <li class="nav-item">
-                            <a href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}>
+                            <a href="{{ .URL | relLangURL }}" id="{{ .Name }}-nav-link" {{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}>
                                 {{ .Pre }}
-                                <span>{{ .Name }}</span>
+                                <span><i class="fa fa-hashtag" aria-hidden="true"></i>{{ .Name }}</span>
                                 {{ .Post }}
                             </a>
                         </li>
@@ -59,9 +59,9 @@
                 {{ end }}
 
                 <li class="nav-item">
-                    <a href="{{ .URL | relLangURL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}{{ ($.Scratch.Get "target") | safeHTMLAttr }}>
+                    <a href="{{ .URL | relLangURL }}" id="{{ .Name }}-nav-link" {{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}{{ ($.Scratch.Get "target") | safeHTMLAttr }}>
                         {{ .Pre }}
-                        <span>{{ .Name }}</span>
+                        <span><i class="fa fa-hashtag" aria-hidden="true"></i>{{ .Name }}</span>
                         {{ .Post }}
                     </a>
                 </li>
@@ -84,7 +84,7 @@
                     <ul class="dropdown-menu">
                         {{ range .Translations }}
                         <li class="nav-item">
-                            <a href="{{ .URL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}>
+                            <a href="{{ .URL }}"{{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}  id="{{ .Id }}">
                                 <span>{{ index .Site.Data.i18n.languages .Lang }}</span>
                             </a>
                         </li>

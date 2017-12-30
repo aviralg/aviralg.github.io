@@ -38,6 +38,15 @@
                 {{ end }}
             </ul>
 
+            <ul class="contact-icon" aria-hidden="true">
+                {{ range $.Site.Params.contact }}
+                {{ $pack := or .icon_pack "fa" }}
+                <li>
+                    <i class="{{ $pack }} {{ $pack }}-{{ .icon }} big-icon" style="color:{{ .color }};" data-toggle="popover" data-trigger="hover | focus" data-placement="bottom" title="{{ .title }}" data-content="{{ .info }}" data-container="body"></i>
+                </li>
+                {{ end }}
+            </ul>
+
             <div class="row" itemprop="worksFor" itemscope itemtype="http://schema.org/Organization">
                 <a itemprop="sameAs" href="http://prl.ccs.neu.edu/" target="_blank" rel="noopener">
                     <img src="img/prl-logo.png" alt="Programming Research Laboratory, College of Computer and Information Science, Northeastern University" class="img-responsive"/>

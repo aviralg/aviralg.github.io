@@ -3,10 +3,6 @@
     padding-bottom: 0px;
 }
 
-#profile ul.network-icon li {
-    margin-right: 25px;
-}
-
 .site-footer {
     padding: 0px;
 }
@@ -16,6 +12,15 @@
     border-color: white;
 }
 
+.navbar-default .navbar-brand {
+    background-color: black;
+    color: white;
+}
+
+.navbar-default .navbar-nav > li > a {
+    background-color: black;
+    color: white;
+}
 
 #blinking-cursor {
     animation: 1s cursor-blink step-end infinite;
@@ -74,7 +79,7 @@
 
 a, a:hover, a:active, a:visited, a:focus {
     text-decoration:none;
-    color: #0073A4;
+    color: #b71c1c; /* #0073A4; */
 }
 
 a:hover {
@@ -90,9 +95,88 @@ a:hover {
     -o-transition-property: background;
     -o-transition-duration: 0.5s;
 
-    background-color: #F2F8FA;
+    background-color: #ffebee;
+}
+
+#profile ul.network-icon a:hover {
+    background-color: white;
 }
 
 #about-content {
     text-align: justify;
+}
+
+.dropdown-menu .nav-item  a {
+    font-size: 1.5em;
+}
+
+.navbar-default .navbar-nav > li > a {
+    font-size: 1.25em;
+    background-color: white;
+}
+
+#blog-nav-link {
+    color: #2196F3;
+}
+
+#blog-nav-link:hover  {
+    color: #2196F3;
+    border-bottom: solid #2196F3 5px;
+    border-top: solid #2196F3 5px;
+}
+
+#origami-nav-link {
+    color: #F44336;
+}
+
+#origami-nav-link:hover  {
+    color: #F44336;
+    border-bottom: solid #F44336 5px;
+    border-top: solid #F44336 5px;
+}
+
+#cv-nav-link {
+    color: #FF9800;
+}
+
+#cv-nav-link:hover  {
+    color: #FF9800;
+    border-bottom: solid #FF9800 5px;
+    border-top: solid #FF9800 5px;
+}
+
+
+#profile ul.network-icon {
+    margin-bottom: 0px;
+}
+
+#profile ul.network-icon li {
+    margin-right: 25px;
+}
+
+#profile ul.contact-icon {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+#profile .contact-icon li {
+    margin-right: 25px;
+}
+
+#profile .contact-icon li:last-of-type {
+    margin-right: 0;
+}
+
+#profile .contact-icon li:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+#profile .contact-icon li i:focus {
+    outline: 0;
 }

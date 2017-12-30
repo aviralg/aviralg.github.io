@@ -51,10 +51,12 @@ defaultContentLanguageInSubdir = false
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "aviral-goel.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "goel dot aviral at gmail dot com"
-#  address = "Building 1 Room 1, Stanford University, California, 90210, USA"
-#  office_hours = "Monday 10:00 to 13:00 or email for appointment"
-#  phone = "888 888 88 88"
+#  address = "330 West Village H, College of Computer & Information Science, Northeastern University, 440 Huntington Ave, Boston, MA 02115, USA"
 #  skype = "echo123"
+#  phone = "+1 (917) 443 0228"
+#  office_hours = "Monday 10:00 to 13:00 or email for appointment"
+
+
 #  telegram = ""
 
   # Enable Keybase in Contact widget by entering your keybase.io username.
@@ -144,8 +146,8 @@ defaultContentLanguageInSubdir = false
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  custom_css = []
-  custom_js  = []
+  custom_css = ["overrides.css"]
+  custom_js  = ["popover.js"]
 
   # Publication types.
   #   Used to categorize publications.
@@ -210,11 +212,6 @@ defaultContentLanguageInSubdir = false
     link = "mailto:goel.aviral@gmail.com"
     color = "#d14836"
 
-#  [[params.social]]
-#    icon = "twitter"
-#    icon_pack = "fa"
-#    link = "//twitter.com/TheAviralGoel"
-
   [[params.social]]
     icon = "google-scholar"
     icon_pack = "ai"
@@ -233,6 +230,26 @@ defaultContentLanguageInSubdir = false
     link = "https://www.linkedin.com/in/aviralgoel/"
     color = "#0077B5"
 
+  [[params.contact]]
+    icon = "skype"
+    title = "Skype"
+    icon_pack = "fa"
+    info = "aviral.goel"
+    color = "#00aff0"
+
+  [[params.contact]]
+    icon = "phone"
+    title = "Phone"
+    icon_pack = "fa"
+    info = "+1 (917) 443 0228"
+    color = "#0F9D58"
+
+  [[params.contact]]
+    icon = "building"
+    title = "Office Address"
+    icon_pack = "fa"
+    info = "330 West Village H, College of Computer & Information Science, Northeastern University, 440 Huntington Ave, Boston, MA 02115, USA"
+    color = "darkorange"
 
 # Navigation Links
 #   To link a homepage widget, specify the URL as a hash `#` followed by the filename of the
@@ -252,20 +269,20 @@ defaultContentLanguageInSubdir = false
 #  url = "#projects"
 #  weight = 2
 
-#[[menu.main]]
-#  name = "#blog"
-#  url = "#blog"
-#  weight = 3
+# [[menu.main]]
+#   name = "blog"
+#   url = "/blog.html"
+#   weight = 3
 
-#[[menu.main]]
-#  name = "#origami"
-#  url = "#origami"
-#  weight = 4
+# [[menu.main]]
+#   name = "origami"
+#   url = "#origami"
+#   weight = 4
 
-#[[menu.main]]
-#  name = "#courses"
-#  url = "#courses"
-#  weight = 5
+# [[menu.main]]
+#   name = "cv"
+#   url = "/cv.html"
+#   weight = 5
 
 #[[menu.main]]
 #  name = "Contact"
