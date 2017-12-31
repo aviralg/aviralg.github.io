@@ -40,7 +40,7 @@
                     <ul class="dropdown-menu">
                         {{ range .Children }}
                         <li class="nav-item">
-                            <a href="{{ .URL | relLangURL }}" id="{{ .Name }}-nav-link" {{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}>
+                            <a href="{{ .URL | relLangURL }}" id="{{ .Name | strings.ToLower }}-nav-link" {{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}>
                                 {{ .Pre }}
                                 <span><i class="fa fa-hashtag" aria-hidden="true"></i>{{ .Name }}</span>
                                 {{ .Post }}
@@ -59,7 +59,7 @@
                 {{ end }}
 
                 <li class="nav-item">
-                    <a href="{{ .URL | relLangURL }}" id="{{ .Name }}-nav-link" {{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}{{ ($.Scratch.Get "target") | safeHTMLAttr }}>
+                    <a href="{{ .URL | relLangURL }}" id="{{ .Name | strings.ToLower }}-nav-link" {{ if $.IsHome }} data-target="{{ .URL }}"{{ end }}{{ ($.Scratch.Get "target") | safeHTMLAttr }}>
                         {{ .Pre }}
                         <span><i class="fa fa-hashtag" aria-hidden="true"></i>{{ .Name }}</span>
                         {{ .Post }}
