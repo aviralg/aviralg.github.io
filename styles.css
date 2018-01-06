@@ -25,14 +25,14 @@
 }
 
 html {
-  font-family: 'Merriweather', sans-serif;
+  font-family: 'Cardo', sans-serif;
   font-size: 16px;
   color: rgba(0,0,0,0.8);
   line-height: 1.65;
 }
 @media screen and (min-width: 58em) {
   html {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
@@ -148,7 +148,7 @@ figcaption h4 {
 
 pre,
 code {
-  font-family: 'Roboto Mono', monospace;
+  font-family: 'Fira Code', monospace;
   color: #c7254e;
   background-color: #f9f2f4;
 }

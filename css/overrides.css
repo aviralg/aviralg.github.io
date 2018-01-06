@@ -22,64 +22,10 @@
     color: white;
 }
 
-#blinking-cursor {
-    animation: 1s cursor-blink step-end infinite;
-    -webkit-animation: 1s cursor-blink step-end infinite;
-    -moz-animation: 1s cursor-blink step-end infinite;
-    -ms-animation: 1s cursor-blink step-end infinite;
-    -o-animation: 1s cursor-blink step-end infinite;
-
-    color: black;
-}
-
-@keyframes "cursor-blink" {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: black;
-    }
-}
-
-@-moz-keyframes cursor-blink {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: black;
-    }
-}
-
-@-webkit-keyframes "cursor-blink" {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: black;
-    }
-}
-
-@-ms-keyframes "cursor-blink" {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: black;
-    }
-}
-
-@-o-keyframes "cursor-blink" {
-    from, to {
-        color: transparent;
-    }
-    50% {
-        color: black;
-    }
-}
-
 a, a:hover, a:active, a:visited, a:focus {
     text-decoration:none;
-    color: #b71c1c; /* #0073A4; */
+    color: #B71C1C;
+    font-weight: bold;
 }
 
 a:hover {
@@ -95,7 +41,8 @@ a:hover {
     -o-transition-property: background;
     -o-transition-duration: 0.5s;
 
-    background-color: #ffebee;
+    background-color: white;
+    text-decoration: underline;
 }
 
 #profile ul.network-icon a:hover {
@@ -184,4 +131,20 @@ a:hover {
 
 #profile .contact-icon li i:focus {
     outline: 0;
+}
+
+#profile .portrait-title h2 {
+    font-family: Stalemate, sans-serif;
+    font-size: 5em;
+}
+
+#profile .portrait-title h3 {
+    margin-top: -30px;
+}
+
+#about-content p:first-child::first-letter {
+    font-size: 4.9em;
+    float: left;
+    margin: auto 0.2em auto auto;
+    line-height: 1;
 }
