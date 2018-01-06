@@ -26,12 +26,8 @@ weight = 5
   year = 2012
 +++
 
-* <strong>$ whoami</strong><strong id="blinking-cursor">_</strong>
-
 I am a second year [[http://www.ccis.northeastern.edu][Computer Science]] Ph.D. student at [[http://www.northeastern.edu/][Northeastern University]], 
-advised by [[http://www.janvitek.org/][Professor Jan Vitek]]. I am a member of the [[http://prl.ccs.neu.edu/][Programming Research Laboratory]].
-
-I am interested in the design and implementation of programming languages. Specifically, my research interests are gradual typing and compiler optimizations.
+advised by [[http://www.janvitek.org/][Professor Jan Vitek]]. I am a member of the [[http://prl.ccs.neu.edu/][Programming Research Laboratory]]. I am interested in the design and implementation of programming languages. Specifically, my research interests are gradual typing and compiler optimizations.
 
 Previously I worked at [[https://www.ncbs.res.in/][National Center for Biological Sciences]] under [[https://www.ncbs.res.in/faculty/bhalla][Professor Upinder S. Bhalla]], initially as a Programmer and subsequently as a Technology Manager. Before that, I worked at Yahoo! as a Software Developer.
 

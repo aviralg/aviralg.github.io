@@ -1,0 +1,15 @@
+# Font style metadata
+name = "Cardo"
+
+# Optional Google font URL
+google_fonts = "Lato|Stalemate|Fira+Code|Cardo"
+
+# Font families
+heading_font = "Lato"
+body_font = "Cardo"
+nav_font = "Lato"
+mono_font = "Fira Code"
+
+# Font size
+font_size = "22"
+font_size_small = "16"
