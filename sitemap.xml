@@ -5,8 +5,8 @@
     
     <url>
     
-      <loc>http://aviral.io/post/</loc>
-      <lastmod>2017-01-01T00:00:00-05:00</lastmod>
+      <loc>http://aviral.io/post/atma-shatakam/</loc>
+      <lastmod>2018-01-10T00:00:00-05:00</lastmod>
     </url>
     
   
@@ -51,6 +51,16 @@
     
     <url>
     
+      <loc>http://aviral.io/post/</loc>
+      <lastmod>2018-01-10T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>http://aviral.io/publication_types/</loc>
       <priority>0</priority>
     </url>
@@ -61,6 +71,26 @@
     <url>
     
       <loc>http://aviral.io/tags/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://aviral.io/tags/%E0%A4%B7%E0%A4%9F%E0%A5%8D%E0%A4%95%E0%A4%AE%E0%A5%8D/</loc>
+      <lastmod>2018-01-10T00:00:00-05:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>http://aviral.io/categories/%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%8B%E0%A4%A4%E0%A5%8D%E0%A4%B0/</loc>
+      <lastmod>2018-01-10T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
