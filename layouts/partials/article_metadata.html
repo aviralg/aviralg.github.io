@@ -1,0 +1,48 @@
+{{ $is_list := .is_list }}
+{{ $ := .content }}
+<div class="article-metadata row">
+
+
+    {{ if isset $.Params "categories" }}
+    {{ $categoriesLen := len $.Params.categories }}
+    {{ if gt $categoriesLen 0 }}
+    <div class="article-categories col-md-4">
+        <i class="fa fa-folder"></i>
+        {{ range $k, $v := $.Params.categories }}
+        <!-- <a href="{{ "/categories/" | relLangURL }}{{ . | urlize | lower }}">{{ . }}</a> -->
+        <a href="{{ "/categories/" | relLangURL }}">{{ . }}</a>
+        {{ if lt $k (sub $categoriesLen 1) }}, {{ end }}
+        {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+
+    <div class="article-date col-md-4">
+        {{ if ne $.Params.Lastmod $.Params.Date }}
+        {{ i18n "last_updated" }}
+        {{ end }}
+        <time datetime="{{ $.Date }}" itemprop="datePublished">
+            {{ $.Lastmod.Format $.Site.Params.date_format }}
+        </time>
+    </div>
+
+
+    {{ if isset $.Params "tags" }}
+    {{ $tagsLen := len $.Params.tags }}
+    {{ if gt $tagsLen 0 }}
+    <div class="article-tags col-md-4">
+        {{ range $k, $v := $.Params.tags }}
+        <span class="text-nowrap">
+            <a href="{{ "/categories/" | relLangURL }}">
+            <!-- <a href="{{ "/tags/" | relLangURL }}{{ . | urlize | lower }}"> -->
+            <i class="fa fa-chevron-left" aria-hidden="true"></i>
+            {{ . }}
+            <i class="fa fa-chevron-right" aria-hidden="true"></i>
+            </a>
+        </span>
+        {{ end }}
+    </div>
+    {{ end }}
+    {{ end }}
+
+</div>

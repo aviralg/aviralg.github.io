@@ -16,7 +16,8 @@
                 {{- if .Site.Params.logo -}}
                 <img src="{{ printf "/img/%s" .Site.Params.logo | relURL }}" alt="{{ .Site.Params.homeMarker }}">
                 {{- else -}}
-                {{- .Site.Params.homeMarker -}}
+                <i class="fa fa-home" aria-hidden="true"></i>
+                <!-- {{- .Site.Params.homeMarker -}} -->
                 {{- end -}}
             </a>
         </div>

@@ -1,0 +1,26 @@
+{{ partial "header.html" . }}
+{{ partial "navbar.html" . }}
+
+<div class="container" id="categories" itemscope itemprop="categories">
+    {{ range $category, $taxonomy := .Site.Taxonomies.categories }}
+    <div class="article-list-item row" id="category-{{ $category }}">
+        <h2 class="category-name">{{ $category }}</h2>
+        <!-- <h6 class="category-desc"></h6> -->
+        <hr />
+        <ul class="list-group row">
+            {{ range $taxonomy.Pages }}
+            <li hugo-nav="{{ .RelPermalink}}"
+                class="category-item list-group-item col-xs-6"
+                id="{{ $category}}-{{.LinkTitle}}">
+                <a href="{{ .Permalink}}">{{ .LinkTitle }}</a>
+            </li>
+            {{ end }}
+        </ul>
+    </div>
+    <!-- <li><a href="{{ "/categories/" | relLangURL }}{{ $category | urlize }}">{{ $category }},{{ $taxonomy }}</a></li> -->
+    {{ end }}
+</div>
+
+<!-- Page Footer -->
+{{ partial "footer_container.html" . }}
+{{ partial "footer.html" . }}

@@ -13,8 +13,13 @@
 }
 
 .navbar-default .navbar-brand {
-    background-color: black;
-    color: white;
+    color: black;
+    font-size: 1.5em;
+}
+
+.navbar-default .navbar-brand:hover {
+    color: black;
+    transform: scale(1.2);
 }
 
 .navbar-default .navbar-nav > li > a {
@@ -51,6 +56,7 @@ a:hover {
 
 #about-content {
     text-align: justify;
+    margin-top: 1.5em;
 }
 
 .dropdown-menu .nav-item  a {
@@ -63,6 +69,7 @@ a:hover {
 
 #blog-nav-link {
     color: #2196F3;
+    border-bottom: solid white 5px;
 }
 
 #blog-nav-link:hover  {
@@ -72,6 +79,7 @@ a:hover {
 
 #origami-nav-link {
     color: #F44336;
+    border-bottom: solid white 5px;
 }
 
 #origami-nav-link:hover  {
@@ -90,13 +98,13 @@ a:hover {
 
 #publications-nav-link {
     color: #689F38;
+    border-bottom: solid white 5px;
 }
 
 #publications-nav-link:hover  {
     color: #689F38;
     border-bottom: solid #689F38 5px;
 }
-
 
 #profile ul.network-icon {
     margin-bottom: 30px;

@@ -30,7 +30,7 @@ defaultContentLanguageInSubdir = false
   smartypants = true  # `false` disables all smart punctuation substitutions (e.g. smart quotes, dashes, fractions).
 
 [params]
-  homeMarker = "~"
+  homeMarker = "⌘"
   # Color theme.
   #   Choose from `default`, `ocean`, `forest`, `coffee`, or `dark`.
   color_theme = "default"
@@ -98,7 +98,7 @@ defaultContentLanguageInSubdir = false
   time_format = "3:04 PM"
 
   # Show estimated reading time for posts?
-  reading_time = true
+  reading_time = false
 
   # Display comment count? Requires commenting to be enabled.
   comment_count = true
@@ -146,7 +146,7 @@ defaultContentLanguageInSubdir = false
 
   # Link custom CSS and JS assets
   #   (relative to /static/css and /static/js respectively)
-  custom_css = ["overrides.css"]
+  custom_css = ["overrides.css", "poem.css", "category.css", "share.css", "article.css"]
   custom_js  = ["popover.js"]
 
   # Publication types.
@@ -276,10 +276,10 @@ defaultContentLanguageInSubdir = false
 #  url = "#projects"
 #  weight = 2
 
-# [[menu.main]]
-#   name = "BLOG"
-#   url = "/blog.html"
-#   weight = 1
+[[menu.main]]
+   name = "BLOG"
+   url = "/categories"
+   weight = 1
 
 # [[menu.main]]
 #   name = "ORIGAMI"
