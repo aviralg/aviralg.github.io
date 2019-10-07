@@ -1,98 +1,79 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
-    
-    
-    <url>
-    
-      <loc>http://aviral.io/post/atma-shatakam/</loc>
-      <lastmod>2018-01-10T00:00:00-05:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://aviral.io/</loc>
+    <lastmod>2019-10-06T23:22:39-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>http://aviral.io/publication/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://aviral.io/categories/</loc>
+    <lastmod>2019-10-06T23:12:58-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>http://aviral.io/talk/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
+  <url>
+    <loc>http://aviral.io/publications/correctness-of-speculative-optimizations-with-dynamic-deoptimization/</loc>
+    <lastmod>2019-10-06T23:00:48-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>http://aviral.io/</loc>
-      <lastmod>2017-12-22T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://aviral.io/tags/dynamic-deoptimization/</loc>
+    <lastmod>2019-10-06T23:00:48-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>http://aviral.io/categories/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://aviral.io/tags/laziness/</loc>
+    <lastmod>2019-10-06T23:12:58-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>http://aviral.io/post/</loc>
-      <lastmod>2018-01-10T00:00:00-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://aviral.io/tags/meta-programming/</loc>
+    <lastmod>2019-10-06T23:12:58-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>http://aviral.io/publication_types/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://aviral.io/publications/on-the-design-implementation-and-use-of-laziness-in-r/</loc>
+    <lastmod>2019-10-06T23:12:58-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>http://aviral.io/tags/</loc>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://aviral.io/tags/on-stack-replacement/</loc>
+    <lastmod>2019-10-06T23:00:48-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>http://aviral.io/tags/%E0%A4%B7%E0%A4%9F%E0%A5%8D%E0%A4%95%E0%A4%AE%E0%A5%8D/</loc>
-      <lastmod>2018-01-10T00:00:00-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://aviral.io/categories/oopsla/</loc>
+    <lastmod>2019-10-06T23:12:58-04:00</lastmod>
+  </url>
   
-    
-    
-    <url>
-    
-      <loc>http://aviral.io/categories/%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A5%8B%E0%A4%A4%E0%A5%8D%E0%A4%B0/</loc>
-      <lastmod>2018-01-10T00:00:00-05:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
+  <url>
+    <loc>http://aviral.io/categories/popl/</loc>
+    <lastmod>2019-10-06T23:00:48-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://aviral.io/publications/</loc>
+    <lastmod>2019-10-06T23:12:58-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://aviral.io/tags/r/</loc>
+    <lastmod>2019-10-06T23:12:58-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://aviral.io/tags/speculative-optimization/</loc>
+    <lastmod>2019-10-06T23:00:48-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://aviral.io/tags/</loc>
+    <lastmod>2019-10-06T23:12:58-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://aviral.io/series/</loc>
+  </url>
   
 </urlset>

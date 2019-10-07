@@ -2,9 +2,12 @@
     <channel>
         <title>
             
+                    laziness on
+                
+            
             Aviral Goel</title>
-        <link>http://aviral.io/</link>
-        <description>Recent content 
+        <link>http://aviral.io/tags/laziness/</link>
+        <description>Recent content  in laziness
             on Aviral Goel</description>
         <language>en-us</language>
         
@@ -12,7 +15,7 @@
                 <webMaster>goel.aviral@gmail.com (Aviral Goel)</webMaster><lastBuildDate>Sun, 06 Oct 2019 23:42:52 -0400</lastBuildDate>
         <generator>Hugo -- gohugo.io</generator>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
-            <atom:link href="http://aviral.io/index.xml" rel="self" type="application/rss&#43;xml" />
+            <atom:link href="http://aviral.io/tags/laziness/index.xml" rel="self" type="application/rss&#43;xml" />
         
     </channel>
 </rss>
