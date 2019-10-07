@@ -1,0 +1,167 @@
+BaseURL = "http://aviral.io/"
+Title = "Aviral Goel"
+theme = "refined"
+
+contentdir = "content"
+layoutdir = "layouts"
+publishdir = "public"
+
+# Remove files from destination not found in static directories
+cleandestinationdir = true
+
+# https://gohugo.io/extras/highlighting/
+
+# Syntax highlighting using Pygments
+# $ python
+# >>> from pygments.styles import STYLE_MAP
+# >>> STYLE_MAP.keys()
+# ['manni', 'igor', 'lovelace', 'xcode', 'vim', 'autumn', 'vs', 'rrt', 'native',
+# 'perldoc', 'borland', 'tango', 'emacs', 'friendly', 'monokai', 'paraiso-dark',
+# 'colorful', 'murphy', 'bw', 'pastie', 'algol_nu', 'paraiso-light', 'trac',
+# 'default', 'algol', 'fruity']
+# pygmentsStyle = "native"
+# pygmentsStyle = "trac"        # This is not needed as the theme is set using external CSS -- Tue Sep 26 13:26:59 EDT 2017 - kmodi
+pygmentsCodeFences = true       # This applies to Chroma too.
+# Use pygmentize generated CSS file instead of inlining the code codes in the HTML.
+# See https://gohugo.io/tools/syntax-highlighting/#pygments and
+# https://github.com/richleland/pygments-css
+pygmentsUseClasses = true       # This applies to Chroma too.
+pygmentsUseClassic = false      # Needs Hugo 0.28+, default=false => Use Chroma for syntax highlighting
+
+enableEmoji = true
+
+# Services
+# GoogleAnalytics = "UA-105225187-1"
+# Mon Mar 26 18:18:27 EDT 2018 - kmodi - Stopped using Disqus today!
+# DisqusShortname = "ascriptersnotes"
+
+LanguageCode = "en-us" # Used in RSS generation
+
+disableFastRender = true        # Hugo 0.30
+
+[Author]                                                         
+  name = "Aviral Goel"                                           
+  email = "goel.aviral@gmail.com"                                
+  bio = "A student of programming languages"                     
+  #[Author.photo]                                                
+  #  url = "images/me--optimized.jpg" # Path relative to baseURL 
+  #  width = 400                                                 
+  #  height = 400                                                
+                                                                 
+[Social]                                                         
+  github = "aviralg"                                             
+  twitter = "TheAviralGoel"                                      
+
+
+[Permalinks]
+  # https://gohugo.io/content-management/urls/#permalink-configuration-values
+  # | :year        | the 4-digit year                           |
+  # | :month       | the 2-digit month                          |
+  # | :monthname   | the name of the month                      |
+  # | :day         | the 2-digit day                            |
+  # | :weekday     | the 1-digit day of the week (Sunday = 0)   |
+  # | :weekdayname | the name of the day of the week            |
+  # | :yearday     | the 1- to 3-digit day of the year          |
+  # | :section     | the content's section                      |
+  # | :sections    | the content's sections hierarchy           |
+  # | :title       | the content's title                        |
+  # | :slug        | the content's slug (or title, if no slug)  |
+  # | :filename    | the content's filename (without extension) |
+
+  # Below, we have:
+  #
+  #   foo = "bar"
+  #
+  # where 'foo' is the section name which we want to have the custom
+  # permalinks. If foo is 'posts', it will apply to content in "content/posts/"
+  # dir. The "bar" portion is how you want the links to look.
+  posts = "/:filename/"
+  # post = "/:year/:month/:title/"
+  notes = "/notes/:filename/"
+
+[Taxonomies] # [indexes] is obsolete since v0.11
+  category = "categories" # SINGULAR = "PLURAL"
+  tag = "tags"
+  series = "series"
+
+# The "ATOM", "JF2Post" and "JF2Feed" are custom output formats defined in the
+# "refined" theme.
+[outputs]
+  home = ["HTML", "RSS", "ATOM", "JF2Feed"] # default = ["HTML", "RSS"]
+  section = ["HTML", "RSS", "ATOM", "JF2Feed"] # posts/atom.xml
+  taxonomy = ["HTML", "RSS", "ATOM", "JF2Feed"] # tags/foo/atom.xml
+  # Fri Mar 23 17:57:08 EDT 2018 - kmodi
+  # There's some issue on Hugo 0.38-DEV (older versions too)..  The "ATOM"
+  # output format is not getting generated for taxonomyTerm.
+  # taxonomyTerm = ["HTML", "RSS", "ATOM", "JF2Feed"]
+  taxonomyTerm = ["HTML"] # tags/atom.xml
+  page = ["HTML", "JF2Post"]
+
+# https://gohugo.io/getting-started/configuration/#configure-file-caches
+[caches]
+  [caches.getjson]
+    dir = ":cacheDir/:project"
+    maxAge = "1m"
+  [caches.getcsv]
+    dir = ":cacheDir/:project"
+    maxAge = "1m"
+
+[Params]
+  # https://gohugo.io/functions/where/#portable-where-filters
+  mainSections = ["posts", "publications"]
+  tagline = ""
+  themecolorbase = "orange" # Valid values: "red", "orange", "yellow", "green", "cyan", "blue", "magenta", "brown"
+
+  custom_css = ["css/academicons-1.8.6.css", "css/publications.css"]
+  
+  # images = ["android-chrome-256x256.png"] # array of image paths relative to <SITE_PROJ>/assets/ dir
+  #                                                                                                   
+  # favicons = true                                                                                   
+  #                                                                                                   
+  feedSections = ["posts"]                                                                            
+  #                                                                                                   
+  html5_validator = true                                                                             
+  #                                                                                                  
+  cache_busting = false                                                                               
+  # cache_busting_debug = true                                                                       
+  # cache_busting_debug = false                                                                      
+  #                                                                                                  
+  [Params.source]                                                                                    
+    url = "https://github.com/aviralg/aviralg.github.io"
+    org_dir = "content-org"                                                                   
+    md_dir = "content"                                                                        
+    ox_hugo = true                                                                              
+
+  [[Params.social]]
+    name = "Github"
+    link = "https://github.com/aviralg/"
+    relme = true
+  [[Params.social]]
+    name = "Twitter"
+    link = "https://twitter.com/TheAviralGoel/"
+
+# See var-naming-rules.md for rules when naming keys (variables) and table names
+# in this config!
+
+######################################################################################################################
+# baseURL = "http://example.org/"                                                                                    #
+# languageCode = "en-us"                                                                                             #
+# title = "Aviral Goel"                                                                                              #
+# theme = "refined"                                                                                                  #
+#                                                                                                                    #
+# [Params]                                                                                                           #
+#   tagline = ""                                                                                                     #
+#                                                                                                                     #
+#   # Go date formats: https://golang.org/pkg/time/#pkg-constants                                                    #
+#   dateform = "Mon Jan 2, 2006"                                                                                     #
+#                                                                                                                    #
+#   # Set favicons to true only if the following files are present in the project assets/ dir:                       #
+#   # - safari-pinned-tab.svg                                                                                        #
+#   # - manifest.json                                                                                                #
+#   # - favicon-16x16.png                                                                                            #
+#   # - favicon-32x32.png                                                                                            #
+#   # - apple-touch-icon.png                                                                                         #
+#   favicons = false                                                                                                 #
+#                                                                                                                    #
+#   themecolorbase = "orange" # Valid values: "red", "orange", "yellow", "green", "cyan", "blue", "magenta", "brown" #
+######################################################################################################################

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"{{ with site.LanguageCode }} xml:lang="{{ . }}" lang="{{ . }}"{{ end }}>
+
+    {{ partial "head.html" . }}
+
+    {{ with .Params.wavedrom }}
+        <body lang="en" onload="WaveDrom.ProcessAll()">
+    {{ else }}
+        <body lang="en">
+    {{ end }}
+
+        <!-- Top color border of the page -->
+        <div class="border" id="home"></div>
+
+        <div class="wrapper">   <!--Used by responsive-nav-orig.js -->
+            {{ partial "navbar.html" . }}
+            <div class="container">
+                <header class="masthead">
+                    <div class="masthead-title no-text-decoration">
+                        <a href="/">{{ site.Title }}</a> <span class="blinking-cursor">❚</span>
+                    </div>
+                    <div class="masthead-tagline">
+                        {{ site.Params.tagline }}
+                    </div>
+                </header>
+
+                {{ .Content }}
+
+                <hr />
+            </div>               <!-- Closing <div class="container"> -->
+
+        </div> <!-- - Closing <div class="wrapper"> -->
+        </body>
+</html>

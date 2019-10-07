@@ -1,0 +1,16 @@
+.h-entry .conference {
+    border-bottom-style: none;
+    font-weight: bold;
+}
+
+.h-entry .arxiv {
+    border-bottom-style: none;
+}
+
+.h-entry .pdf {
+    border-bottom-style: none;
+}
+
+.h-entry .citations {
+    border-bottom-style: none;
+}

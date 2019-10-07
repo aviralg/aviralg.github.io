@@ -1,0 +1,33 @@
+<li class="h-entry li">
+    <span class="left p-name post-title no-text-decoration">
+        <a class="u-url" href='{{ .Permalink }}'>{{ .Title }}</a>
+    </span>
+
+    <span class = "right">
+        <a class="conference" href="{{ .Params.conference_url }}">{{ .Params.conference_name }}</i></a>
+    </span>
+
+    <br />
+
+    <span class="authors">{{ delimit .Params.Author ", " }}</span>
+
+    <br />
+
+    <div class="left">
+        {{ with .Params.arxiv }}
+            <a title ="arXiv" class="arxiv" href="{{ . }}"><i class="ai ai-arxiv"></i></a>
+        {{ end }}
+
+        {{ with .Params.pdf }}
+            <a title ="PDF" class="pdf" href="/docs/{{ . }}">🗏</a>
+        {{ end }}
+
+        {{ with .Params.google_scholar }}
+            <a title = "Citations" class="citations" href="{{ . }}"><i class="ai ai-google-scholar ai-2x"></i></a>
+        {{ end }}
+    </div>
+    <div class="right">
+        {{ partial "taxo-buttons.html" . }}
+    </div>
+    <div class="clear-float"></div>
+</li>
