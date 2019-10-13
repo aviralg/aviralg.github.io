@@ -4,13 +4,15 @@
 
 #+TITLE: On the Design, Implementation, and Use of Laziness in R
 #+DATE: <2019-10-06 Sun>
-#+AUTHOR: Aviral Goel, Jan Vitek
-#+HUGO_TAGS: R laziness meta-programming
-#+HUGO_CATEGORIES: "oopsla"
+#+AUTHOR: aviral-goel, jan-vitek
+#+HUGO_TAGS: R Laziness Meta-programming
+#+HUGO_CATEGORIES: "OOPSLA"
 #+HUGO_MENU: :menu "main"
 #+HUGO_DRAFT: false
-#+HUGO_CUSTOM_FRONT_MATTER: :conference_name "OOPSLA, Oct 2019" :conference_url "https://2019.splashcon.org/track/splash-2019-oopsla" :pdf "on-the-design-implementation-and-use-of-laziness-in-r.pdf" :arxiv "https://arxiv.org/abs/1909.08958"
-
+#+HUGO_CUSTOM_FRONT_MATTER: :event "oopsla"
+#+HUGO_CUSTOM_FRONT_MATTER: :doi "10.1145/3360579"
+#+HUGO_CUSTOM_FRONT_MATTER: :arxiv "1909.08958/"
+#+HUGO_CUSTOM_FRONT_MATTER: :artifact "https://zenodo.org/record/3369573#.XaC2c-aYVhE"
 
 The R programming language has been lazy for over twenty-five years. This paper presents a review of the design and implementation of call-by-need in R, and a data-driven study of how generations of programmers have put laziness to use in their code. We analyze 16,707 packages and observe the creation of 270.9 B promises. Our data suggests that there is little supporting evidence to assert that programmers use laziness to avoid unnecessary computation or to operate over infinite data structures. For the most part R code appears to have been written without reliance on, and in many cases even knowledge of, delayed argument evaluation. The only significant exception is a small number of packages which leverage call-by-need for meta-programming.
 

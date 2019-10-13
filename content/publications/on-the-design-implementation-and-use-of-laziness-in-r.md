@@ -1,15 +1,15 @@
 +++
 title = "On the Design, Implementation, and Use of Laziness in R"
-author = ["Aviral Goel", "Jan Vitek"]
+author = ["aviral-goel", "jan-vitek"]
 date = 2019-10-06T00:00:00-04:00
-lastmod = 2019-10-06T23:12:58-04:00
-tags = ["R", "laziness", "meta-programming"]
-categories = ["oopsla"]
+lastmod = 2019-10-11T13:11:34-04:00
+tags = ["R", "Laziness", "Meta-programming"]
+categories = ["OOPSLA"]
 draft = false
-conference_name = "OOPSLA, Oct 2019"
-conference_url = "https://2019.splashcon.org/track/splash-2019-oopsla"
-pdf = "on-the-design-implementation-and-use-of-laziness-in-r.pdf"
-arxiv = "https://arxiv.org/abs/1909.08958"
+event = "oopsla"
+doi = "10.1145/3360579"
+arxiv = "1909.08958/"
+artifact = "https://zenodo.org/record/3369573#.XaC2c-aYVhE"
 [menu.main]
   identifier = "on-the-design-implementation-and-use-of-laziness-in-r"
 +++

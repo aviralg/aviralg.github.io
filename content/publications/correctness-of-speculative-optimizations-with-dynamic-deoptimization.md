@@ -1,15 +1,15 @@
 +++
 title = "Correctness of Speculative Optimizations with Dynamic Deoptimization"
-author = ["Olivier Flückiger", "Gabriel Scherer", "Ming-Ho Yee", "Aviral Goel", "Amal Ahmed", "Jan Vitek"]
-date = 2019-10-06T00:00:00-04:00
-lastmod = 2019-10-06T23:00:48-04:00
-tags = ["speculative-optimization", "dynamic-deoptimization", "on-stack-replacement"]
-categories = ["popl"]
+author = ["olivier-fluckiger", "gabriel-scherer", "ming-ho-yee", "aviral-goel", "amal-ahmed", "jan-vitek"]
+date = 2018-10-06T00:00:00-04:00
+lastmod = 2019-10-10T19:55:44-04:00
+tags = ["Speculative Optimization", "Dynamic Deoptimization", "On-stack-replacement"]
+categories = ["POPL"]
 draft = false
-conference_name = "POPL, Jan 2018"
-conference_url = "https://popl18.sigplan.org/"
-pdf = "correctness-of-speculative-optimizations-with-dynamic-deoptimization.pdf"
-arxiv = "https://arxiv.org/abs/1711.03050"
+event = "popl"
+doi = "10.1145/3158137"
+arxiv = "1711.03050/"
+citations = "https://scholar.google.com/scholar?oi=bibs&hl=en&cites=1257795545622262627"
 [menu.main]
   identifier = "correctness-of-speculative-optimizations-with-dynamic-deoptimization"
 +++

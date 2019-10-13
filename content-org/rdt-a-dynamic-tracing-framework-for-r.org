@@ -1,0 +1,13 @@
+#+HUGO_BASE_DIR: ../
+#+HUGO_SECTION: talks
+#+HUGO_AUTO_SET_LASTMOD: true
+
+#+TITLE: RDT: A Dynamic Tracing Framework for R
+#+DATE: <2019-10-06 Sun>
+#+AUTHOR: aviral-goel, filip-krikava, jan-vitek
+#+hugo_TAGS: R "Dynamic Tracing" "Laziness"
+#+HUGO_CATEGORIES: "RIOT"
+#+HUGO_MENU: :menu "main"
+#+HUGO_DRAFT: false
+#+HUGO_CUSTOM_FRONT_MATTER: :event "riot" 
+

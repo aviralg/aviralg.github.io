@@ -106,13 +106,14 @@ disableFastRender = true        # Hugo 0.30
     dir = ":cacheDir/:project"
     maxAge = "1m"
 
+
 [Params]
   # https://gohugo.io/functions/where/#portable-where-filters
-  mainSections = ["posts", "publications"]
+  mainSections = ["posts", "publications", "talks"]
   tagline = ""
   themecolorbase = "orange" # Valid values: "red", "orange", "yellow", "green", "cyan", "blue", "magenta", "brown"
 
-  custom_css = ["css/academicons-1.8.6.css", "css/publications.css"]
+  custom_css = ["css/academicons-1.8.6.css", "css/publications.css", "css/content.css"]
   
   # images = ["android-chrome-256x256.png"] # array of image paths relative to <SITE_PROJ>/assets/ dir
   #                                                                                                   
@@ -139,6 +140,7 @@ disableFastRender = true        # Hugo 0.30
   [[Params.social]]
     name = "Twitter"
     link = "https://twitter.com/TheAviralGoel/"
+
 
 # See var-naming-rules.md for rules when naming keys (variables) and table names
 # in this config!
