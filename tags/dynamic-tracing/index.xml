@@ -1,0 +1,23 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>
+            
+                    Dynamic Tracing on
+                
+            
+            Aviral Goel</title>
+        <link>http://aviral.io/tags/dynamic-tracing/</link>
+        <description>Recent content  in Dynamic Tracing
+            on Aviral Goel</description>
+        <language>en-us</language>
+        
+                <managingEditor>goel.aviral@gmail.com (Aviral Goel)</managingEditor>
+                <webMaster>goel.aviral@gmail.com (Aviral Goel)</webMaster><lastBuildDate>Sun, 13 Oct 2019 14:47:43 -0400</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+            <atom:link href="http://aviral.io/tags/dynamic-tracing/index.xml" rel="self" type="application/rss&#43;xml" />
+        
+    </channel>
+</rss>
+
+

@@ -7,10 +7,22 @@
     border-bottom-style: none;
 }
 
-.h-entry .pdf {
+.h-entry .paper {
+    border-bottom-style: none;
+}
+
+.h-entry .artifact {
     border-bottom-style: none;
 }
 
 .h-entry .citations {
+    border-bottom-style: none;
+}
+
+.h-entry .authors a {
+    border-bottom-style: none;
+}
+
+.h-entry .doi {
     border-bottom-style: none;
 }
