@@ -31,7 +31,7 @@ pygmentsUseClassic = false      # Needs Hugo 0.28+, default=false => Use Chroma 
 enableEmoji = true
 
 # Services
-# GoogleAnalytics = "UA-105225187-1"
+GoogleAnalytics = "UA-46114889-2"
 # Mon Mar 26 18:18:27 EDT 2018 - kmodi - Stopped using Disqus today!
 # DisqusShortname = "ascriptersnotes"
 
