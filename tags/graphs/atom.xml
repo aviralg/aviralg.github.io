@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us">
+    <generator uri="https://gohugo.io/" version="0.59.0">Hugo</generator><title type="html"><![CDATA[graphs on Aviral Goel]]></title>
+    
+    
+    
+            <link href="http://aviral.io/tags/graphs/" rel="alternate" type="text/html" title="HTML" />
+            <link href="http://aviral.io/tags/graphs/index.xml" rel="alternate" type="application/rss+xml" title="RSS" />
+            <link href="http://aviral.io/tags/graphs/atom.xml" rel="self" type="application/atom+xml" title="Atom" />
+            <link href="http://aviral.io/tags/graphs/jf2feed.json" rel="alternate" type="application/jf2feed+json" title="jf2feed" />
+    <updated>2019-11-02T11:46:10-04:00</updated>
+    
+    
+    <author>
+            <name>Aviral Goel</name>
+            
+                <email>goel.aviral@gmail.com</email>
+            </author>
+    
+        <id>http://aviral.io/tags/graphs/</id>
+    
+        
+        <entry>
+            <title type="html"><![CDATA[ggplot2 Theme]]></title>
+            <link href="http://aviral.io/articles/ggplot2-theme/?utm_source=atom_feed" rel="alternate" type="text/html" />
+            
+                <link href="http://aviral.io/publications/on-the-design-implementation-and-use-of-laziness-in-r/?utm_source=atom_feed" rel="related" type="text/html" title="On the Design, Implementation, and Use of Laziness in R" />
+                <link href="http://aviral.io/talks/rdt-a-dynamic-tracing-framework-for-r/?utm_source=atom_feed" rel="related" type="text/html" title="RDT: A Dynamic Tracing Framework for R" />
+            
+                <id>http://aviral.io/articles/ggplot2-theme/</id>
+            
+            
+                    <author>
+                        <name>aviral-goel</name>
+                    </author>
+            <published>2019-11-02T00:00:00-04:00</published>
+            <updated>2019-11-02T11:43:08-04:00</updated>
+            
+            
+            <content type="html"><![CDATA[<p>I use <a href="https://ggplot2.tidyverse.org">ggplot2</a> nowadays for all my graphing requirements because my research is on improving <a href="https://www.r-project.org/">R</a> and alternatives such as <a href="https://matplotlib.org/">matplotlib</a> are abysmal. This article is a collection of theme settings I have found useful, especially for generating figures for my <a href="http://aviral.io/publications/on-the-design-implementation-and-use-of-laziness-in-r.pdf">recent publication on R</a>.</p>
+
+<p>For generating colorless background figures, I use the following theme setting.</p>
+<div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R"><span class="n">old_theme</span> <span class="o">&lt;-</span> <span class="nf">theme_set</span><span class="p">(</span><span class="nf">theme_bw</span><span class="p">()</span> <span class="o">+</span>
+                       <span class="nf">theme</span><span class="p">(</span><span class="n">text</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">15</span><span class="p">),</span> <span class="n">panel.border</span> <span class="o">=</span> <span class="nf">element_blank</span><span class="p">()))</span></code></pre></div>
+<p>This is how the figures look like before and after updating the theme.</p>
+
+<p><a id="orgd5774a6"></a></p>
+
+
+
+
+<figure>
+    
+        <img src="http://aviral.io/images/ggplot2/without-theme.png" alt="Figure 1: Figure without updated theme" width="750px"/> <figcaption>
+                
+                <p>
+                    Figure 1: Figure without updated theme
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+
+<p><a id="org3ee6670"></a></p>
+
+
+
+
+<figure>
+    
+        <img src="http://aviral.io/images/ggplot2/with-theme.png" alt="Figure 2: Figure with updated theme" width="750px"/> <figcaption>
+                
+                <p>
+                    Figure 2: Figure with updated theme
+                    
+                        
+                        </p>
+                
+            </figcaption></figure>
+
+
+<p>These figures were generated from the following code snippet.</p>
+<div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R"><span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
+
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">mpg</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">class</span><span class="p">))</span> <span class="o">+</span>
+<span class="nf">geom_bar</span><span class="p">()</span></code></pre></div>]]></content>
+            
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="http://aviral.io/categories/ggplot2" term="ggplot2" label="ggplot2" />
+                            
+                        
+                    
+                 
+                    
+                 
+                    
+                         
+                        
+                            
+                             
+                                <category scheme="http://aviral.io/tags/r" term="r" label="R" />
+                             
+                                <category scheme="http://aviral.io/tags/graphs" term="graphs" label="graphs" />
+                             
+                                <category scheme="http://aviral.io/tags/charts" term="charts" label="charts" />
+                             
+                                <category scheme="http://aviral.io/tags/plots" term="plots" label="plots" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+</feed>

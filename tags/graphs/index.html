@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-us" lang="en-us">
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+    
+    
+    
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5">
+
+    
+    <meta name="referrer" content="no-referrer">
+
+    <title>
+        
+            graphs ❚ Aviral Goel
+        
+    </title>
+
+    
+    
+    <!-- Google Analytics -->
+    <script type="application/javascript">
+     
+     if(navigator.userAgent.indexOf("Speed Insights") == -1) {
+         window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date; 
+         ga('create', 'UA-46114889-2', 'auto');
+         ga('require', 'linkid'); 
+         ga('send', 'pageview');
+     }
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+
+
+
+    
+    
+    
+    
+
+    
+    
+    
+    
+
+    
+    
+    
+
+    
+    
+    
+    <style>
+     
+     
+     :root {
+         --theme-color: #d28445;
+         --theme-color-light: rgba(210, 84, 45, 0.2);
+     }
+     
+     html {
+         line-height: 1.5;
+     }
+    </style>
+
+    
+    
+
+    
+    
+    
+    
+    <link rel="stylesheet" href="/css/refined.min.9cfc0dce385ee361bea254c6e10dd50d2a15bac34e9e3e839f89b598401a8e51.css">
+    
+    <link rel="preload" href="/css/refined.min.9cfc0dce385ee361bea254c6e10dd50d2a15bac34e9e3e839f89b598401a8e51.css" as="style">
+
+    
+
+    
+                      
+        
+            <link rel="stylesheet" href="/css/academicons-1.8.6.css">
+        
+    
+
+    
+                      
+        
+            <link rel="stylesheet" href="/css/publications.css">
+        
+    
+
+    
+                      
+        
+            <link rel="stylesheet" href="/css/content.css">
+        
+    
+
+
+
+    
+        <style>
+         
+         /* Background */ .chroma { background-color: #ffffff }
+/* Error */ .chroma .err { color: #a61717; background-color: #e3d2d2 }
+/* LineTableTD */ .chroma .lntd { vertical-align: top; padding: 0; margin: 0; border: 0; }
+/* LineTable */ .chroma .lntable { border-spacing: 0; padding: 0; margin: 0; border: 0; width: auto; overflow: auto; display: block; }
+/* LineHighlight */ .chroma .hl { display: block; width: 100%;background-color: #ffffcc }
+/* LineNumbersTable */ .chroma .lnt { margin-right: 0.4em; padding: 0 0.4em 0 0.4em; }
+/* LineNumbers */ .chroma .ln { margin-right: 0.4em; padding: 0 0.4em 0 0.4em; }
+/* Keyword */ .chroma .k { color: #000000; font-weight: bold }
+/* KeywordConstant */ .chroma .kc { color: #000000; font-weight: bold }
+/* KeywordDeclaration */ .chroma .kd { color: #000000; font-weight: bold }
+/* KeywordNamespace */ .chroma .kn { color: #000000; font-weight: bold }
+/* KeywordPseudo */ .chroma .kp { color: #000000; font-weight: bold }
+/* KeywordReserved */ .chroma .kr { color: #000000; font-weight: bold }
+/* KeywordType */ .chroma .kt { color: #445588; font-weight: bold }
+/* NameAttribute */ .chroma .na { color: #008080 }
+/* NameBuiltin */ .chroma .nb { color: #0086b3 }
+/* NameBuiltinPseudo */ .chroma .bp { color: #999999 }
+/* NameClass */ .chroma .nc { color: #445588; font-weight: bold }
+/* NameConstant */ .chroma .no { color: #008080 }
+/* NameDecorator */ .chroma .nd { color: #3c5d5d; font-weight: bold }
+/* NameEntity */ .chroma .ni { color: #800080 }
+/* NameException */ .chroma .ne { color: #990000; font-weight: bold }
+/* NameFunction */ .chroma .nf { color: #990000; font-weight: bold }
+/* NameLabel */ .chroma .nl { color: #990000; font-weight: bold }
+/* NameNamespace */ .chroma .nn { color: #555555 }
+/* NameTag */ .chroma .nt { color: #000080 }
+/* NameVariable */ .chroma .nv { color: #008080 }
+/* NameVariableClass */ .chroma .vc { color: #008080 }
+/* NameVariableGlobal */ .chroma .vg { color: #008080 }
+/* NameVariableInstance */ .chroma .vi { color: #008080 }
+/* LiteralString */ .chroma .s { color: #dd1144 }
+/* LiteralStringAffix */ .chroma .sa { color: #dd1144 }
+/* LiteralStringBacktick */ .chroma .sb { color: #dd1144 }
+/* LiteralStringChar */ .chroma .sc { color: #dd1144 }
+/* LiteralStringDelimiter */ .chroma .dl { color: #dd1144 }
+/* LiteralStringDoc */ .chroma .sd { color: #dd1144 }
+/* LiteralStringDouble */ .chroma .s2 { color: #dd1144 }
+/* LiteralStringEscape */ .chroma .se { color: #dd1144 }
+/* LiteralStringHeredoc */ .chroma .sh { color: #dd1144 }
+/* LiteralStringInterpol */ .chroma .si { color: #dd1144 }
+/* LiteralStringOther */ .chroma .sx { color: #dd1144 }
+/* LiteralStringRegex */ .chroma .sr { color: #009926 }
+/* LiteralStringSingle */ .chroma .s1 { color: #dd1144 }
+/* LiteralStringSymbol */ .chroma .ss { color: #990073 }
+/* LiteralNumber */ .chroma .m { color: #009999 }
+/* LiteralNumberBin */ .chroma .mb { color: #009999 }
+/* LiteralNumberFloat */ .chroma .mf { color: #009999 }
+/* LiteralNumberHex */ .chroma .mh { color: #009999 }
+/* LiteralNumberInteger */ .chroma .mi { color: #009999 }
+/* LiteralNumberIntegerLong */ .chroma .il { color: #009999 }
+/* LiteralNumberOct */ .chroma .mo { color: #009999 }
+/* Operator */ .chroma .o { color: #000000; font-weight: bold }
+/* OperatorWord */ .chroma .ow { color: #000000; font-weight: bold }
+/* Comment */ .chroma .c { color: #999988; font-style: italic }
+/* CommentHashbang */ .chroma .ch { color: #999988; font-style: italic }
+/* CommentMultiline */ .chroma .cm { color: #999988; font-style: italic }
+/* CommentSingle */ .chroma .c1 { color: #999988; font-style: italic }
+/* CommentSpecial */ .chroma .cs { color: #999999; font-weight: bold; font-style: italic }
+/* CommentPreproc */ .chroma .cp { color: #999999; font-weight: bold; font-style: italic }
+/* CommentPreprocFile */ .chroma .cpf { color: #999999; font-weight: bold; font-style: italic }
+/* GenericDeleted */ .chroma .gd { color: #000000; background-color: #ffdddd }
+/* GenericEmph */ .chroma .ge { color: #000000; font-style: italic }
+/* GenericError */ .chroma .gr { color: #aa0000 }
+/* GenericHeading */ .chroma .gh { color: #999999 }
+/* GenericInserted */ .chroma .gi { color: #000000; background-color: #ddffdd }
+/* GenericOutput */ .chroma .go { color: #888888 }
+/* GenericPrompt */ .chroma .gp { color: #555555 }
+/* GenericStrong */ .chroma .gs { font-weight: bold }
+/* GenericSubheading */ .chroma .gu { color: #aaaaaa }
+/* GenericTraceback */ .chroma .gt { color: #aa0000 }
+/* GenericUnderline */ .chroma .gl { text-decoration: underline }
+/* TextWhitespace */ .chroma .w { color: #bbbbbb }
+
+         
+         /* Overrides on top of the theme and Chroma CSS */
+/* Chroma-based lines highlighting in code blocks */
+.chroma .hl {
+    background-color: #e8e8e8;
+    /* Extend highlight up to 100 characters (assuming that the code blocks never have more than 100 characters in a line) */
+    min-width: 100ch;
+}
+/* GenericHeading */ .chroma .gh { color: #999999; font-weight: bold }
+/* GenericSubheading */ .chroma .gu { color: #aaaaaa; font-weight: bold }
+
+         
+        </style>
+    
+
+    
+
+    
+    
+    
+
+    
+    <script src="/js/responsive-nav-orig.min.355eebd835ac8071d56b337f68ffbbddc0f6487625599895e3e0b0461e791ebb.js"></script>
+    
+    <link rel="preload" href="/js/responsive-nav-orig.min.355eebd835ac8071d56b337f68ffbbddc0f6487625599895e3e0b0461e791ebb.js" as="script">
+
+    
+    
+    <script defer src="/js/libs/fa/fontawesome-all.min.78bd3583027f40ce4330d39e1f1df56bda5f4af819aac2d0214ba529918c9e95.js"></script>
+    
+    <link rel="preload" href="/js/libs/fa/fontawesome-all.min.78bd3583027f40ce4330d39e1f1df56bda5f4af819aac2d0214ba529918c9e95.js" as="script">
+
+    
+
+    
+
+    
+    
+    
+
+    
+    
+<!-- rel="me" links for IndieAuth -->
+
+<link href="https://github.com/aviralg/" rel="me">
+
+
+    
+    
+    <link rel="authorization_endpoint" href="https://indieauth.com/auth" data-proofer-ignore>
+    
+    
+    <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+
+
+
+
+    
+ 
+<meta property="og:title" content="graphs" />
+<meta property="og:description"
+      content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="http://aviral.io/tags/graphs/" />
+
+
+    
+        <meta property="og:updated_time" content="2019-11-02T00:00:00-04:00"/>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+     <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="graphs"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@TheAviralGoel"/>
+    <meta name="twitter:creator" content="@TheAviralGoel"/>
+
+
+    
+    
+    <link rel="alternate" type="application/rss+xml" href="http://aviral.io/tags/graphs/index.xml" title="RSS for Aviral Goel" />
+    <link rel="alternate" type="application/atom+xml" href="http://aviral.io/tags/graphs/atom.xml" title="Atom for Aviral Goel" />
+    <link rel="alternate" type="application/jf2feed+json" href="http://aviral.io/tags/graphs/jf2feed.json" title="Jf2feed for Aviral Goel" />
+    
+     
+
+     
+
+
+
+
+     
+        
+        <meta name="DC.Creator" content="Aviral Goel"/>
+    
+
+
+
+    
+    
+    
+    <meta name="hugo-build-date" content=""/>
+    <meta name="hugo-commit-hash" content=""/>
+    <meta name="generator" content="Hugo 0.59.0" />
+</head>
+
+
+    
+        <body lang="en">
+    
+
+        
+        <div class="border" id="home"></div>
+
+        <div class="wrapper">   
+            
+<nav id="nav" class="nav-collapse opened" aria-hidden="false">
+    <ul class="navbar">
+        <li><a class="" href="/">Home</a></li>
+        
+            
+                <li><a class="" href="http://aviral.io/articles/">Articles</a></li>
+            
+        
+            
+                <li><a class="" href="http://aviral.io/publications/">Publications</a></li>
+            
+        
+            
+                <li><a class="" href="http://aviral.io/talks/">Talks</a></li>
+            
+        
+        
+    </ul>
+</nav>
+
+            <div class="container">
+                <header class="masthead">
+                    <div class="masthead-title no-text-decoration">
+                        <a href="/">Aviral Goel</a> <span class="blinking-cursor">❚</span>
+                    </div>
+                    <div class="masthead-tagline">
+                        
+                    </div>
+                </header>
+
+                             
+
+
+
+
+
+
+
+    
+    <div class="all-terms right no-text-decoration">
+        
+            
+            
+            
+            
+            
+            
+                
+                    
+                    <span class="categories"><a href="http://aviral.io/categories/">all <span class="term">categories</span></a></span>
+                    
+                
+            
+        
+            
+            
+            
+            
+            
+            
+        
+            
+            
+            
+            
+            
+            
+                
+                    
+                    <span class="tags"> | <a href="http://aviral.io/tags/">all <span class="term">tags</span></a></span>
+                    
+                
+            
+        
+    </div>
+    <div class="clear-float"></div>
+
+
+
+
+
+
+
+<section class="h-feed">
+    <header>
+        
+        <data class="u-url" value="http://aviral.io/tags/graphs/"></data>
+         
+
+     
+
+
+
+
+    
+        
+        <span class="hide">
+            &mdash; <a href="http://aviral.io/" class="u-author">Aviral Goel</a>
+        </span>
+    
+
+
+
+        
+        
+        
+
+        
+            <div class="center">
+    <div class="taxo no-text-decoration">
+         
+            
+         
+            
+         
+            
+        
+    </div>
+
+</div>
+            
+            <h1 class="p-name">Posts tagged with ‘graphs’ (1)</h1>
+        
+    </header>
+
+    
+        
+        <article class="summary h-entry articles">
+    <header>
+        <h2 class="post-title p-name no-text-decoration"><a class="u-url" href='http://aviral.io/articles/ggplot2-theme/'> ggplot2 Theme</a> </h2>
+        
+    <div class="taxo no-text-decoration">
+         
+            
+                <ul class="no-bullets inline categories">
+                    
+                        
+                        
+                        
+                            
+                            
+                            
+                            
+                            
+                            <li class="__ggplot2__"
+                                
+                                
+                                title="This is the only post categorized in ‘ggplot2’"
+                                
+                            >
+                                <a class="p-category" href="http://aviral.io/categories/ggplot2/">ggplot2</a>
+                            </li>
+                        
+                    
+                </ul>
+            
+         
+            
+         
+            
+                <ul class="no-bullets inline tags">
+                    
+                        
+                        
+                        
+                            
+                            
+                            
+                            
+                            
+                            <li class="__r__"
+                                
+                                
+                                title="See all 3 posts tagged with ‘R’"
+                                
+                            >
+                                <a class="p-category" href="http://aviral.io/tags/r/">R</a>
+                            </li>
+                        
+                    
+                        
+                        
+                        
+                            
+                            
+                            
+                            
+                            
+                            <li class="active"
+                                
+                                
+                                title="This is the only post tagged with ‘graphs’"
+                                
+                            >
+                                <a class="p-category" href="http://aviral.io/tags/graphs/">graphs</a>
+                            </li>
+                        
+                    
+                        
+                        
+                        
+                            
+                            
+                            
+                            
+                            
+                            <li class="__charts__"
+                                
+                                
+                                title="This is the only post tagged with ‘charts’"
+                                
+                            >
+                                <a class="p-category" href="http://aviral.io/tags/charts/">charts</a>
+                            </li>
+                        
+                    
+                        
+                        
+                        
+                            
+                            
+                            
+                            
+                            
+                            <li class="__plots__"
+                                
+                                
+                                title="This is the only post tagged with ‘plots’"
+                                
+                            >
+                                <a class="p-category" href="http://aviral.io/tags/plots/">plots</a>
+                            </li>
+                        
+                    
+                </ul>
+            
+        
+    </div>
+
+
+        
+
+
+    
+    
+    <div class="post-date">
+        
+        <time datetime="2019-11-02T00:00:00-0400" class="dt-published">Sat Nov 2, 2019</time>
+        
+        
+    </div>
+
+
+    </header>
+
+    <div class="post p-summary" >
+        <p>I use ggplot2 nowadays for all my graphing requirements because my research is on improving R and alternatives such as matplotlib are abysmal. This article is a collection of theme settings I have found useful, especially for generating figures for my recent publication on R.
+For generating colorless background figures, I use the following theme setting.
+old_theme &lt;- theme_set(theme_bw() + theme(text = element_text(size = 15), panel.border = element_blank())) This is how the figures look like before and after updating the theme.</p>
+
+    </div>
+
+    
+    
+    
+        <div class="readmore no-text-decoration">
+            <a href='http://aviral.io/articles/ggplot2-theme/'
+               title="Read more about ggplot2 Theme">
+                read <span class="more"> more</span>
+                <span class="screen-readers-only" > about ggplot2 Theme</span>
+            </a>
+        </div>
+    
+</article>
+
+    
+
+    
+
+
+    
+    <div class="all-terms right no-text-decoration">
+        
+            
+            
+            
+            
+            
+            
+                
+                    
+                    <span class="categories"><a href="http://aviral.io/categories/">all <span class="term">categories</span></a></span>
+                    
+                
+            
+        
+            
+            
+            
+            
+            
+            
+        
+            
+            
+            
+            
+            
+            
+                
+                    
+                    <span class="tags"> | <a href="http://aviral.io/tags/">all <span class="term">tags</span></a></span>
+                    
+                
+            
+        
+    </div>
+    <div class="clear-float"></div>
+
+
+</section>
+
+
+
+                <footer>
+                    
+                    <ul class="no-bullets feed right inline">
+    
+        
+        
+            <li class="inline no-text-decoration">
+                <a href="http://aviral.io/tags/graphs/index.xml">RSS</a>
+            </li>
+        
+    
+        
+        
+            <li class="inline no-text-decoration">
+                <a href="http://aviral.io/tags/graphs/atom.xml">ATOM</a>
+            </li>
+        
+    
+        
+        
+    
+</ul>
+<div class="clear-float"></div>
+
+                </footer>
+                <hr />
+            </div>               
+
+            <footer> 
+                
+
+<ul class="social no-text-decoration">
+    
+        <li>
+            <a href="https://github.com/aviralg/" title="Github">
+                
+                
+                    
+                    
+                    
+                    <i class="fab fa-2x fa-github"></i>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="https://twitter.com/TheAviralGoel/" title="Twitter">
+                
+                
+                    
+                    
+                    
+                    <i class="fab fa-2x fa-twitter"></i>
+                
+            </a>
+        </li>
+    
+</ul>
+
+
+
+
+
+
+    
+    
+    
+        
+    
+    
+        
+            
+        
+        
+    
+    
+    
+        
+    
+    
+
+
+
+
+
+
+
+
+<p class="generated no-text-decoration">
+    Generated using the <a href="https://github.com/kaushalmodi/ox-hugo"><code class="nobr">ox-hugo</code></a> package for Emacs/Org-mode + <a href="https://gitlab.com/kaushalmodi/hugo-theme-refined"><code class="nobr">hugo-theme-refined</code></a> + <span class="nobr">Hugo 0.59.0</span><br /> <span class="nobr">[<a href="https://github.com/aviralg/aviralg.github.io/tree/master/content-org">Org mode source</a>]</span>
+</p>
+
+<p>
+    
+</p>
+
+
+
+
+<div class="badges no-text-decoration">
+    
+    
+
+    
+        
+        
+        <a href="https://html5.validator.nu/?doc=http://aviral.io/tags/graphs/&amp;showsource=yes">
+            
+            <img src="/images/html5-css3-semantics-badge--scaled-optimized.0f343c79b5f793c32b308b8b872fccdc6f8f10dc328d12f3f8fba203ab3ccc6e.png"
+                 width="46" height="18" class="pixelated"
+                 alt="HTML5 Powered with CSS3 / Styling, and Semantics"
+                 title="HTML5 Powered with CSS3 / Styling, and Semantics">
+        </a>
+    
+</div>
+
+
+
+
+<script type="application/javascript">var nav=responsiveNav("#nav");</script>
+
+
+
+
+<script defer src="/js/libs/fragmentions/wrapper.min.4c511209cd3786314b251d891c8da528b47a972669aa4eea416b64d4be01eee2.js"></script>
+
+
+
+
+
+
+
+    <div class="h-card">
+        
+        
+        <a class="p-name u-url" href="http://aviral.io/">Aviral Goel</a>
+        
+            <p>
+                <a class="u-email" href="mailto:goel.aviral@gmail.com" rel="me">goel.aviral@gmail.com</a>
+            </p>
+        
+        
+            <p class="p-note">
+                A student of programming languages
+            </p>
+        
+    </div>
+
+
+
+            </footer>
+        </div> 
+    </body>
+</html>
