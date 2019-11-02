@@ -1,0 +1,43 @@
+#+HUGO_BASE_DIR: ../
+#+HUGO_SECTION: articles
+#+HUGO_AUTO_SET_LASTMOD: true
+
+#+TITLE: ggplot2 Theme
+#+DATE: <2019-11-02 Sat>
+#+AUTHOR: aviral-goel
+#+HUGO_TAGS: R graphs charts plots
+#+HUGO_CATEGORIES: ggplot2
+#+HUGO_MENU: :menu "main"
+#+HUGO_DRAFT: false
+
+I use [[https://ggplot2.tidyverse.org][ggplot2]] nowadays for all my graphing requirements because my research is on improving [[https://www.r-project.org/][R]] and alternatives such as [[https://matplotlib.org/][matplotlib]] are abysmal. This article is a collection of theme settings I have found useful, especially for generating figures for my [[http://aviral.io/publications/on-the-design-implementation-and-use-of-laziness-in-r.pdf][recent publication on R]].
+
+For generating colorless background figures, I use the following theme setting. 
+
+#+BEGIN_SRC R
+old_theme <- theme_set(theme_bw() + 
+                       theme(text = element_text(size = 15), panel.border = element_blank()))
+#+END_SRC
+
+
+This is how the figures look like before and after updating the theme.
+
+#+CAPTION: Figure without updated theme
+#+NAME:   fig:without-theme
+#+attr_html: :width 750px
+[[/images/ggplot2/without-theme.png]]
+
+#+CAPTION: Figure with updated theme
+#+NAME:   fig:with-theme
+#+attr_html: :width 750px
+[[/images/ggplot2/with-theme.png]]
+
+
+These figures were generated from the following code snippet.
+
+#+BEGIN_SRC R
+library(ggplot2)
+
+ggplot(mpg, aes(class)) + 
+geom_bar()
+#+END_SRC
