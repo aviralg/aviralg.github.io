@@ -29,6 +29,10 @@
             ⇩
         </a>
 
+        {{ with .Params.talk }}
+        <a title ="Talk" class="talk" href="{{ . }}">▶</a>
+        {{ end }}
+
         {{ with .Params.artifact }}
         <a title ="Artifact" class="artifact" href="{{ . }}">⧉</a>
         {{ end }}
