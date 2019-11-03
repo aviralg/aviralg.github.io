@@ -16,7 +16,7 @@
 
     <title>
         
-            Articles ❚ Aviral Goel
+            tmux Cheatsheet ❚ Aviral Goel
         
     </title>
 
@@ -238,15 +238,18 @@
 
     
  
-<meta property="og:title" content="Articles" />
+<meta property="og:title" content="tmux Cheatsheet" />
 <meta property="og:description"
-      content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="http://aviral.io/articles/" />
+      content="Tmux tmux is a terminal multiplexer. It enables you to share the same screen among multiple terminal programs. A single tmux session lets you run multiple programs in separate windows (tabs). These windows can be split horizontally or vertically into panes. tmux is flexible. You can detach from a tmux session to reconnect at a later point while it continues running the programs in the background. You can create multiple tmux sessions on the same machine and connect to them simultaneously from different terminal sessions." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://aviral.io/articles/tmux-cheatsheet/" />
 
 
     
-        <meta property="og:updated_time" content="2019-11-03T00:00:00-04:00"/>
+        <meta property="article:published_time" content="2019-11-03T00:00:00-04:00"/>
+    
+    
+        <meta property="article:modified_time" content="2019-11-03T17:18:03-05:00"/>
     
 
 
@@ -256,22 +259,22 @@
 
 
 
+
+    
 
 
 
 
      <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Articles"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="tmux Cheatsheet"/>
+<meta name="twitter:description" content="Tmux tmux is a terminal multiplexer. It enables you to share the same screen among multiple terminal programs. A single tmux session lets you run multiple programs in separate windows (tabs). These windows can be split horizontally or vertically into panes. tmux is flexible. You can detach from a tmux session to reconnect at a later point while it continues running the programs in the background. You can create multiple tmux sessions on the same machine and connect to them simultaneously from different terminal sessions."/>
 <meta name="twitter:site" content="@TheAviralGoel"/>
     <meta name="twitter:creator" content="@TheAviralGoel"/>
 
 
     
     
-    <link rel="alternate" type="application/rss+xml" href="http://aviral.io/articles/index.xml" title="RSS for Aviral Goel" />
-    <link rel="alternate" type="application/atom+xml" href="http://aviral.io/articles/atom.xml" title="Atom for Aviral Goel" />
-    <link rel="alternate" type="application/jf2feed+json" href="http://aviral.io/articles/jf2feed.json" title="Jf2feed for Aviral Goel" />
+    <link rel="alternate" type="application/jf2post+json" href="http://aviral.io/articles/tmux-cheatsheet/jf2post.json" title="Jf2post for Aviral Goel" />
     
      
 
@@ -279,10 +282,16 @@
 
 
 
+    
+    
+    
+        
+    
+
 
      
         
-        <meta name="DC.Creator" content="Aviral Goel"/>
+        <meta name="DC.Creator" content="aviral-goel"/>
     
 
 
@@ -310,7 +319,7 @@
         <li><a class="" href="/">Home</a></li>
         
             
-                <li><a class="active" href="http://aviral.io/articles/">Articles</a></li>
+                <li><a class="" href="http://aviral.io/articles/">Articles</a></li>
             
         
             
@@ -335,116 +344,18 @@
                     </div>
                 </header>
 
-                             
+                
 
 
-<div class="h-feed">
+
+
+
+
+
+
+<article class="post h-entry articles">
     <header>
-        
-        <data class="u-url" value="http://aviral.io/articles/"></data>
-         
-
-     
-
-
-
-
-    
-        
-        <span class="hide">
-            &mdash; <a href="http://aviral.io/" class="u-author">Aviral Goel</a>
-        </span>
-    
-
-
-
-        
-        
-        
-
-        
-            
-            <div class="hugotoc no-text-decoration">
-                <nav id="TableOfContents">
-                    
-                    <ul>
-                        <li>
-                            <ul>
-                                
-                                    <li><a href="#2019">2019</a></li>
-                                
-                            </ul>
-                        </li>
-                    </ul>
-                </nav>
-                <a href="#" class="back-to-top">Back to top</a>
-            </div>
-            
-<script src="/js/libs/jquery/3.3.1/jquery.slim.min.min.528a9ce56371729e50605653bf72b1e933574cdb97519529bf8fab01b63f9703.js"></script>
-
-<link rel="preload" href="/js/libs/jquery/3.3.1/jquery.slim.min.min.528a9ce56371729e50605653bf72b1e933574cdb97519529bf8fab01b63f9703.js" as="script">
-
-<script type="application/javascript">(function() {
-     var $window = $(window);
-     if ($window.width() >= 1400) { 
-         var $toc = $('#TableOfContents');
-         if ($toc.length > 0) {
-             function onScroll(){
-                 var currentScroll = $window.scrollTop();
-                 var h = $('.content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .h-feed h2');
-                 var id = "";
-                 h.each(function (i, e) {
-                     e = $(e);
-                     if (e.offset().top - 10 <= currentScroll) {
-                         id = e.attr('id');
-                     }
-                 });
-                 var current = $toc.find('a.current');
-                 if (current.length == 1 && current.eq(0).attr('href') == '#' + id) return true;
-
-                 current.each(function (i, e) {
-                     $(e).removeClass('current').siblings('ul').hide();
-                 });
-                 $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
-                     $(e).children('a').addClass('current').siblings('ul').show();
-                 });
-             }
-             $window.on('scroll', onScroll);
-             $(document).ready(function() {
-                 $toc.find('a').parent('li').find('ul').hide();
-                 onScroll();
-                 document.getElementsByClassName('hugotoc')[0].style.display = '';
-             });}}})();</script>
-
-
-
-
-
-        
-    </header>
-
-    
-    
-        <h2 id="2019">2019</h2>
-        <ul class="no-bullets">
-            
-                <li class="h-entry li">
-    
-
-
-    
-    
-    <div class="post-date">
-        
-        <time datetime="2019-11-03T00:00:00-0400" class="dt-published">11/03</time>
-        
-        
-    </div>
-
-
-    <span class="p-name post-title no-text-decoration"><a class="u-url" href='http://aviral.io/articles/tmux-cheatsheet/'>tmux Cheatsheet</a></span>
-    <div class="right">
-        
+        <div class="center">
     <div class="taxo no-text-decoration">
          
             
@@ -499,29 +410,416 @@
         
     </div>
 
+</div>
 
-    </div>
-    <div class="clear-float"></div>
-</li>
+        <h1 class="post-title p-name">tmux Cheatsheet</h1>
 
+        
+        <data class="u-url" value="http://aviral.io/articles/tmux-cheatsheet/"></data>
+
+        <div class="date-syndication">
             
-                <li class="h-entry li">
-    
 
 
     
     
     <div class="post-date">
         
-        <time datetime="2019-11-02T00:00:00-0400" class="dt-published">11/02</time>
+        <time datetime="2019-11-03T00:00:00-0400" class="dt-published">Sun Nov 3, 2019</time>
         
         
     </div>
 
 
-    <span class="p-name post-title no-text-decoration"><a class="u-url" href='http://aviral.io/articles/ggplot2-theme/'>ggplot2 Theme</a></span>
-    <div class="right">
+            
+
+
+
+
+        </div>
+         
+
+     
+
+
+
+    
+    
+    
         
+    
+
+
+    
+        
+        <span class="hide">
+            &mdash; <a href="http://aviral.io/" class="u-author">aviral-goel</a>
+        </span>
+    
+
+
+    </header>
+
+    <div class="content">
+        
+
+
+        
+
+
+
+
+
+                       
+
+
+        <div class="e-content">
+            
+
+
+
+
+
+
+<h2 id="tmux">Tmux&nbsp;<a class="headline-hash no-text-decoration" href="#tmux">#</a> </h2>
+
+<p><a href="http://tmux.github.io/">tmux</a> is a terminal multiplexer. It enables you to share the same screen among multiple terminal programs.
+A single <a href="http://tmux.github.io/">tmux</a> session lets you run multiple programs in separate windows (tabs). These windows can be split horizontally or vertically into panes.
+<a href="http://tmux.github.io/">tmux</a> is flexible. You can detach from a <a href="http://tmux.github.io/">tmux</a> session to reconnect at a later point while it continues running the programs in the background.
+You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on the same machine and connect to them simultaneously from different terminal sessions. It is a <em>modern</em> alternative to <a href="https://www.gnu.org/software/screen/">GNU Screen</a>.</p>
+
+<h2 id="commands">Commands&nbsp;<a class="headline-hash no-text-decoration" href="#commands">#</a> </h2>
+
+<h3 id="command-line-interface">Command Line Interface&nbsp;<a class="headline-hash no-text-decoration" href="#command-line-interface">#</a> </h3>
+
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Command</th>
+<th>Shortcut</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Create a named tmux session</td>
+<td>new-session -s <session-name></td>
+<td>new -s <session-name></td>
+</tr>
+
+<tr>
+<td>Create a new named session with a named window</td>
+<td>new-session -s <session-name> -n <window-name></td>
+<td>new -s <session-name> -n <window-name></td>
+</tr>
+
+<tr>
+<td>List tmux sessions</td>
+<td>list-sessions​</td>
+<td>ls</td>
+</tr>
+
+<tr>
+<td>Attach to a session</td>
+<td>attach -t <session-name></td>
+<td></td>
+</tr>
+
+<tr>
+<td>Kill a session</td>
+<td>kil-session -t <session-name></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="session-management">Session Management&nbsp;<a class="headline-hash no-text-decoration" href="#session-management">#</a> </h3>
+
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Command</th>
+<th>Shortcut</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Detach from tmux session</td>
+<td></td>
+<td><code>Prefix</code> <code>d</code></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="window-management">Window Management&nbsp;<a class="headline-hash no-text-decoration" href="#window-management">#</a> </h3>
+
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Command</th>
+<th>Shortcut</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Create window</td>
+<td>new-window -n <window-name> [&rdquo;<application-name>&rdquo;]</td>
+<td><code>Prefix</code> <code>c</code></td>
+</tr>
+
+<tr>
+<td>Rename window</td>
+<td></td>
+<td><code>Prefix</code> <code>,</code></td>
+</tr>
+
+<tr>
+<td>Move to next window</td>
+<td></td>
+<td><code>Prefix</code> <code>n</code></td>
+</tr>
+
+<tr>
+<td>Move to previous window</td>
+<td></td>
+<td><code>Prefix</code> <code>p</code></td>
+</tr>
+
+<tr>
+<td>Move to nth window</td>
+<td></td>
+<td><code>Prefix</code> <code>&lt;n&gt;</code></td>
+</tr>
+
+<tr>
+<td>Show window menu</td>
+<td></td>
+<td><code>Prefix</code> <code>w</code></td>
+</tr>
+
+<tr>
+<td>Find window</td>
+<td></td>
+<td><code>Prefix</code> <code>f</code></td>
+</tr>
+
+<tr>
+<td>Close window</td>
+<td></td>
+<td><code>Prefix</code> <code>&amp;</code></td>
+</tr>
+
+<tr>
+<td>Find window</td>
+<td></td>
+<td><code>Prefix</code> <code>f</code></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="pane-management">Pane Management&nbsp;<a class="headline-hash no-text-decoration" href="#pane-management">#</a> </h3>
+
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Command</th>
+<th>Shortcut</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Divide Window Vertically</td>
+<td></td>
+<td><code>Prefix</code> <code>%</code></td>
+</tr>
+
+<tr>
+<td>Divide Window Horizontally</td>
+<td></td>
+<td><code>Prefix</code> <code>&quot;</code></td>
+</tr>
+
+<tr>
+<td>Cycle throw panes</td>
+<td></td>
+<td><code>Prefix</code> <code>o</code></td>
+</tr>
+
+<tr>
+<td>Move to upper pane</td>
+<td></td>
+<td><code>Prefix</code> <code>Up</code></td>
+</tr>
+
+<tr>
+<td>Move to lower pane</td>
+<td></td>
+<td><code>Prefix</code> <code>Down</code></td>
+</tr>
+
+<tr>
+<td>Move to right pane</td>
+<td></td>
+<td><code>Prefix</code> <code>Right</code></td>
+</tr>
+
+<tr>
+<td>Move to left pane</td>
+<td></td>
+<td><code>Prefix</code> <code>Left</code></td>
+</tr>
+
+<tr>
+<td>Cycle through pane layouts</td>
+<td></td>
+<td><code>Prefix</code> <code>Spacebar</code></td>
+</tr>
+</tbody>
+</table>
+
+<h3 id="miscellaneous">Miscellaneous&nbsp;<a class="headline-hash no-text-decoration" href="#miscellaneous">#</a> </h3>
+
+<table>
+<thead>
+<tr>
+<th>Description</th>
+<th>Command</th>
+<th>Shortcut</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>Show clock</td>
+<td></td>
+<td><code>Prefix</code> <code>b</code></td>
+</tr>
+
+<tr>
+<td>Enter command mode</td>
+<td></td>
+<td><code>Prefix</code> <code>:</code></td>
+</tr>
+
+<tr>
+<td>List predefined tmux keybindings</td>
+<td></td>
+<td><code>Prefix</code> <code>?</code></td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="pane-layouts">Pane Layouts&nbsp;<a class="headline-hash no-text-decoration" href="#pane-layouts">#</a> </h2>
+
+<p><code>tmux</code> provides the following default pane layouts:</p>
+
+<ul>
+<li><em>even-horizontal</em>: stack panes horizontally</li>
+<li><em>even-vertical</em>: stack panes vertically</li>
+<li><em>main-horizontal</em>: single large pane on top and remaining panes arranged left-to-right below it</li>
+<li><em>main-vertical</em>: single large pane on left and remaining panes arranged top-to-bottom beside it</li>
+<li><em>tiled</em>: arrange panes evenly</li>
+</ul>
+
+
+        </div>
+    </div>
+</article>
+
+
+
+                <footer>
+                    
+
+
+
+
+<div class="no-text-decoration">
+    <div class="jump top"><a href="#" title="Top of this page">⮉</a></div>
+    <div class="jump bottom"><a href="#bottom" title="Bottom of this page">⮋</a></div>
+</div>
+
+
+ 
+    
+        <div class="hugotoc no-text-decoration">
+            <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#tmux">Tmux</a></li>
+<li><a href="#commands">Commands</a>
+<ul>
+<li><a href="#command-line-interface">Command Line Interface</a></li>
+<li><a href="#session-management">Session Management</a></li>
+<li><a href="#window-management">Window Management</a></li>
+<li><a href="#pane-management">Pane Management</a></li>
+<li><a href="#miscellaneous">Miscellaneous</a></li>
+</ul></li>
+<li><a href="#pane-layouts">Pane Layouts</a></li>
+</ul></li>
+</ul>
+</nav>
+            <a href="#" class="back-to-top">Back to top</a>
+        </div>
+    
+    
+<script src="/js/libs/jquery/3.3.1/jquery.slim.min.min.528a9ce56371729e50605653bf72b1e933574cdb97519529bf8fab01b63f9703.js"></script>
+
+<link rel="preload" href="/js/libs/jquery/3.3.1/jquery.slim.min.min.528a9ce56371729e50605653bf72b1e933574cdb97519529bf8fab01b63f9703.js" as="script">
+
+<script type="application/javascript">(function() {
+     var $window = $(window);
+     if ($window.width() >= 1400) { 
+         var $toc = $('#TableOfContents');
+         if ($toc.length > 0) {
+             function onScroll(){
+                 var currentScroll = $window.scrollTop();
+                 var h = $('.content h1, .content h2, .content h3, .content h4, .content h5, .content h6, .h-feed h2');
+                 var id = "";
+                 h.each(function (i, e) {
+                     e = $(e);
+                     if (e.offset().top - 10 <= currentScroll) {
+                         id = e.attr('id');
+                     }
+                 });
+                 var current = $toc.find('a.current');
+                 if (current.length == 1 && current.eq(0).attr('href') == '#' + id) return true;
+
+                 current.each(function (i, e) {
+                     $(e).removeClass('current').siblings('ul').hide();
+                 });
+                 $toc.find('a[href="#' + id + '"]').parentsUntil('#TableOfContents').each(function (i, e) {
+                     $(e).children('a').addClass('current').siblings('ul').show();
+                 });
+             }
+             $window.on('scroll', onScroll);
+             $(document).ready(function() {
+                 $toc.find('a').parent('li').find('ul').hide();
+                 onScroll();
+                 document.getElementsByClassName('hugotoc')[0].style.display = '';
+             });}}})();</script>
+
+
+
+
+
+
+
+
+<div class="backtotop center no-text-decoration">
+    <a href="#">back to <span class="top">top</span></a>
+</div>
+
+
+<div class="right">
     <div class="taxo no-text-decoration">
          
             
@@ -535,13 +833,13 @@
                             
                             
                             
-                            <li class="__ggplot2__"
+                            <li class="__cheatsheet__"
                                 
                                 
-                                title="This is the only post categorized in ‘ggplot2’"
+                                title="This is the only post categorized in ‘Cheatsheet’"
                                 
                             >
-                                <a class="p-category" href="http://aviral.io/categories/ggplot2/">ggplot2</a>
+                                <a class="p-category" href="http://aviral.io/categories/cheatsheet/">Cheatsheet</a>
                             </li>
                         
                     
@@ -561,67 +859,13 @@
                             
                             
                             
-                            <li class="__r__"
+                            <li class="__tmux__"
                                 
                                 
-                                title="See all 3 posts tagged with ‘R’"
-                                
-                            >
-                                <a class="p-category" href="http://aviral.io/tags/r/">R</a>
-                            </li>
-                        
-                    
-                        
-                        
-                        
-                            
-                            
-                            
-                            
-                            
-                            <li class="__graphs__"
-                                
-                                
-                                title="This is the only post tagged with ‘graphs’"
+                                title="This is the only post tagged with ‘tmux’"
                                 
                             >
-                                <a class="p-category" href="http://aviral.io/tags/graphs/">graphs</a>
-                            </li>
-                        
-                    
-                        
-                        
-                        
-                            
-                            
-                            
-                            
-                            
-                            <li class="__charts__"
-                                
-                                
-                                title="This is the only post tagged with ‘charts’"
-                                
-                            >
-                                <a class="p-category" href="http://aviral.io/tags/charts/">charts</a>
-                            </li>
-                        
-                    
-                        
-                        
-                        
-                            
-                            
-                            
-                            
-                            
-                            <li class="__plots__"
-                                
-                                
-                                title="This is the only post tagged with ‘plots’"
-                                
-                            >
-                                <a class="p-category" href="http://aviral.io/tags/plots/">plots</a>
+                                <a class="p-category" href="http://aviral.io/tags/tmux/">tmux</a>
                             </li>
                         
                     
@@ -630,35 +874,40 @@
         
     </div>
 
+</div>
+<div class="clear-float"></div>
 
-    </div>
-    <div class="clear-float"></div>
-</li>
 
-            
-        </ul>
+
+<div class="prev-next-navigator clear-float">
+    
+    
+        <span class="next-post right no-text-decoration">
+            <a href="http://aviral.io/articles/ggplot2-theme/" class="nobr">ggplot2 Theme »</a>
+        </span>
     
 </div>
 
 
+<a id="bottom"></a>
 
-                <footer>
-                    
+
+
+
+
+
+
+
+
+                       
+
+
+
+
+
+
+
                     <ul class="no-bullets feed right inline">
-    
-        
-        
-            <li class="inline no-text-decoration">
-                <a href="http://aviral.io/articles/index.xml">RSS</a>
-            </li>
-        
-    
-        
-        
-            <li class="inline no-text-decoration">
-                <a href="http://aviral.io/articles/atom.xml">ATOM</a>
-            </li>
-        
     
         
         
@@ -718,9 +967,20 @@
         
     
     
+        
+            
+            
+                
+            
+        
+    
     
         
     
+    
+        
+            
+        
     
 
 
@@ -731,7 +991,7 @@
 
 
 <p class="generated no-text-decoration">
-    Generated using the <a href="https://github.com/kaushalmodi/ox-hugo"><code class="nobr">ox-hugo</code></a> package for Emacs/Org-mode + <a href="https://gitlab.com/kaushalmodi/hugo-theme-refined"><code class="nobr">hugo-theme-refined</code></a> + <span class="nobr">Hugo 0.59.0</span><br /> <span class="nobr">[<a href="https://github.com/aviralg/aviralg.github.io/tree/master/content-org">Org mode source</a>]</span>
+    Generated using the <a href="https://github.com/kaushalmodi/ox-hugo"><code class="nobr">ox-hugo</code></a> package for Emacs/Org-mode + <a href="https://gitlab.com/kaushalmodi/hugo-theme-refined"><code class="nobr">hugo-theme-refined</code></a> + <span class="nobr">Hugo 0.59.0</span><br /><span class="nobr">&mdash; <code>ox-hugo</code>-generated</span> Markdown <a href="https://github.com/aviralg/aviralg.github.io/raw/master/content/articles/tmux-cheatsheet.md">source</a> of this page <span class="nobr">[<a href="https://github.com/aviralg/aviralg.github.io/tree/master/content-org">Org mode source</a>]</span>.
 </p>
 
 <p>
@@ -748,7 +1008,7 @@
     
         
         
-        <a href="https://html5.validator.nu/?doc=http://aviral.io/articles/&amp;showsource=yes">
+        <a href="https://html5.validator.nu/?doc=http://aviral.io/articles/tmux-cheatsheet/&amp;showsource=yes">
             
             <img src="/images/html5-css3-semantics-badge--scaled-optimized.0f343c79b5f793c32b308b8b872fccdc6f8f10dc328d12f3f8fba203ab3ccc6e.png"
                  width="46" height="18" class="pixelated"
