@@ -1,0 +1,91 @@
+#+HUGO_BASE_DIR: ../
+#+HUGO_SECTION: articles
+#+HUGO_AUTO_SET_LASTMOD: true
+
+#+TITLE: tmux Cheatsheet
+#+DATE: <2019-11-03 Sun>
+#+AUTHOR: aviral-goel
+#+HUGO_TAGS: tmux
+#+HUGO_CATEGORIES: Cheatsheet
+#+HUGO_MENU: :menu "main"
+
+
+** Tmux
+
+[[http://tmux.github.io/
+][tmux]] is a terminal multiplexer. It enables you to share the same screen among multiple terminal programs. 
+A single [[http://tmux.github.io/
+][tmux]] session lets you run multiple programs in separate windows (tabs). These windows can be split horizontally or vertically into panes. 
+[[http://tmux.github.io/
+][tmux]] is flexible. You can detach from a [[http://tmux.github.io/
+][tmux]] session to reconnect at a later point while it continues running the programs in the background. 
+You can create multiple [[http://tmux.github.io/
+][tmux]] sessions on the same machine and connect to them simultaneously from different terminal sessions. It is a /modern/ alternative to [[https://www.gnu.org/software/screen/][GNU Screen]].
+
+** Commands
+
+*** Command Line Interface
+
+   | Description                                    | Command                                        | Shortcut                               |
+   |------------------------------------------------+------------------------------------------------+----------------------------------------|
+   | Create a named tmux session                    | new-session -s <session-name>                  | new -s <session-name>                  |
+   | Create a new named session with a named window | new-session -s <session-name> -n <window-name> | new -s <session-name> -n <window-name> |
+   | List tmux sessions                             | list-sessions​                                  | ls                                     |
+   | Attach to a session                            | attach -t <session-name>                       |                                        |
+   | Kill a session                                 | kil-session -t <session-name>                  |                                        |
+
+*** Session Management
+
+   | Description                      | Command                                            | Shortcut            |
+   |----------------------------------+----------------------------------------------------+---------------------|
+   | Detach from tmux session         |                                                    | =Prefix= =d=        |
+   |----------------------------------+----------------------------------------------------+---------------------|
+      
+*** Window Management
+   
+   | Description                      | Command                                            | Shortcut            |
+   |----------------------------------+----------------------------------------------------+---------------------|
+   | Create window                    | new-window -n <window-name> ["<application-name>"] | =Prefix= =c=        |
+   | Rename window                    |                                                    | =Prefix= =,=        |
+   | Move to next window              |                                                    | =Prefix= =n=        |
+   | Move to previous window          |                                                    | =Prefix= =p=        |
+   | Move to nth window               |                                                    | =Prefix= =<n>=      |
+   | Show window menu                 |                                                    | =Prefix= =w=        |
+   | Find window                      |                                                    | =Prefix= =f=        |
+   | Close window                     |                                                    | =Prefix= =&=        |
+   | Find window                      |                                                    | =Prefix= =f=        |
+
+
+*** Pane Management
+
+   | Description                      | Command                                            | Shortcut            |
+   |----------------------------------+----------------------------------------------------+---------------------|
+   | Divide Window Vertically         |                                                    | =Prefix= =%=        |
+   | Divide Window Horizontally       |                                                    | =Prefix= ="=        |
+   | Cycle throw panes                |                                                    | =Prefix= =o=        |
+   | Move to upper pane               |                                                    | =Prefix= =Up=       |
+   | Move to lower pane               |                                                    | =Prefix= =Down=     |
+   | Move to right pane               |                                                    | =Prefix= =Right=    |
+   | Move to left pane                |                                                    | =Prefix= =Left=     |
+   | Cycle through pane layouts       |                                                    | =Prefix= =Spacebar= |
+
+
+*** Miscellaneous
+
+   | Description                      | Command | Shortcut     |
+   |----------------------------------+---------+--------------|
+   | Show clock                       |         | =Prefix= =b= |
+   | Enter command mode               |         | =Prefix= =:= |
+   | List predefined tmux keybindings |         | =Prefix= =?= |
+
+
+** Pane Layouts
+
+    ~tmux~ provides the following default pane layouts:
+    - /even-horizontal/: stack panes horizontally
+    - /even-vertical/: stack panes vertically
+    - /main-horizontal/: single large pane on top and remaining panes arranged left-to-right below it
+    - /main-vertical/: single large pane on left and remaining panes arranged top-to-bottom beside it
+    - /tiled/: arrange panes evenly
+
+ 
