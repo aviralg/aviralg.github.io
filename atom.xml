@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?> 
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us">
-    <generator uri="https://gohugo.io/" version="0.59.0">Hugo</generator><title type="html"><![CDATA[Aviral Goel]]></title>
+    <generator uri="https://gohugo.io/" version="0.59.0">Hugo</generator><title type="html"><![CDATA[whoami on Aviral Goel]]></title>
     
     
     
@@ -8,7 +8,7 @@
             <link href="http://aviral.io/index.xml" rel="alternate" type="application/rss+xml" title="RSS" />
             <link href="http://aviral.io/atom.xml" rel="self" type="application/atom+xml" title="Atom" />
             <link href="http://aviral.io/jf2feed.json" rel="alternate" type="application/jf2feed+json" title="jf2feed" />
-    <updated>2019-11-03T17:19:33-05:00</updated>
+    <updated>2019-11-04T09:45:20-05:00</updated>
     
     
     <author>
