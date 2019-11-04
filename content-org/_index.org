@@ -2,11 +2,11 @@
 #+HUGO_SECTION: ./
 #+HUGO_AUTO_SET_LASTMOD: true
 
+#+TITLE: whoami
+
 I am a third year [[https://www.khoury.northeastern.edu/][Computer Science]] Ph.D. student at [[http://www.northeastern.edu/][Northeastern University]]. I am a member of the [[http://prl.ccs.neu.edu/][Programming Research Laboratory]]. I am interested in all aspects related to the design and implementation of programming languages.
 Currently, I am studying laziness (call-by-need) in [[https://www.r-project.org/][R]].
 
 I am also an intern at [[https://labs.oracle.com/pls/apex/f?p=LABS:location:0::::P23_LOCATION_ID:26][Oracle Labs, USA]]. Previously, I was involved in a research project at [[https://www.ncbs.res.in/][National Center for Biological Sciences]]. Before that, I worked at Yahoo! as a Software Developer.
-
-I live in Malden, Massachusetts.
 
 My e-mail id is ~goel dot aviral at gmail dot com~.
