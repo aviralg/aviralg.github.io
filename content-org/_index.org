@@ -9,4 +9,4 @@ Currently, I am studying laziness (call-by-need) in [[https://www.r-project.org/
 
 I am also an intern at [[https://labs.oracle.com/pls/apex/f?p=LABS:location:0::::P23_LOCATION_ID:26][Oracle Labs, USA]]. Previously, I was involved in a research project at [[https://www.ncbs.res.in/][National Center for Biological Sciences]]. Before that, I worked at Yahoo! as a Software Developer.
 
-My e-mail id is ~goel dot aviral at gmail dot com~.
+My e-mail id is ~aviral at aviral dot io~.
