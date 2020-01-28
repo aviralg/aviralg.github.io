@@ -74,9 +74,9 @@
     
     
     
-    <link rel="stylesheet" href="/css/refined.min.9cfc0dce385ee361bea254c6e10dd50d2a15bac34e9e3e839f89b598401a8e51.css">
+    <link rel="stylesheet" href="/css/refined.min.61b1de55623520dab99b70e9e2298001fb97241583a47396e2f10feb789e300d.css">
     
-    <link rel="preload" href="/css/refined.min.9cfc0dce385ee361bea254c6e10dd50d2a15bac34e9e3e839f89b598401a8e51.css" as="style">
+    <link rel="preload" href="/css/refined.min.61b1de55623520dab99b70e9e2298001fb97241583a47396e2f10feb789e300d.css" as="style">
 
     
 
@@ -240,7 +240,7 @@
  
 <meta property="og:title" content="tmux Cheatsheet" />
 <meta property="og:description"
-      content="Tmux tmux is a terminal multiplexer. It enables you to share the same screen among multiple terminal programs. A single tmux session lets you run multiple programs in separate windows (tabs). These windows can be split horizontally or vertically into panes. tmux is flexible. You can detach from a tmux session to reconnect at a later point while it continues running the programs in the background. You can create multiple tmux sessions on the same machine and connect to them simultaneously from different terminal sessions." />
+      content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://aviral.io/articles/tmux-cheatsheet/" />
 
@@ -267,7 +267,7 @@
 
      <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="tmux Cheatsheet"/>
-<meta name="twitter:description" content="Tmux tmux is a terminal multiplexer. It enables you to share the same screen among multiple terminal programs. A single tmux session lets you run multiple programs in separate windows (tabs). These windows can be split horizontally or vertically into panes. tmux is flexible. You can detach from a tmux session to reconnect at a later point while it continues running the programs in the background. You can create multiple tmux sessions on the same machine and connect to them simultaneously from different terminal sessions."/>
+<meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@TheAviralGoel"/>
     <meta name="twitter:creator" content="@TheAviralGoel"/>
 
@@ -301,7 +301,7 @@
     
     <meta name="hugo-build-date" content=""/>
     <meta name="hugo-commit-hash" content=""/>
-    <meta name="generator" content="Hugo 0.59.0" />
+    <meta name="generator" content="Hugo 0.63.1" />
 </head>
 
 
@@ -479,19 +479,13 @@
 
 
 
-
-
 <h2 id="tmux">Tmux&nbsp;<a class="headline-hash no-text-decoration" href="#tmux">#</a> </h2>
-
 <p><a href="http://tmux.github.io/">tmux</a> is a terminal multiplexer. It enables you to share the same screen among multiple terminal programs.
 A single <a href="http://tmux.github.io/">tmux</a> session lets you run multiple programs in separate windows (tabs). These windows can be split horizontally or vertically into panes.
 <a href="http://tmux.github.io/">tmux</a> is flexible. You can detach from a <a href="http://tmux.github.io/">tmux</a> session to reconnect at a later point while it continues running the programs in the background.
 You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on the same machine and connect to them simultaneously from different terminal sessions. It is a <em>modern</em> alternative to <a href="https://www.gnu.org/software/screen/">GNU Screen</a>.</p>
-
 <h2 id="commands">Commands&nbsp;<a class="headline-hash no-text-decoration" href="#commands">#</a> </h2>
-
 <h3 id="command-line-interface">Command Line Interface&nbsp;<a class="headline-hash no-text-decoration" href="#command-line-interface">#</a> </h3>
-
 <table>
 <thead>
 <tr>
@@ -500,42 +494,35 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
 <th>Shortcut</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Create a named tmux session</td>
-<td>new-session -s <session-name></td>
-<td>new -s <session-name></td>
+<td>new-session -s <!-- raw HTML omitted --></td>
+<td>new -s <!-- raw HTML omitted --></td>
 </tr>
-
 <tr>
 <td>Create a new named session with a named window</td>
-<td>new-session -s <session-name> -n <window-name></td>
-<td>new -s <session-name> -n <window-name></td>
+<td>new-session -s <!-- raw HTML omitted --> -n <!-- raw HTML omitted --></td>
+<td>new -s <!-- raw HTML omitted --> -n <!-- raw HTML omitted --></td>
 </tr>
-
 <tr>
 <td>List tmux sessions</td>
 <td>list-sessions​</td>
 <td>ls</td>
 </tr>
-
 <tr>
 <td>Attach to a session</td>
-<td>attach -t <session-name></td>
+<td>attach -t <!-- raw HTML omitted --></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Kill a session</td>
-<td>kil-session -t <session-name></td>
+<td>kil-session -t <!-- raw HTML omitted --></td>
 <td></td>
 </tr>
 </tbody>
 </table>
-
 <h3 id="session-management">Session Management&nbsp;<a class="headline-hash no-text-decoration" href="#session-management">#</a> </h3>
-
 <table>
 <thead>
 <tr>
@@ -544,7 +531,6 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
 <th>Shortcut</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Detach from tmux session</td>
@@ -553,9 +539,7 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
 </tr>
 </tbody>
 </table>
-
 <h3 id="window-management">Window Management&nbsp;<a class="headline-hash no-text-decoration" href="#window-management">#</a> </h3>
-
 <table>
 <thead>
 <tr>
@@ -564,56 +548,47 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
 <th>Shortcut</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Create window</td>
-<td>new-window -n <window-name> [&rdquo;<application-name>&rdquo;]</td>
+<td>new-window -n <!-- raw HTML omitted --> [&ldquo;<!-- raw HTML omitted -->&rdquo;]</td>
 <td><code>Prefix</code> <code>c</code></td>
 </tr>
-
 <tr>
 <td>Rename window</td>
 <td></td>
 <td><code>Prefix</code> <code>,</code></td>
 </tr>
-
 <tr>
 <td>Move to next window</td>
 <td></td>
 <td><code>Prefix</code> <code>n</code></td>
 </tr>
-
 <tr>
 <td>Move to previous window</td>
 <td></td>
 <td><code>Prefix</code> <code>p</code></td>
 </tr>
-
 <tr>
 <td>Move to nth window</td>
 <td></td>
 <td><code>Prefix</code> <code>&lt;n&gt;</code></td>
 </tr>
-
 <tr>
 <td>Show window menu</td>
 <td></td>
 <td><code>Prefix</code> <code>w</code></td>
 </tr>
-
 <tr>
 <td>Find window</td>
 <td></td>
 <td><code>Prefix</code> <code>f</code></td>
 </tr>
-
 <tr>
 <td>Close window</td>
 <td></td>
 <td><code>Prefix</code> <code>&amp;</code></td>
 </tr>
-
 <tr>
 <td>Find window</td>
 <td></td>
@@ -621,9 +596,7 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
 </tr>
 </tbody>
 </table>
-
 <h3 id="pane-management">Pane Management&nbsp;<a class="headline-hash no-text-decoration" href="#pane-management">#</a> </h3>
-
 <table>
 <thead>
 <tr>
@@ -632,50 +605,42 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
 <th>Shortcut</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Divide Window Vertically</td>
 <td></td>
 <td><code>Prefix</code> <code>%</code></td>
 </tr>
-
 <tr>
 <td>Divide Window Horizontally</td>
 <td></td>
 <td><code>Prefix</code> <code>&quot;</code></td>
 </tr>
-
 <tr>
 <td>Cycle throw panes</td>
 <td></td>
 <td><code>Prefix</code> <code>o</code></td>
 </tr>
-
 <tr>
 <td>Move to upper pane</td>
 <td></td>
 <td><code>Prefix</code> <code>Up</code></td>
 </tr>
-
 <tr>
 <td>Move to lower pane</td>
 <td></td>
 <td><code>Prefix</code> <code>Down</code></td>
 </tr>
-
 <tr>
 <td>Move to right pane</td>
 <td></td>
 <td><code>Prefix</code> <code>Right</code></td>
 </tr>
-
 <tr>
 <td>Move to left pane</td>
 <td></td>
 <td><code>Prefix</code> <code>Left</code></td>
 </tr>
-
 <tr>
 <td>Cycle through pane layouts</td>
 <td></td>
@@ -683,9 +648,7 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
 </tr>
 </tbody>
 </table>
-
 <h3 id="miscellaneous">Miscellaneous&nbsp;<a class="headline-hash no-text-decoration" href="#miscellaneous">#</a> </h3>
-
 <table>
 <thead>
 <tr>
@@ -694,20 +657,17 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
 <th>Shortcut</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Show clock</td>
 <td></td>
 <td><code>Prefix</code> <code>b</code></td>
 </tr>
-
 <tr>
 <td>Enter command mode</td>
 <td></td>
 <td><code>Prefix</code> <code>:</code></td>
 </tr>
-
 <tr>
 <td>List predefined tmux keybindings</td>
 <td></td>
@@ -715,11 +675,8 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
 </tr>
 </tbody>
 </table>
-
 <h2 id="pane-layouts">Pane Layouts&nbsp;<a class="headline-hash no-text-decoration" href="#pane-layouts">#</a> </h2>
-
 <p><code>tmux</code> provides the following default pane layouts:</p>
-
 <ul>
 <li><em>even-horizontal</em>: stack panes horizontally</li>
 <li><em>even-vertical</em>: stack panes vertically</li>
@@ -751,21 +708,19 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
     
         <div class="hugotoc no-text-decoration">
             <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#tmux">Tmux</a></li>
-<li><a href="#commands">Commands</a>
-<ul>
-<li><a href="#command-line-interface">Command Line Interface</a></li>
-<li><a href="#session-management">Session Management</a></li>
-<li><a href="#window-management">Window Management</a></li>
-<li><a href="#pane-management">Pane Management</a></li>
-<li><a href="#miscellaneous">Miscellaneous</a></li>
-</ul></li>
-<li><a href="#pane-layouts">Pane Layouts</a></li>
-</ul></li>
-</ul>
+  <ul>
+    <li><a href="#tmux">Tmux</a></li>
+    <li><a href="#commands">Commands</a>
+      <ul>
+        <li><a href="#command-line-interface">Command Line Interface</a></li>
+        <li><a href="#session-management">Session Management</a></li>
+        <li><a href="#window-management">Window Management</a></li>
+        <li><a href="#pane-management">Pane Management</a></li>
+        <li><a href="#miscellaneous">Miscellaneous</a></li>
+      </ul>
+    </li>
+    <li><a href="#pane-layouts">Pane Layouts</a></li>
+  </ul>
 </nav>
             <a href="#" class="back-to-top">Back to top</a>
         </div>
@@ -991,7 +946,7 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
 
 
 <p class="generated no-text-decoration">
-    Generated using the <a href="https://github.com/kaushalmodi/ox-hugo"><code class="nobr">ox-hugo</code></a> package for Emacs/Org-mode + <a href="https://gitlab.com/kaushalmodi/hugo-theme-refined"><code class="nobr">hugo-theme-refined</code></a> + <span class="nobr">Hugo 0.59.0</span><br /><span class="nobr">&mdash; <code>ox-hugo</code>-generated</span> Markdown <a href="https://github.com/aviralg/aviralg.github.io/raw/master/content/articles/tmux-cheatsheet.md">source</a> of this page <span class="nobr">[<a href="https://github.com/aviralg/aviralg.github.io/tree/master/content-org">Org mode source</a>]</span>.
+    Generated using the <a href="https://github.com/kaushalmodi/ox-hugo"><code class="nobr">ox-hugo</code></a> package for Emacs/Org-mode + <a href="https://gitlab.com/kaushalmodi/hugo-theme-refined"><code class="nobr">hugo-theme-refined</code></a> + <span class="nobr">Hugo 0.63.1</span><br /><span class="nobr">&mdash; <code>ox-hugo</code>-generated</span> Markdown <a href="https://github.com/aviralg/aviralg.github.io/raw/master/content/articles/tmux-cheatsheet.md">source</a> of this page <span class="nobr">[<a href="https://github.com/aviralg/aviralg.github.io/tree/master/content-org">Org mode source</a>]</span>.
 </p>
 
 <p>

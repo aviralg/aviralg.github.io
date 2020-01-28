@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?> 
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us">
-    <generator uri="https://gohugo.io/" version="0.59.0">Hugo</generator><title type="html"><![CDATA[R on Aviral Goel]]></title>
+    <generator uri="https://gohugo.io/" version="0.63.1">Hugo</generator><title type="html"><![CDATA[R on Aviral Goel]]></title>
     
     
     
@@ -8,7 +8,7 @@
             <link href="http://aviral.io/tags/r/index.xml" rel="alternate" type="application/rss+xml" title="RSS" />
             <link href="http://aviral.io/tags/r/atom.xml" rel="self" type="application/atom+xml" title="Atom" />
             <link href="http://aviral.io/tags/r/jf2feed.json" rel="alternate" type="application/jf2feed+json" title="jf2feed" />
-    <updated>2019-11-04T09:45:20-05:00</updated>
+    <updated>2020-01-28T09:24:41-05:00</updated>
     
     
     <author>
@@ -38,14 +38,11 @@
             
             
             <content type="html"><![CDATA[<p>I use <a href="https://ggplot2.tidyverse.org">ggplot2</a> nowadays for all my graphing requirements because my research is on improving <a href="https://www.r-project.org/">R</a> and alternatives such as <a href="https://matplotlib.org/">matplotlib</a> are abysmal. This article is a collection of theme settings I have found useful, especially for generating figures for my <a href="http://aviral.io/publications/on-the-design-implementation-and-use-of-laziness-in-r.pdf">recent publication on R</a>.</p>
-
 <p>For generating colorless background figures, I use the following theme setting.</p>
-<div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R"><span class="n">old_theme</span> <span class="o">&lt;-</span> <span class="nf">theme_set</span><span class="p">(</span><span class="nf">theme_bw</span><span class="p">()</span> <span class="o">+</span>
-                       <span class="nf">theme</span><span class="p">(</span><span class="n">text</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">15</span><span class="p">),</span> <span class="n">panel.border</span> <span class="o">=</span> <span class="nf">element_blank</span><span class="p">()))</span></code></pre></div>
-<p>This is how the figures look like before and after updating the theme.</p>
-
-<p><a id="orgd5774a6"></a></p>
-
+<div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R"><span class="n">old_theme</span> <span class="o">&lt;-</span> <span class="nf">theme_set</span><span class="p">(</span><span class="nf">theme_bw</span><span class="p">(</span><span class="p">)</span> <span class="o">+</span>
+                       <span class="nf">theme</span><span class="p">(</span><span class="n">text</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">15</span><span class="p">)</span><span class="p">,</span> <span class="n">panel.border</span> <span class="o">=</span> <span class="nf">element_blank</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">)</span>
+</code></pre></div><p>This is how the figures look like before and after updating the theme.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 
 
 
@@ -61,9 +58,7 @@
                 
             </figcaption></figure>
 
-
-<p><a id="org3ee6670"></a></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 
 
 
@@ -79,12 +74,12 @@
                 
             </figcaption></figure>
 
-
 <p>These figures were generated from the following code snippet.</p>
 <div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R"><span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
 
-<span class="nf">ggplot</span><span class="p">(</span><span class="n">mpg</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">class</span><span class="p">))</span> <span class="o">+</span>
-<span class="nf">geom_bar</span><span class="p">()</span></code></pre></div>]]></content>
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">mpg</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">class</span><span class="p">)</span><span class="p">)</span> <span class="o">+</span>
+<span class="nf">geom_bar</span><span class="p">(</span><span class="p">)</span>
+</code></pre></div>]]></content>
             
                  
                     

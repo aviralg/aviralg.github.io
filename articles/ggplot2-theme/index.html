@@ -74,9 +74,9 @@
     
     
     
-    <link rel="stylesheet" href="/css/refined.min.9cfc0dce385ee361bea254c6e10dd50d2a15bac34e9e3e839f89b598401a8e51.css">
+    <link rel="stylesheet" href="/css/refined.min.61b1de55623520dab99b70e9e2298001fb97241583a47396e2f10feb789e300d.css">
     
-    <link rel="preload" href="/css/refined.min.9cfc0dce385ee361bea254c6e10dd50d2a15bac34e9e3e839f89b598401a8e51.css" as="style">
+    <link rel="preload" href="/css/refined.min.61b1de55623520dab99b70e9e2298001fb97241583a47396e2f10feb789e300d.css" as="style">
 
     
 
@@ -240,9 +240,7 @@
  
 <meta property="og:title" content="ggplot2 Theme" />
 <meta property="og:description"
-      content="I use ggplot2 nowadays for all my graphing requirements because my research is on improving R and alternatives such as matplotlib are abysmal. This article is a collection of theme settings I have found useful, especially for generating figures for my recent publication on R.
-For generating colorless background figures, I use the following theme setting.
-old_theme &amp;lt;- theme_set(theme_bw() &#43; theme(text = element_text(size = 15), panel.border = element_blank())) This is how the figures look like before and after updating the theme." />
+      content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://aviral.io/articles/ggplot2-theme/" />
 
@@ -269,9 +267,7 @@ old_theme &amp;lt;- theme_set(theme_bw() &#43; theme(text = element_text(size = 
 
      <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="ggplot2 Theme"/>
-<meta name="twitter:description" content="I use ggplot2 nowadays for all my graphing requirements because my research is on improving R and alternatives such as matplotlib are abysmal. This article is a collection of theme settings I have found useful, especially for generating figures for my recent publication on R.
-For generating colorless background figures, I use the following theme setting.
-old_theme &amp;lt;- theme_set(theme_bw() &#43; theme(text = element_text(size = 15), panel.border = element_blank())) This is how the figures look like before and after updating the theme."/>
+<meta name="twitter:description" content=""/>
 <meta name="twitter:site" content="@TheAviralGoel"/>
     <meta name="twitter:creator" content="@TheAviralGoel"/>
 
@@ -305,7 +301,7 @@ old_theme &amp;lt;- theme_set(theme_bw() &#43; theme(text = element_text(size = 
     
     <meta name="hugo-build-date" content=""/>
     <meta name="hugo-commit-hash" content=""/>
-    <meta name="generator" content="Hugo 0.59.0" />
+    <meta name="generator" content="Hugo 0.63.1" />
 </head>
 
 
@@ -538,14 +534,11 @@ old_theme &amp;lt;- theme_set(theme_bw() &#43; theme(text = element_text(size = 
 
 
 <p>I use <a href="https://ggplot2.tidyverse.org">ggplot2</a> nowadays for all my graphing requirements because my research is on improving <a href="https://www.r-project.org/">R</a> and alternatives such as <a href="https://matplotlib.org/">matplotlib</a> are abysmal. This article is a collection of theme settings I have found useful, especially for generating figures for my <a href="http://aviral.io/publications/on-the-design-implementation-and-use-of-laziness-in-r.pdf">recent publication on R</a>.</p>
-
 <p>For generating colorless background figures, I use the following theme setting.</p>
-<div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R"><span class="n">old_theme</span> <span class="o">&lt;-</span> <span class="nf">theme_set</span><span class="p">(</span><span class="nf">theme_bw</span><span class="p">()</span> <span class="o">+</span>
-                       <span class="nf">theme</span><span class="p">(</span><span class="n">text</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">15</span><span class="p">),</span> <span class="n">panel.border</span> <span class="o">=</span> <span class="nf">element_blank</span><span class="p">()))</span></code></pre></div>
-<p>This is how the figures look like before and after updating the theme.</p>
-
-<p><a id="orgd5774a6"></a></p>
-
+<div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R"><span class="n">old_theme</span> <span class="o">&lt;-</span> <span class="nf">theme_set</span><span class="p">(</span><span class="nf">theme_bw</span><span class="p">(</span><span class="p">)</span> <span class="o">+</span>
+                       <span class="nf">theme</span><span class="p">(</span><span class="n">text</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">15</span><span class="p">)</span><span class="p">,</span> <span class="n">panel.border</span> <span class="o">=</span> <span class="nf">element_blank</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">)</span>
+</code></pre></div><p>This is how the figures look like before and after updating the theme.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 
 
 
@@ -561,9 +554,7 @@ old_theme &amp;lt;- theme_set(theme_bw() &#43; theme(text = element_text(size = 
                 
             </figcaption></figure>
 
-
-<p><a id="org3ee6670"></a></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 
 
 
@@ -579,12 +570,12 @@ old_theme &amp;lt;- theme_set(theme_bw() &#43; theme(text = element_text(size = 
                 
             </figcaption></figure>
 
-
 <p>These figures were generated from the following code snippet.</p>
 <div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R"><span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
 
-<span class="nf">ggplot</span><span class="p">(</span><span class="n">mpg</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">class</span><span class="p">))</span> <span class="o">+</span>
-<span class="nf">geom_bar</span><span class="p">()</span></code></pre></div>
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">mpg</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">class</span><span class="p">)</span><span class="p">)</span> <span class="o">+</span>
+<span class="nf">geom_bar</span><span class="p">(</span><span class="p">)</span>
+</code></pre></div>
 
         </div>
     </div>
@@ -605,6 +596,11 @@ old_theme &amp;lt;- theme_set(theme_bw() &#43; theme(text = element_text(size = 
 
 
  
+    
+        <div class="hugotoc no-text-decoration">
+            <nav id="TableOfContents"></nav>
+            <a href="#" class="back-to-top">Back to top</a>
+        </div>
     
     
 <script src="/js/libs/jquery/3.3.1/jquery.slim.min.min.528a9ce56371729e50605653bf72b1e933574cdb97519529bf8fab01b63f9703.js"></script>
@@ -885,7 +881,7 @@ old_theme &amp;lt;- theme_set(theme_bw() &#43; theme(text = element_text(size = 
 
 
 <p class="generated no-text-decoration">
-    Generated using the <a href="https://github.com/kaushalmodi/ox-hugo"><code class="nobr">ox-hugo</code></a> package for Emacs/Org-mode + <a href="https://gitlab.com/kaushalmodi/hugo-theme-refined"><code class="nobr">hugo-theme-refined</code></a> + <span class="nobr">Hugo 0.59.0</span><br /><span class="nobr">&mdash; <code>ox-hugo</code>-generated</span> Markdown <a href="https://github.com/aviralg/aviralg.github.io/raw/master/content/articles/ggplot2-theme.md">source</a> of this page <span class="nobr">[<a href="https://github.com/aviralg/aviralg.github.io/tree/master/content-org">Org mode source</a>]</span>.
+    Generated using the <a href="https://github.com/kaushalmodi/ox-hugo"><code class="nobr">ox-hugo</code></a> package for Emacs/Org-mode + <a href="https://gitlab.com/kaushalmodi/hugo-theme-refined"><code class="nobr">hugo-theme-refined</code></a> + <span class="nobr">Hugo 0.63.1</span><br /><span class="nobr">&mdash; <code>ox-hugo</code>-generated</span> Markdown <a href="https://github.com/aviralg/aviralg.github.io/raw/master/content/articles/ggplot2-theme.md">source</a> of this page <span class="nobr">[<a href="https://github.com/aviralg/aviralg.github.io/tree/master/content-org">Org mode source</a>]</span>.
 </p>
 
 <p>

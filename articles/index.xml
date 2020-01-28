@@ -12,7 +12,7 @@
         <language>en-us</language>
         
                 <managingEditor>goel.aviral@gmail.com (Aviral Goel)</managingEditor>
-                <webMaster>goel.aviral@gmail.com (Aviral Goel)</webMaster><lastBuildDate>Mon, 04 Nov 2019 09:45:20 -0500</lastBuildDate>
+                <webMaster>goel.aviral@gmail.com (Aviral Goel)</webMaster><lastBuildDate>Tue, 28 Jan 2020 09:24:41 -0500</lastBuildDate>
         <generator>Hugo -- gohugo.io</generator>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
             <atom:link href="http://aviral.io/articles/index.xml" rel="self" type="application/rss&#43;xml" />
@@ -23,19 +23,13 @@
                 <link>http://aviral.io/articles/tmux-cheatsheet/</link>
                 
                 
-                <description>
-
-&lt;h2 id=&#34;tmux&#34;&gt;Tmux&lt;/h2&gt;
-
+                <description>&lt;h2 id=&#34;tmux&#34;&gt;Tmux&lt;/h2&gt;
 &lt;p&gt;&lt;a href=&#34;http://tmux.github.io/&#34;&gt;tmux&lt;/a&gt; is a terminal multiplexer. It enables you to share the same screen among multiple terminal programs.
 A single &lt;a href=&#34;http://tmux.github.io/&#34;&gt;tmux&lt;/a&gt; session lets you run multiple programs in separate windows (tabs). These windows can be split horizontally or vertically into panes.
 &lt;a href=&#34;http://tmux.github.io/&#34;&gt;tmux&lt;/a&gt; is flexible. You can detach from a &lt;a href=&#34;http://tmux.github.io/&#34;&gt;tmux&lt;/a&gt; session to reconnect at a later point while it continues running the programs in the background.
 You can create multiple &lt;a href=&#34;http://tmux.github.io/&#34;&gt;tmux&lt;/a&gt; sessions on the same machine and connect to them simultaneously from different terminal sessions. It is a &lt;em&gt;modern&lt;/em&gt; alternative to &lt;a href=&#34;https://www.gnu.org/software/screen/&#34;&gt;GNU Screen&lt;/a&gt;.&lt;/p&gt;
-
 &lt;h2 id=&#34;commands&#34;&gt;Commands&lt;/h2&gt;
-
 &lt;h3 id=&#34;command-line-interface&#34;&gt;Command Line Interface&lt;/h3&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -44,42 +38,35 @@ You can create multiple &lt;a href=&#34;http://tmux.github.io/&#34;&gt;tmux&lt;/
 &lt;th&gt;Shortcut&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Create a named tmux session&lt;/td&gt;
-&lt;td&gt;new-session -s &lt;session-name&gt;&lt;/td&gt;
-&lt;td&gt;new -s &lt;session-name&gt;&lt;/td&gt;
+&lt;td&gt;new-session -s &lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+&lt;td&gt;new -s &lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Create a new named session with a named window&lt;/td&gt;
-&lt;td&gt;new-session -s &lt;session-name&gt; -n &lt;window-name&gt;&lt;/td&gt;
-&lt;td&gt;new -s &lt;session-name&gt; -n &lt;window-name&gt;&lt;/td&gt;
+&lt;td&gt;new-session -s &lt;!-- raw HTML omitted --&gt; -n &lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
+&lt;td&gt;new -s &lt;!-- raw HTML omitted --&gt; -n &lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;List tmux sessions&lt;/td&gt;
 &lt;td&gt;list-sessions​&lt;/td&gt;
 &lt;td&gt;ls&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Attach to a session&lt;/td&gt;
-&lt;td&gt;attach -t &lt;session-name&gt;&lt;/td&gt;
+&lt;td&gt;attach -t &lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Kill a session&lt;/td&gt;
-&lt;td&gt;kil-session -t &lt;session-name&gt;&lt;/td&gt;
+&lt;td&gt;kil-session -t &lt;!-- raw HTML omitted --&gt;&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;h3 id=&#34;session-management&#34;&gt;Session Management&lt;/h3&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -88,7 +75,6 @@ You can create multiple &lt;a href=&#34;http://tmux.github.io/&#34;&gt;tmux&lt;/
 &lt;th&gt;Shortcut&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Detach from tmux session&lt;/td&gt;
@@ -97,9 +83,7 @@ You can create multiple &lt;a href=&#34;http://tmux.github.io/&#34;&gt;tmux&lt;/
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;h3 id=&#34;window-management&#34;&gt;Window Management&lt;/h3&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -108,56 +92,47 @@ You can create multiple &lt;a href=&#34;http://tmux.github.io/&#34;&gt;tmux&lt;/
 &lt;th&gt;Shortcut&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Create window&lt;/td&gt;
-&lt;td&gt;new-window -n &lt;window-name&gt; [&amp;rdquo;&lt;application-name&gt;&amp;rdquo;]&lt;/td&gt;
+&lt;td&gt;new-window -n &lt;!-- raw HTML omitted --&gt; [&amp;ldquo;&lt;!-- raw HTML omitted --&gt;&amp;rdquo;]&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;Prefix&lt;/code&gt; &lt;code&gt;c&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Rename window&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;Prefix&lt;/code&gt; &lt;code&gt;,&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Move to next window&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;Prefix&lt;/code&gt; &lt;code&gt;n&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Move to previous window&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;Prefix&lt;/code&gt; &lt;code&gt;p&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Move to nth window&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;Prefix&lt;/code&gt; &lt;code&gt;&amp;lt;n&amp;gt;&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Show window menu&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;Prefix&lt;/code&gt; &lt;code&gt;w&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Find window&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;Prefix&lt;/code&gt; &lt;code&gt;f&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Close window&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;Prefix&lt;/code&gt; &lt;code&gt;&amp;amp;&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Find window&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
@@ -165,9 +140,7 @@ You can create multiple &lt;a href=&#34;http://tmux.github.io/&#34;&gt;tmux&lt;/
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;h3 id=&#34;pane-management&#34;&gt;Pane Management&lt;/h3&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -176,50 +149,42 @@ You can create multiple &lt;a href=&#34;http://tmux.github.io/&#34;&gt;tmux&lt;/
 &lt;th&gt;Shortcut&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Divide Window Vertically&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;Prefix&lt;/code&gt; &lt;code&gt;%&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Divide Window Horizontally&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;Prefix&lt;/code&gt; &lt;code&gt;&amp;quot;&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Cycle throw panes&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;Prefix&lt;/code&gt; &lt;code&gt;o&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Move to upper pane&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;Prefix&lt;/code&gt; &lt;code&gt;Up&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Move to lower pane&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;Prefix&lt;/code&gt; &lt;code&gt;Down&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Move to right pane&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;Prefix&lt;/code&gt; &lt;code&gt;Right&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Move to left pane&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;Prefix&lt;/code&gt; &lt;code&gt;Left&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Cycle through pane layouts&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
@@ -227,9 +192,7 @@ You can create multiple &lt;a href=&#34;http://tmux.github.io/&#34;&gt;tmux&lt;/
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;h3 id=&#34;miscellaneous&#34;&gt;Miscellaneous&lt;/h3&gt;
-
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -238,20 +201,17 @@ You can create multiple &lt;a href=&#34;http://tmux.github.io/&#34;&gt;tmux&lt;/
 &lt;th&gt;Shortcut&lt;/th&gt;
 &lt;/tr&gt;
 &lt;/thead&gt;
-
 &lt;tbody&gt;
 &lt;tr&gt;
 &lt;td&gt;Show clock&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;Prefix&lt;/code&gt; &lt;code&gt;b&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;Enter command mode&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
 &lt;td&gt;&lt;code&gt;Prefix&lt;/code&gt; &lt;code&gt;:&lt;/code&gt;&lt;/td&gt;
 &lt;/tr&gt;
-
 &lt;tr&gt;
 &lt;td&gt;List predefined tmux keybindings&lt;/td&gt;
 &lt;td&gt;&lt;/td&gt;
@@ -259,11 +219,8 @@ You can create multiple &lt;a href=&#34;http://tmux.github.io/&#34;&gt;tmux&lt;/
 &lt;/tr&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
-
 &lt;h2 id=&#34;pane-layouts&#34;&gt;Pane Layouts&lt;/h2&gt;
-
 &lt;p&gt;&lt;code&gt;tmux&lt;/code&gt; provides the following default pane layouts:&lt;/p&gt;
-
 &lt;ul&gt;
 &lt;li&gt;&lt;em&gt;even-horizontal&lt;/em&gt;: stack panes horizontally&lt;/li&gt;
 &lt;li&gt;&lt;em&gt;even-vertical&lt;/em&gt;: stack panes vertically&lt;/li&gt;
@@ -310,14 +267,11 @@ You can create multiple &lt;a href=&#34;http://tmux.github.io/&#34;&gt;tmux&lt;/
                 
                 
                 <description>&lt;p&gt;I use &lt;a href=&#34;https://ggplot2.tidyverse.org&#34;&gt;ggplot2&lt;/a&gt; nowadays for all my graphing requirements because my research is on improving &lt;a href=&#34;https://www.r-project.org/&#34;&gt;R&lt;/a&gt; and alternatives such as &lt;a href=&#34;https://matplotlib.org/&#34;&gt;matplotlib&lt;/a&gt; are abysmal. This article is a collection of theme settings I have found useful, especially for generating figures for my &lt;a href=&#34;http://aviral.io/publications/on-the-design-implementation-and-use-of-laziness-in-r.pdf&#34;&gt;recent publication on R&lt;/a&gt;.&lt;/p&gt;
-
 &lt;p&gt;For generating colorless background figures, I use the following theme setting.&lt;/p&gt;
-&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-R&#34; data-lang=&#34;R&#34;&gt;&lt;span class=&#34;n&#34;&gt;old_theme&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;theme_set&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;theme_bw&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;
-                       &lt;span class=&#34;nf&#34;&gt;theme&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;text&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;element_text&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;size&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;),&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;panel.border&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;element_blank&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()))&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;This is how the figures look like before and after updating the theme.&lt;/p&gt;
-
-&lt;p&gt;&lt;a id=&#34;orgd5774a6&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-R&#34; data-lang=&#34;R&#34;&gt;&lt;span class=&#34;n&#34;&gt;old_theme&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;&amp;lt;-&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;theme_set&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;nf&#34;&gt;theme_bw&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;
+                       &lt;span class=&#34;nf&#34;&gt;theme&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;text&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;element_text&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;size&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;m&#34;&gt;15&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;n&#34;&gt;panel.border&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;=&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;element_blank&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;This is how the figures look like before and after updating the theme.&lt;/p&gt;
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 
 
 
@@ -333,9 +287,7 @@ You can create multiple &lt;a href=&#34;http://tmux.github.io/&#34;&gt;tmux&lt;/
                 
             &lt;/figcaption&gt;&lt;/figure&gt;
 
-
-&lt;p&gt;&lt;a id=&#34;org3ee6670&#34;&gt;&lt;/a&gt;&lt;/p&gt;
-
+&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;
 
 
 
@@ -351,12 +303,12 @@ You can create multiple &lt;a href=&#34;http://tmux.github.io/&#34;&gt;tmux&lt;/
                 
             &lt;/figcaption&gt;&lt;/figure&gt;
 
-
 &lt;p&gt;These figures were generated from the following code snippet.&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;pre class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-R&#34; data-lang=&#34;R&#34;&gt;&lt;span class=&#34;nf&#34;&gt;library&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;ggplot2&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
 
-&lt;span class=&#34;nf&#34;&gt;ggplot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mpg&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;aes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;))&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;
-&lt;span class=&#34;nf&#34;&gt;geom_bar&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
+&lt;span class=&#34;nf&#34;&gt;ggplot&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;mpg&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;,&lt;/span&gt; &lt;span class=&#34;nf&#34;&gt;aes&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;n&#34;&gt;class&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt; &lt;span class=&#34;o&#34;&gt;+&lt;/span&gt;
+&lt;span class=&#34;nf&#34;&gt;geom_bar&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;(&lt;/span&gt;&lt;span class=&#34;p&#34;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;</description>
                 
                         <author>aviral-goel@fakeEmailToMakeValidatorHappy.com (aviral-goel)</author>
                 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?> 
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en-us">
-    <generator uri="https://gohugo.io/" version="0.59.0">Hugo</generator><title type="html"><![CDATA[Articles on Aviral Goel]]></title>
+    <generator uri="https://gohugo.io/" version="0.63.1">Hugo</generator><title type="html"><![CDATA[Articles on Aviral Goel]]></title>
     
     
     
@@ -8,7 +8,7 @@
             <link href="http://aviral.io/articles/index.xml" rel="alternate" type="application/rss+xml" title="RSS" />
             <link href="http://aviral.io/articles/atom.xml" rel="self" type="application/atom+xml" title="Atom" />
             <link href="http://aviral.io/articles/jf2feed.json" rel="alternate" type="application/jf2feed+json" title="jf2feed" />
-    <updated>2019-11-04T09:45:20-05:00</updated>
+    <updated>2020-01-28T09:24:41-05:00</updated>
     
     
     <author>
@@ -35,19 +35,13 @@
             <updated>2019-11-03T17:18:03-05:00</updated>
             
             
-            <content type="html"><![CDATA[
-
-<h2 id="tmux">Tmux</h2>
-
+            <content type="html"><![CDATA[<h2 id="tmux">Tmux</h2>
 <p><a href="http://tmux.github.io/">tmux</a> is a terminal multiplexer. It enables you to share the same screen among multiple terminal programs.
 A single <a href="http://tmux.github.io/">tmux</a> session lets you run multiple programs in separate windows (tabs). These windows can be split horizontally or vertically into panes.
 <a href="http://tmux.github.io/">tmux</a> is flexible. You can detach from a <a href="http://tmux.github.io/">tmux</a> session to reconnect at a later point while it continues running the programs in the background.
 You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on the same machine and connect to them simultaneously from different terminal sessions. It is a <em>modern</em> alternative to <a href="https://www.gnu.org/software/screen/">GNU Screen</a>.</p>
-
 <h2 id="commands">Commands</h2>
-
 <h3 id="command-line-interface">Command Line Interface</h3>
-
 <table>
 <thead>
 <tr>
@@ -56,42 +50,35 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
 <th>Shortcut</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Create a named tmux session</td>
-<td>new-session -s <session-name></td>
-<td>new -s <session-name></td>
+<td>new-session -s <!-- raw HTML omitted --></td>
+<td>new -s <!-- raw HTML omitted --></td>
 </tr>
-
 <tr>
 <td>Create a new named session with a named window</td>
-<td>new-session -s <session-name> -n <window-name></td>
-<td>new -s <session-name> -n <window-name></td>
+<td>new-session -s <!-- raw HTML omitted --> -n <!-- raw HTML omitted --></td>
+<td>new -s <!-- raw HTML omitted --> -n <!-- raw HTML omitted --></td>
 </tr>
-
 <tr>
 <td>List tmux sessions</td>
 <td>list-sessions​</td>
 <td>ls</td>
 </tr>
-
 <tr>
 <td>Attach to a session</td>
-<td>attach -t <session-name></td>
+<td>attach -t <!-- raw HTML omitted --></td>
 <td></td>
 </tr>
-
 <tr>
 <td>Kill a session</td>
-<td>kil-session -t <session-name></td>
+<td>kil-session -t <!-- raw HTML omitted --></td>
 <td></td>
 </tr>
 </tbody>
 </table>
-
 <h3 id="session-management">Session Management</h3>
-
 <table>
 <thead>
 <tr>
@@ -100,7 +87,6 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
 <th>Shortcut</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Detach from tmux session</td>
@@ -109,9 +95,7 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
 </tr>
 </tbody>
 </table>
-
 <h3 id="window-management">Window Management</h3>
-
 <table>
 <thead>
 <tr>
@@ -120,56 +104,47 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
 <th>Shortcut</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Create window</td>
-<td>new-window -n <window-name> [&rdquo;<application-name>&rdquo;]</td>
+<td>new-window -n <!-- raw HTML omitted --> [&ldquo;<!-- raw HTML omitted -->&rdquo;]</td>
 <td><code>Prefix</code> <code>c</code></td>
 </tr>
-
 <tr>
 <td>Rename window</td>
 <td></td>
 <td><code>Prefix</code> <code>,</code></td>
 </tr>
-
 <tr>
 <td>Move to next window</td>
 <td></td>
 <td><code>Prefix</code> <code>n</code></td>
 </tr>
-
 <tr>
 <td>Move to previous window</td>
 <td></td>
 <td><code>Prefix</code> <code>p</code></td>
 </tr>
-
 <tr>
 <td>Move to nth window</td>
 <td></td>
 <td><code>Prefix</code> <code>&lt;n&gt;</code></td>
 </tr>
-
 <tr>
 <td>Show window menu</td>
 <td></td>
 <td><code>Prefix</code> <code>w</code></td>
 </tr>
-
 <tr>
 <td>Find window</td>
 <td></td>
 <td><code>Prefix</code> <code>f</code></td>
 </tr>
-
 <tr>
 <td>Close window</td>
 <td></td>
 <td><code>Prefix</code> <code>&amp;</code></td>
 </tr>
-
 <tr>
 <td>Find window</td>
 <td></td>
@@ -177,9 +152,7 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
 </tr>
 </tbody>
 </table>
-
 <h3 id="pane-management">Pane Management</h3>
-
 <table>
 <thead>
 <tr>
@@ -188,50 +161,42 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
 <th>Shortcut</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Divide Window Vertically</td>
 <td></td>
 <td><code>Prefix</code> <code>%</code></td>
 </tr>
-
 <tr>
 <td>Divide Window Horizontally</td>
 <td></td>
 <td><code>Prefix</code> <code>&quot;</code></td>
 </tr>
-
 <tr>
 <td>Cycle throw panes</td>
 <td></td>
 <td><code>Prefix</code> <code>o</code></td>
 </tr>
-
 <tr>
 <td>Move to upper pane</td>
 <td></td>
 <td><code>Prefix</code> <code>Up</code></td>
 </tr>
-
 <tr>
 <td>Move to lower pane</td>
 <td></td>
 <td><code>Prefix</code> <code>Down</code></td>
 </tr>
-
 <tr>
 <td>Move to right pane</td>
 <td></td>
 <td><code>Prefix</code> <code>Right</code></td>
 </tr>
-
 <tr>
 <td>Move to left pane</td>
 <td></td>
 <td><code>Prefix</code> <code>Left</code></td>
 </tr>
-
 <tr>
 <td>Cycle through pane layouts</td>
 <td></td>
@@ -239,9 +204,7 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
 </tr>
 </tbody>
 </table>
-
 <h3 id="miscellaneous">Miscellaneous</h3>
-
 <table>
 <thead>
 <tr>
@@ -250,20 +213,17 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
 <th>Shortcut</th>
 </tr>
 </thead>
-
 <tbody>
 <tr>
 <td>Show clock</td>
 <td></td>
 <td><code>Prefix</code> <code>b</code></td>
 </tr>
-
 <tr>
 <td>Enter command mode</td>
 <td></td>
 <td><code>Prefix</code> <code>:</code></td>
 </tr>
-
 <tr>
 <td>List predefined tmux keybindings</td>
 <td></td>
@@ -271,11 +231,8 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
 </tr>
 </tbody>
 </table>
-
 <h2 id="pane-layouts">Pane Layouts</h2>
-
 <p><code>tmux</code> provides the following default pane layouts:</p>
-
 <ul>
 <li><em>even-horizontal</em>: stack panes horizontally</li>
 <li><em>even-vertical</em>: stack panes vertically</li>
@@ -330,14 +287,11 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
             
             
             <content type="html"><![CDATA[<p>I use <a href="https://ggplot2.tidyverse.org">ggplot2</a> nowadays for all my graphing requirements because my research is on improving <a href="https://www.r-project.org/">R</a> and alternatives such as <a href="https://matplotlib.org/">matplotlib</a> are abysmal. This article is a collection of theme settings I have found useful, especially for generating figures for my <a href="http://aviral.io/publications/on-the-design-implementation-and-use-of-laziness-in-r.pdf">recent publication on R</a>.</p>
-
 <p>For generating colorless background figures, I use the following theme setting.</p>
-<div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R"><span class="n">old_theme</span> <span class="o">&lt;-</span> <span class="nf">theme_set</span><span class="p">(</span><span class="nf">theme_bw</span><span class="p">()</span> <span class="o">+</span>
-                       <span class="nf">theme</span><span class="p">(</span><span class="n">text</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">15</span><span class="p">),</span> <span class="n">panel.border</span> <span class="o">=</span> <span class="nf">element_blank</span><span class="p">()))</span></code></pre></div>
-<p>This is how the figures look like before and after updating the theme.</p>
-
-<p><a id="orgd5774a6"></a></p>
-
+<div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R"><span class="n">old_theme</span> <span class="o">&lt;-</span> <span class="nf">theme_set</span><span class="p">(</span><span class="nf">theme_bw</span><span class="p">(</span><span class="p">)</span> <span class="o">+</span>
+                       <span class="nf">theme</span><span class="p">(</span><span class="n">text</span> <span class="o">=</span> <span class="nf">element_text</span><span class="p">(</span><span class="n">size</span> <span class="o">=</span> <span class="m">15</span><span class="p">)</span><span class="p">,</span> <span class="n">panel.border</span> <span class="o">=</span> <span class="nf">element_blank</span><span class="p">(</span><span class="p">)</span><span class="p">)</span><span class="p">)</span>
+</code></pre></div><p>This is how the figures look like before and after updating the theme.</p>
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 
 
 
@@ -353,9 +307,7 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
                 
             </figcaption></figure>
 
-
-<p><a id="org3ee6670"></a></p>
-
+<p><!-- raw HTML omitted --><!-- raw HTML omitted --></p>
 
 
 
@@ -371,12 +323,12 @@ You can create multiple <a href="http://tmux.github.io/">tmux</a> sessions on th
                 
             </figcaption></figure>
 
-
 <p>These figures were generated from the following code snippet.</p>
 <div class="highlight"><pre class="chroma"><code class="language-R" data-lang="R"><span class="nf">library</span><span class="p">(</span><span class="n">ggplot2</span><span class="p">)</span>
 
-<span class="nf">ggplot</span><span class="p">(</span><span class="n">mpg</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">class</span><span class="p">))</span> <span class="o">+</span>
-<span class="nf">geom_bar</span><span class="p">()</span></code></pre></div>]]></content>
+<span class="nf">ggplot</span><span class="p">(</span><span class="n">mpg</span><span class="p">,</span> <span class="nf">aes</span><span class="p">(</span><span class="n">class</span><span class="p">)</span><span class="p">)</span> <span class="o">+</span>
+<span class="nf">geom_bar</span><span class="p">(</span><span class="p">)</span>
+</code></pre></div>]]></content>
             
                  
                     
