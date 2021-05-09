@@ -48,7 +48,14 @@
 ;; https://stackoverflow.com/questions/12169667/org-mode-uses-current-color-theme-to-publish
 (setq org-html-htmlize-output-type 'css)
 
-(setq org-publish-project-alist `(("articles"
+(setq org-publish-project-alist `(("cname"
+                                   :base-directory "cname"
+                                   :publishing-directory "www"
+                                   :base-extension any
+                                   :recursive t
+                                   :publishing-function org-publish-attachment)
+
+                                  ("articles"
                                    :base-directory "content"
                                    :publishing-directory "www"
                                    :base-extension "org"
@@ -94,4 +101,4 @@
                                    :table-of-contents nil)
 
                                   ("all"
-                                   :components ("articles" "articles-source" "static" "rss"))))
+                                   :components ("cname" "articles" "articles-source" "static" "rss"))))
