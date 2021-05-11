@@ -151,6 +151,10 @@ pre.src {
     font-family: 'CascadiaCodePL';
 }
 
+table {
+    margin: auto;
+}
+
 #postamble {
     border-top: solid black;
     margin-top: 30px;
