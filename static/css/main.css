@@ -21,19 +21,17 @@ a:hover, a:focus {
     color: #2a6496;
 }
 
-span.tag {
-    background-color: #3273dc;
-    color: #fff;
-    align-items: center;
-    border-radius: 4px;
-    display: inline-flex;
-    font-size: .75rem;
-    height: 2em;
-    justify-content: center;
-    line-height: 1.5;
-    padding-left: .75em;
-    padding-right: .75em;
-    white-space: nowrap;
+.tag {
+    float: right;
+}
+
+.tag span {
+    font-family: 'CascadiaMono';
+    margin-left: 5px;
+}
+
+.tag span::before {
+    content: "#";
 }
 
 .social {
@@ -162,3 +160,13 @@ table {
     border-bottom: solid black;
 }
 
+
+table {
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+    font-size: 1rem;
+}
+
+h2::before {
+    content: "∙∙ ";
+}

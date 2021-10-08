@@ -1,0 +1,16 @@
+* Resources
+
+  - [[https://opensource.com/article/20/3/blog-emacs][How to blog with Emacs Org mode]]
+  - [[https://bastibe.de/2013-11-13-blogging-with-emacs.html][Blogging with Emacs]]
+  - [[https://rkallos.com/blog/2017/01/02/static-site-generation-with-org-mode/][Static site generation with Org Mode]]
+  - [[https://thibaultmarin.github.io/blog/posts/2016-11-13-Personal_website_in_org.html#org7022d4f][Personal website in org]]
+  - [[https://explog.in/config.html][Org Configuration]]
+  - [[https://pavpanchekha.com/blog/org-mode-publish.html][Using Org-mode to Publish a Web Site]]
+  - [[https://thenybble.de/projects/orgsite.html][Website with org-mode]]
+  - [[http://snarvaez.poweredbygnulinux.com/notes/org-mode-publishing-system.html][Org-mode as a content/publishing system]]
+  - [[https://akirakyle.com/blog/2019-02-04-beginning-blogging.html][Beginning Blogging with org-publish]]
+  - [[http://kumakichi.github.io/org-github-pages.html][build blog with orgmode and github pages]]
+  - [[https://ambrevar.xyz/blog-architecture/index.html][A blog in pure Org/Lisp]]
+  - [[https://ogbe.net/blog/blogging_with_org.html][Blogging using org-mode (and nothing else)]]
+  - [[https://justin.abrah.ms/emacs/orgmode_static_site_generator.html][Writing a static site generator using org-mode.]]
+  - [[http://jgkamat.gitlab.io/blog/website1.html][Creating A Blog in Org Mode]]
