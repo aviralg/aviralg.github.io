@@ -1,4 +1,4 @@
-# Created 2021-05-09 Sun 18:48
+# Created 2021-10-08 Fri 09:18
 #+OPTIONS: H:8
 #+TITLE: 
 #+AUTHOR: Aviral Goel
@@ -53,6 +53,33 @@ code.
 
 
 
+
+- [[https://2021.splashcon.org/track/splash-2021-oopsla][*=OOPSLA'21=*]] :: *[[file:static/pdfs/promises-are-made-to-be-broken.pdf][Promises Are Made to Be Broken]]* \\
+     _Aviral Goel_, Jan Ječmen, Olivier Flückiger, Sebástian Krynski, Jan Vitek
+
+     [[https://doi.org/10.1145/3485478][⸢doi:10.1145/3485478⸥]] \nbsp\nbsp
+     [[file:static/pdfs/promises-are-made-to-be-broken.pdf][⸢paper⸥]] \nbsp\nbsp
+     [[https://doi.org/10.5281/zenodo.5394235][⸢software⸥]] \nbsp\nbsp
+
+-----
+
+- [[https://2021.splashcon.org/track/splash-2021-oopsla][*=OOPSLA'21=*]] :: *[[file:static/pdfs/what-we-eval-in-the-shadows.pdf][What We Eval in the Shadows]]* \\
+     _Aviral Goel_, Pierre Donat-Bouillud, Filip Křikava, Christoph M. Kirsch, Jan Vitek
+
+     [[https://doi.org/10.1145/3485502][⸢doi:10.1145/3485502⸥]] \nbsp\nbsp
+     [[file:static/pdfs/what-we-eval-in-the-shadows.pdf][⸢paper⸥]] \nbsp\nbsp
+     [[https://doi.org/10.5281/zenodo.5415230][⸢software⸥]] \nbsp\nbsp
+
+-----
+
+- [[https://conf.researchr.org/home/dls-2021][*=DLS'21=*]] :: *[[file:static/pdfs/first-class-environments-in-r.pdf][First-Class Environments in R]]* \\
+     _Aviral Goel_, Jan Vitek
+
+     [[https://doi.org/10.1145/3486602.3486768][⸢doi:10.1145/3486602.3486768⸥]] \nbsp\nbsp
+     [[file:static/pdfs/first-class-environments-in-r.pdf][⸢paper⸥]] \nbsp\nbsp
+
+-----
+
 - [[https://2020.splashcon.org/track/splash-2020-oopsla][*=OOPSLA'20=*]] :: *[[file:static/pdfs/designing-types-for-r-empirically.pdf][Designing Types for R, Empirically]]* \\
      Alexi Turcotte , _Aviral Goel_ , Filip Křikava , Jan Vitek
 
@@ -96,9 +123,8 @@ code.
 
 - [[https://github.com/aviralg/instrumentr][=instrumentr=]] :: An R package that
      complements R-dyntrace by modeling all R objects and the R session for tracing
-     and empirical evaluations. =instrumentr= is a culmination of years of
-     experience writing tracers and provides a rich API to facilitate many complex
-     analyses used in our research papers. It accumulates a lot of metadata about R
+     and empirical evaluations. =instrumentr= provides a rich API to facilitate many complex
+     analyses used in our research papers. It accumulates metadata about R
      objects and provides wrapper APIs to extract fine-grained information used in
      dynamic analyses for object tainting and event tracking.
 
@@ -118,7 +144,7 @@ code.
      comprehensive environment for R and C/C++ development, large-scale program
      analysis experiments, and setting up corpus of R programs. It provides
      standard development tools such as emacs, gdb, valgrind, and, perf, includes
-     all the dependencies needed to build our in-house dynamic and static analysis
+     all the dependencies needed to build our 
      softwares, and contains enough native dependencies to install most of the
      [[https://cran.r-project.org/][CRAN]] and
      [[https://bioconductor.org/][Bioconductor]] repositories ( ~20,000 R packages
