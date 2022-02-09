@@ -1,0 +1,51 @@
+<div class="publication-metadata field is-grouped is-grouped-multiline is-vcentered">
+                                    <div class="control doi">
+                                        <div class="tags has-addons">
+                                            <span class="tag is-dark">DOI</span>
+                                            <span class="tag is-info">{{ publication.doi }}</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="control is-vcentered pdf" title="PDF">
+                                        <a href="pdfs/{{publication.pdf}}"><i class="fas fa-file-download fa-lg"></i></a>
+                                    </div>
+
+                                    <div class="control is-vcentered citation" title="Citation">
+                                        <div class="dropdown is-hoverable">
+                                            <div class="dropdown-trigger">
+                                                <span><i class="fas fa-quote-right fa-lg"></i></span>
+                                            </div>
+                                            <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                                                <div class="dropdown-content">
+                                                    <div class="dropdown-item">
+                                                        <pre>{{ publication.citation }}</pre>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {% if publication.video %}
+                                    <div class="control is-vcentered video" title="Talk">
+                                        <a href="{{publication.video}}"><i class="fas fa-video fa-lg"></i></a>
+                                    </div>
+                                    {% endif %}
+
+                                    {% if publication.artifact %}
+                                    <div class="control is-pulled-right artifact" title="Artifact">
+                                        <a href="{{publication.artifact}}"><i class="fas fa-cube fa-lg"></i></i></a>
+                                    </div>
+                                    {% endif %}
+
+                                    <div class="control is-pulled-right reproducible" title="">
+                                        <figure class="image is-24x24">
+                                            <img src="images/artifact-available.jpg"></img>
+                                        </figure>
+                                        <figure class="image is-24x24">
+                                            <img src="images/artifact-reusable.jpg"></img>
+                                        </figure>
+                                        <figure class="image is-24x24">
+                                            <img src="images/artifact-functional.jpg"></img>
+                                        </figure>
+                                    </div>
+</div>

@@ -1,0 +1,233 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="section">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-two-thirds">
+                <div class="has-text-centered mr-2 is-pulled-left">
+                    {% if config.extra.author.avatar %}
+                    <figure class="image is-flex is-justify-content-center is-align-items-center">
+                        <img class="is-rounded" src="{{ config.extra.author.avatar }}" style="max-width: 192px" />
+                    </figure>
+                    {% endif %}
+                    <h1 class="title is-2 m-0">{{ section.title }}</h1>
+                    {{ macros:: social_links( social_config=config.extra.social) }}
+                </div>
+
+                <div class="content">
+                    {{ section.content | safe }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="publications">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-two-thirds pl-0">
+                <h1 class="title is-2 double-border">Publications</h1>
+            </div>
+        </div>
+
+        <div class="columns is-centered">
+            <div class="column is-two-thirds">
+
+                {% set data = load_data(path="data/publications.toml") %}
+
+                {% for publication in data.publications %}
+                <div class="publication mb-5">
+                    <div class="columns is-vcentered">
+                        <div class="column left is-one-fifth p-0">
+                            <div class="venue tag is-medium is-pulled-left is-black">
+                                {{ publication.venue }}'{{ publication.year % 100 }}
+                            </div>
+                        </div>
+                        <div class="column right is-four-fifths p-0">
+                            <div class="is-size-5 has-text-weight-semibold">{{ publication.title }}</div>
+                            <div>
+                                {% for author in publication.authors %}
+                                {% if author == "Aviral Goel" %}
+                                <u>{{ author }}</u>
+                                {% else %}
+                                {{ author }}
+                                {% endif %}
+                                {% if not loop.last %}
+                                ,
+                                {% endif %}
+                                {% endfor %}
+                            </div>
+                            <div class="columns">
+                                <div class="column is-one-third">
+                                    <div class="field is-grouped is-grouped-multiline">
+
+                                        <div class="control">
+                                            <a href="https://doi.org/{{ publication.doi }}">
+                                                <div class="doi tags has-addons">
+                                                    <span class="tag is-dark">DOI</span>
+                                                    <span class="tag is-info">{{ publication.doi }}</span>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="column is-one-third">
+                                    <div class="field is-grouped is-grouped-multiline">
+
+                                        <div class="control">
+                                            <a href="pdfs/{{publication.pdf}}">
+                                                <span class="tag is-success">
+                                                    PDF
+                                                </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="control">
+                                            <div class="cite dropdown is-hoverable">
+                                                <div class="dropdown-trigger">
+                                                    <span class="tag is-link">Cite</span>
+                                                </div>
+                                                <div class="dropdown-menu" id="dropdown-menu4" role="menu">
+                                                    <div class="dropdown-content">
+                                                        <div class="dropdown-item">
+                                                            <pre>{{ publication.citation }}</pre>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        {% if publication.video %}
+                                        <div class="control">
+                                            <a href="{{publication.video}}">
+                                                <span class="tag is-danger">
+                                                    Talk
+                                                </span>
+                                            </a>
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+
+                                <div class="column is-one-third">
+
+                                    {% if publication.artifact %}
+                                    <div class="field is-grouped is-grouped-multiline">
+
+                                        <div class="control">
+                                            <a href="https://doi.org/{{publication.artifact.doi}}" class="is-pulled-left">
+                                                <span class="tag is-warning">
+                                                    Artifact
+                                                </span>
+                                            </a>
+                                        </div>
+
+                                        <div class="control reproducible">
+
+                                            {% if publication.artifact.functional %}
+                                            <figure class="image is-24x24">
+                                                <img src="images/artifact-functional.jpg" title="Functional"></img>
+                                            </figure>
+                                            {% endif %}
+
+                                            {% if publication.artifact.reusable %}
+                                            <figure class="image is-24x24">
+                                                <img src="images/artifact-reusable.jpg" title="Reusable"></img>
+                                            </figure>
+                                            {% endif %}
+
+                                            {% if publication.artifact.available %}
+                                            <figure class="image is-24x24">
+                                                <img src="images/artifact-available.jpg" title="Available"></img>
+                                            </figure>
+                                            {% endif %}
+
+                                        </div>
+                                    </div>
+                                    {% endif %}
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="softwares">
+    {% set data = load_data(path="data/softwares.toml") %}
+    <div class="container">
+        <div class="columns is-centered mt-4">
+            <div class="column is-two-thirds pl-0">
+                <h2 class="title is-2 double-border">Softwares</h2>
+            </div>
+        </div>
+
+        <div class="columns is-centered">
+            <div class="column is-two-thirds pl-0">
+                <h3 class="title is-3">Frameworks</h3>
+            </div>
+        </div>
+
+        <div class="columns is-centered">
+            <div class="column is-two-thirds">
+
+                {% for framework in data.frameworks %}
+                <div class="publication mb-5">
+                    <div class="columns is-vcentered">
+                        <div class="column left is-one-fifth p-0">
+
+                            <a href="{{framework.url}}">
+                                <div class="venue tag is-large is-pulled-left is-black">
+                                {{ framework.name }}
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column right is-four-fifths p-0">
+                            {{ framework.description }}
+
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+
+        <div class="columns is-centered">
+            <div class="column is-two-thirds pl-0">
+                <h3 class="title is-3">Applications</h3>
+            </div>
+        </div>
+
+        <div class="columns is-centered">
+            <div class="column is-two-thirds">
+
+                {% for application in data.applications %}
+                <div class="publication mb-5">
+                    <div class="columns is-vcentered">
+                        <div class="column left is-one-fifth p-0">
+
+                            <a href="{{application.url}}">
+                                <div class="venue tag is-large is-pulled-left is-black">
+                                    {{ application.name }}
+                                </div>
+                            </a>
+                        </div>
+                        <div class="column right is-four-fifths p-0">
+                            {{ application.description }}
+
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

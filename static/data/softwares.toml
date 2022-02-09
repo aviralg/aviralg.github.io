@@ -1,0 +1,76 @@
+[[frameworks]]
+name = "R-dyntrace"
+url = "https://github.com/aviralg/R-dyntrace"
+description = """
+A modified R VM that provides an event framework for program execution. This forms the base of all our dynamic analyses and empirical evaluations of R. It supports over forty events related to function calls, side-effects, garbage collection, attributes, promises, environments, eval, metaprogramming, and dynamic dispatch.
+"""
+
+[[frameworks]]
+name = "instrumentr"
+url = "https://github.com/aviralg/instrumentr"
+description = """
+An R package that complements R-dyntrace by modeling all R objects and the R session for tracing and empirical evaluations. instrumentr provides a rich API to facilitate many complex analyses used in our research papers. It accumulates metadata about R objects and provides wrapper APIs to extract fine-grained information used in dynamic analyses for object tainting and event tracking.
+"""
+
+[[frameworks]]
+name = "experimentr"
+url = "https://github.com/aviralg/experimentr"
+description = """
+An R package for large-scale program analysis experiments related to R. First, it provides utility functions for ranking R packages based on dependencies, extracting runnable programs, counting lines of code, and other routine tasks. Second, it exposes a DSL to express complex analysis pipelines as a graph of step abstractions with a facility to invoke the steps from command-line or a web-app based interface.
+"""
+
+[[frameworks]]
+name = "dockr"
+url = "https://github.com/aviralg/dockr"
+description = """
+A Docker image providing a comprehensive environment for R and C/C++ development, large-scale program analysis experiments, and setting up corpus of R programs. It provides standard development tools such as emacs, gdb, valgrind, and, perf, includes all the dependencies needed to build our softwares, and contains enough native dependencies to install most of the CRAN and Bioconductor repositories ( ~20,000 R packages with ~450,000 programs).
+"""
+
+[[applications]]
+name = "envtracer"
+url = "https://github.com/aviralg/envtracer"
+description = """
+A dynamic analyzer for tracking first-class environments and reflective frame access in R. We are using this to understand how R developers take advantage of the first-class nature of environments and function scopes.
+"""
+
+[[applications]]
+name = "strictr"
+url = "https://github.com/aviralg/strictr"
+description = """
+An R package that alters R semantics by eagerly evaluating function arguments based on strictness specifications. We are using this to study the impact of switching R's semantics from lazy-by-default to lazy-on-demand.
+"""
+
+[[applications]]
+name = "lazr"
+url = "https://github.com/aviralg/strictr"
+description = """
+A dynamic analyzer for profiling laziness in R applications and synthesizing strictness signatures. We are using this in conjunction with strictr to propose a semi-automated laziness removal technique.
+"""
+
+[[applications]]
+name = "evil"
+url = "https://github.com/PRL-PRG/evil"
+description = """
+A dynamic analyzer for analyzing the use of eval family of functions in R. We are using this to better understand how dynamic evaluation is employed by R package authors and how their usage patterns are different from those of Javascript developers.
+"""
+
+[[applications]]
+name = "contractr"
+url = "https://github.com/PRL-PRG/contractr"
+description = """
+An R package that inserts function argument and return type contracts and monitors failures. We used this to evaluate the design of type signatures for R for 8.7K R packages with 98M assertions.
+"""
+
+[[applications]]
+name = "tastr"
+url = "https://github.com/PRL-PRG/tastr"
+description = """
+A C++ library implementing a grammar of type signatures for R. It provides APIs to parse type signatures from input streams into C++ objects. This was used by contractr to generate type contracts for 22K R functions from 412 packages.
+"""
+
+[[applications]]
+name = "promisedyntracer"
+url = "https://github.com/aviralg/promisedyntracer"
+description = """
+A dynamic analysis tool to analyze use of laziness in R, specifically, evaluation of promises, side-effects, metaprogramming, and argument evaluation orders. It was used to study laziness in 230K R programs from 16,707 R packages. The tool generated 5.2 TB of execution traces from 271B promises (thunks).
+"""
