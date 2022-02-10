@@ -4,7 +4,7 @@
 <section class="section">
     <div class="container">
         <div class="columns is-centered">
-            <div class="column is-two-thirds">
+            <div class="column is-three-fifths">
                 <div class="has-text-centered mr-2 is-pulled-left">
                     {% if config.extra.author.avatar %}
                     <figure class="image is-flex is-justify-content-center is-align-items-center">
@@ -26,13 +26,13 @@
 <section class="publications">
     <div class="container">
         <div class="columns is-centered">
-            <div class="column is-two-thirds pl-0">
-                <h1 class="title is-2 double-border">Publications</h1>
+            <div class="column is-three-fifths pl-0">
+                <h3 class="title is-3 double-border">Publications</h3>
             </div>
         </div>
 
         <div class="columns is-centered">
-            <div class="column is-two-thirds">
+            <div class="column is-three-fifths">
 
                 {% set data = load_data(path="data/publications.toml") %}
 
@@ -164,19 +164,19 @@
     {% set data = load_data(path="data/softwares.toml") %}
     <div class="container">
         <div class="columns is-centered mt-4">
-            <div class="column is-two-thirds pl-0">
-                <h2 class="title is-2 double-border">Softwares</h2>
+            <div class="column is-three-fifths pl-0">
+                <h3 class="title is-3 double-border">Softwares</h3>
             </div>
         </div>
 
         <div class="columns is-centered">
-            <div class="column is-two-thirds pl-0">
-                <h3 class="title is-3">Frameworks</h3>
+            <div class="column is-three-fifths pl-0">
+                <h4 class="title is-4">Frameworks</h4>
             </div>
         </div>
 
         <div class="columns is-centered">
-            <div class="column is-two-thirds">
+            <div class="column is-three-fifths">
 
                 {% for framework in data.frameworks %}
                 <div class="publication mb-5">
@@ -184,7 +184,7 @@
                         <div class="column left is-one-fifth p-0">
 
                             <a href="{{framework.url}}">
-                                <div class="venue tag is-large is-pulled-left is-black">
+                                <div class="venue tag is-medium is-pulled-left is-black">
                                 {{ framework.name }}
                                 </div>
                             </a>
@@ -200,13 +200,13 @@
         </div>
 
         <div class="columns is-centered">
-            <div class="column is-two-thirds pl-0">
-                <h3 class="title is-3">Applications</h3>
+            <div class="column is-three-fifths pl-0">
+                <h4 class="title is-4">Applications</h4>
             </div>
         </div>
 
         <div class="columns is-centered">
-            <div class="column is-two-thirds">
+            <div class="column is-three-fifths">
 
                 {% for application in data.applications %}
                 <div class="publication mb-5">
@@ -214,7 +214,7 @@
                         <div class="column left is-one-fifth p-0">
 
                             <a href="{{application.url}}">
-                                <div class="venue tag is-large is-pulled-left is-black">
+                                <div class="venue tag is-medium is-pulled-left is-black">
                                     {{ application.name }}
                                 </div>
                             </a>
