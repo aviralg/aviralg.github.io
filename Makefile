@@ -7,7 +7,7 @@ PORT := 8000
 WWW := www
 
 publish: publish.el
-	$(EMACS) -u $(USERNAME) --batch --load publish.el --funcall org-publish-all
+	$(EMACS) -u $(USERNAME) --batch --load publish.el --funcall build-site
 
 serve:
 	$(PYTHON) -m http.server -d $(WWW) $(PORT)

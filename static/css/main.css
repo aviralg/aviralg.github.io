@@ -1,38 +1,507 @@
+/********************************************************************************
+ * Page
+ *******************************************************************************/
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
 body {
-    font-family: 'Cardo', serif;
+    color: black;
+    background-color: white;
     max-width: 800px;
     margin: auto;
-    padding: 20px;
+    font-family: 'Linux Libertine', sans-serif;
+    line-height: 1.6;
+    border-top: 10px solid black;
+
+    display: flex;
+    flex-direction: column;
 }
 
 p {
-    font-size: 1.2em;
     text-align: justify;
     text-justify: inter-word;
 }
 
+.org-left {
+    text-align: left;
+}
+
+.org-right {
+    text-align: right;
+}
+
+.org-center {
+    text-align: center;
+}
+
+.bg-black {
+    background: black;
+}
+
+.fg-white {
+    color: white;
+}
+
+.pd-5 {
+    padding: 5px;
+}
+
+a.tag,
+a.tag:visited,
+a.tag:hover,
+a.tag:focus {
+    text-transform: lowercase;
+    font-family: monospace;
+    padding: 4px;
+    /****************************/
+    /* background-color: white; */
+    /* color: black;            */
+    /****************************/
+}
+
+a.tag:hover,
+a.tag:focus {
+    /****************************/
+    /* background-color: black; */
+    /* color: white;            */
+    /****************************/
+}
+
+
+a.category,
+a.category:visited,
+a.category:hover,
+a.category:focus {
+    text-transform: uppercase;
+    font-family: monospace;
+    /****************************/
+    /* background-color: white; */
+    /* color: black;            */
+    /****************************/
+}
+
+
+/********************************************************************************
+ * Headings
+ *******************************************************************************/
+
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+    color: black;
+}
+
+h2:not(#subtitle) {
+    border-bottom: 1px solid black;
+}
+
+h2 a:hover, h2 a:focus,
+h3 a:hover, h3 a:focus,
+h4 a:hover, h4 a:focus,
+h5 a:hover, h5 a:focus {
+    color: black;
+    border: none;
+    background-color: white;
+}
+
+h2 a:hover::after, h2 a:focus::after,
+h3 a:hover::after, h3 a:focus::after,
+h4 a:hover::after, h4 a:focus::after,
+h5 a:hover::after, h5 a:focus::after {
+    content: " 𑗏";
+}
+
+/* Removing fancy bullets to accommodate for section numbers
+h1:not(#title)::before {
+    content: "\115D7  ";
+}
+
+h2:not(#subtitle)::before {
+    content: "\115D1  ";
+}
+
+h3::before {
+    content: "\115D2  ";
+}
+
+h4::before {
+    content: "\115D3  ";
+}
+
+h5::before {
+    content: "\115D4  ";
+}
+*/
+
+/********************************************************************************
+ * Hyperlinks
+ *******************************************************************************/
+
+/* order is important: link, visited, hover, active, and focus */
+/* background-color property is important to ensure that visited state
+ * can change it. Check: https://css-tricks.com/almanac/selectors/v/visited/
+ */
 a {
-    color: #930000;
+    color: crimson;
+}
+
+a:visited {
     text-decoration: none;
 }
 
-a:hover, a:focus {
+a:hover, a:active, a:focus {
+    text-decoration: underline;
+}
+
+/********************************************************************************
+ * Table
+ *******************************************************************************/
+
+table {
+    border-top: solid black 2px;
+    border-bottom: solid black 2px;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+table thead {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+table tbody {
+    border-top: 1px solid black;
+    border-collapse: separate;
+}
+
+table th,
+table td {
+    padding-right: 20px;
+}
+
+/********************************************************************************
+ * Code block
+ *******************************************************************************/
+
+pre.src {
+    color: #505050;
+    background-color: #00000004;
+    padding-left: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    font-family: 'CascadiaCodePL';
+    border-left: 5px solid black;
+}
+
+/********************************************************************************
+ * Responsive Navbar
+ * https://www.freecodecamp.org/news/how-to-create-a-fully-responsive-navbar-with-flexbox-a4435d175dd3/
+ *******************************************************************************/
+
+.navbar {
+    display: flex;
+    margin: 0 0 2rem 0;
+    font-weight: bold;
+    text-align: center;
+    line-height: 2.5rem;
+}
+
+.navbar a {
+    flex: 1;
+    font-family: monospace;
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0;
     text-decoration: none;
-    color: #2a6496;
+    text-transform: uppercase;
+    color: black;
+    background: white;
+    border-top: 0;
+    border-bottom: 0;
 }
 
-.tag {
-    float: right;
+.navbar a:hover,
+.navbar a:focus {
+    border-top: 0;
+    border-bottom: 0;
+    background: black;
+    color: white;
 }
 
-.tag span {
-    font-family: 'CascadiaMono';
-    margin-left: 5px;
+@media all and (max-width: 600px) {
+
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar > a {
+        flex-basis: 50%;
+    }
+
 }
 
-.tag span::before {
-    content: "#";
+@media all and (max-width: 400px) {
+    .navbar > a {
+        flex-basis: 100%;
+    }
 }
+
+/********************************************************************************
+ * Article Header
+ *******************************************************************************/
+
+header {
+    margin: 3rem 0 1rem 0;
+    line-height: 1;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#title {
+    margin: 0.5rem 0rem;
+    text-align: center;
+}
+
+#subtitle {
+    margin: 0.2rem 0rem;
+    text-align: center;
+}
+
+header .author {
+    font-size: 1rem;
+    color: gray;
+    font-style: normal;
+    margin: 0.25rem 0;
+    text-align: center;
+    font-style: italic;
+}
+
+header .breadcrumbs {
+    display: flex;
+    font-size: 0.75rem;
+    padding: 5px 0;
+}
+
+header .breadcrumbs > * {
+    flex: 1;
+}
+
+header .breadcrumbs .categories {
+    text-align: left;
+    order: 2;
+}
+
+header .breadcrumbs .datetime {
+    text-align: center;
+    order: 2;
+}
+
+header .breadcrumbs .tags {
+    text-align: right;
+    order: 2;
+}
+
+header .breadcrumbs .tags .tag:not(:last-child) {
+    margin-right: 5px;
+}
+
+@media all and (max-width: 600px) {
+
+    header .breadcrumbs {
+        flex-wrap: wrap;
+    }
+
+    header .breadcrumbs > * {
+        flex-basis: 33%;
+    }
+
+}
+
+@media all and (max-width: 400px) {
+    header .breadcrumbs > * {
+        flex-basis: 100%;
+    }
+
+    header .breadcrumbs .datetime {
+        order: 1;
+    }
+
+    header .breadcrumbs .categories,
+    header .breadcrumbs .datetime,
+    header .breadcrumbs .tags {
+        text-align: center;
+    }
+}
+
+
+/**************************************/
+/* .fleuron-top {                     */
+/*     width: 100%;                   */
+/*     text-align: center;            */
+/*     border-bottom: 2px solid #000; */
+/*     line-height: 0rem;             */
+/*     margin: 0;                     */
+/*     font-size: 1.5rem;             */
+/* }                                  */
+/*                                    */
+/* .fleuron-top span {                */
+/*     background:#fff;               */
+/*     padding:0 0.5rem;              */
+/* }                                  */
+/**************************************/
+
+/********************************************************************************
+ * Table of Contents
+ *******************************************************************************/
+#text-table-of-contents {
+    /* font-weight: bold; */
+}
+
+#text-table-of-contents ul,
+#text-table-of-contents ul ul,
+#text-table-of-contents ul ul ul,
+#text-table-of-contents ul ul ul ul,
+#text-table-of-contents ul ul ul ul ul,
+#text-table-of-contents ul ul ul ul ul ul
+{
+    list-style-type: none;
+}
+
+#text-table-of-contents > ul {
+    padding-left: 0px;
+}
+
+/******************************************/
+/* #text-table-of-contents li > a {       */
+/*     text-decoration: none;             */
+/*     color: black;                      */
+/*     background-color: white;           */
+/* }                                      */
+/*                                        */
+/* #text-table-of-contents li > a:hover,  */
+/* #text-table-of-contents li > a:focus { */
+/*     text-decoration: none;             */
+/*     color: black;                      */
+/*     background-color: white;           */
+/*     border: none;                      */
+/* }                                      */
+/******************************************/
+
+/*************************************************/
+/* #text-table-of-contents li > a:hover::after,  */
+/* #text-table-of-contents li > a:focus::after { */
+/*     text-decoration: none;                    */
+/*     color: black;                             */
+/*     background-color: white;                  */
+/*     border: none;                             */
+/*     content: " 𑗏";                            */
+/* }                                             */
+/*************************************************/
+
+.content {
+    flex: 1 0 auto;
+}
+
+/********************************************************************************
+ * Article Footer
+ *******************************************************************************/
+
+/* https://stackoverflow.com/questions/5214127/css-technique-for-a-horizontal-line-with-words-in-the-middle */
+.fleuron-bottom {
+    width: 100%;
+    text-align: center;
+    border-bottom: 3px solid #000;
+    line-height: 0rem;
+    margin: 2rem 0 0px;
+    font-size: 2rem;
+}
+
+.fleuron-bottom span {
+    background:#fff;
+    padding:0 0.5rem;
+}
+
+.footer {
+    flex-shrink: 0;
+}
+
+/********************************************************************************
+ * Responsive Navbar
+ * https://www.freecodecamp.org/news/how-to-create-a-fully-responsive-navbar-with-flexbox-a4435d175dd3/
+ *******************************************************************************/
+
+footer.full {
+    border-top: 2px solid black;
+}
+
+footer {
+    display: flex;
+    margin: 3rem 0 0 0;
+    border-bottom: 10px solid black;
+    text-transform: uppercase;
+    font-family: monospace;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    padding: 2px;
+}
+
+footer > * {
+    flex: 1;
+}
+
+footer .copyright {
+    text-align: left;
+}
+
+footer .source-link {
+    text-align: right;
+}
+
+@media all and (max-width: 600px) {
+
+    footer {
+        flex-wrap: wrap;
+    }
+
+    footer > * {
+        flex-basis: 50%;
+    }
+
+}
+
+@media all and (max-width: 400px) {
+    footer > * {
+        flex-basis: 100%;
+    }
+
+    footer > * {
+        text-align: center;
+    }
+}
+
+
+
+/************************************/
+/* .tag {                           */
+/*     float: right;                */
+/* }                                */
+/*                                  */
+/* .tag span {                      */
+/*     font-family: 'CascadiaMono'; */
+/*     margin-left: 5px;            */
+/* }                                */
+/*                                  */
+/* .tag span::before {              */
+/*     content: "#";                */
+/* }                                */
+/************************************/
 
 .social {
 }
@@ -88,40 +557,16 @@ dl {
     flex-wrap: wrap;
     margin: 0px;
 }
-dt {
-    width: 20%;
-}
-dd {
-    margin-left: auto;
-    width: 80%;
-}
-/*
-          .publications dl {
-            width: 100%;
-            overflow: hidden;
-            padding: 0;
-            margin: 0
-          }*/
-.publications dt {
-    width: 15%;
-    font-size: 1.1rem;
-}
+/**************************/
+/* dt {                   */
+/*     width: 20%;        */
+/* }                      */
+/* dd {                   */
+/*     margin-left: auto; */
+/*     width: 80%;        */
+/* }                      */
+/**************************/
 
-.publications dt a {
-    color: black;
-    font-family: 'CascadiaMono';
-}
-
-.publications dd {
-    width: 85%;
-    font-size: 1rem;
-}
-
-.publications .info {
-    font-family: 'CascadiaMono';
-    font-size: 0.8rem;
-    margin-top: 2px;
-}
 
 .underline {
     text-decoration: underline;
@@ -140,33 +585,10 @@ dd {
 .source-link {
     float: right;
 }
-pre.src {
-    color: white;
-    background: black;
-    padding: 15px;
-    border-radius: 10px;
-    font-size: 1rem;
-    font-family: 'CascadiaCodePL';
-}
-
-table {
-    margin: auto;
-}
 
 #postamble {
-    border-top: solid black;
+    /*border-top: solid black;
     margin-top: 30px;
     padding: 5px;
-    border-bottom: solid black;
-}
-
-
-table {
-    border-top: solid black 2px;
-    border-bottom: solid black 2px;
-    font-size: 1rem;
-}
-
-h2::before {
-    content: "∙∙ ";
+    border-bottom: solid black;*/
 }

@@ -14,3 +14,14 @@
   - [[https://ogbe.net/blog/blogging_with_org.html][Blogging using org-mode (and nothing else)]]
   - [[https://justin.abrah.ms/emacs/orgmode_static_site_generator.html][Writing a static site generator using org-mode.]]
   - [[http://jgkamat.gitlab.io/blog/website1.html][Creating A Blog in Org Mode]]
+  - [[https://two-wrongs.com/about][Two Wrongs]]
+
+* Special Characters
+
+https://en.wikipedia.org/wiki/Siddha%E1%B9%83_script
+https://unicode.org/charts/PDF/U11580.pdf
+https://unicode-table.com/en/blocks/siddham/
+
+* TODO
+- Fix article date formatting
+- Add paper abstract using summary/details html tag
