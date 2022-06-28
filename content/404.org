@@ -1,0 +1,24 @@
+#+OPTIONS: H:8
+#+AUTHOR: Aviral Goel
+#+include-header: false
+#+include-footer: false
+#+TITLE: Aviral Goel
+#+DESCRIPTION: My Biography
+#+KEYWORDS: biography
+#+NAME:   fig:aviral
+#+ATTR_HTML:  :style width:200px; border-radius: 50%; float:center; margin-left: auto; margin-right: auto; display: block;
+[[./static/images/aviral.jpg]]
+
+@@html:<div class="name-title">Aviral Goel</div>@@
+#+begin_social
+[[mailto:aviral@aviral.io][@@html:<i class="fas fa-envelope"></i>@@]]
+[[file:static/pdfs/cv.pdf][@@html:<i class="ai ai-cv ai-lg"></i>@@]]
+[[https://github.com/aviralg][@@html:<i class="fab fa-github"></i>@@]]
+[[https://orcid.org/0000-0002-0814-5015][@@html:<i class="ai ai-orcid"></i>@@]]
+[[https://dblp.uni-trier.de/pid/209/9875.html][@@html:<i class="ai ai-dblp ai-lg"></i>@@]]
+[[https://scholar.google.com/citations?user=_cEObskAAAAJ][@@html:<i class="ai ai-google-scholar ai-lg"></i>@@]]
+[[https://www.linkedin.com/in/aviralgoel][@@html:<i class="fab fa-linkedin"></i>@@]]
+#+end_social
+
+
+@@html:<div class="org-center fs-15 fg-red">It seems you are looking for something that I don't have!</div>@@
