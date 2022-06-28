@@ -1,0 +1,264 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<!-- Created by htmlize-1.57 in css mode. -->
+<html>
+  <head>
+    <title>index.org</title>
+    <style type="text/css">
+    <!--
+      body {
+        color: #505050;
+        background-color: #FFFFFF;
+      }
+      .bold {
+        /* bold */
+        font-weight: bold;
+      }
+      .comment {
+        /* font-lock-comment-face */
+        color: #a49da5;
+        background-color: #f7f7f7;
+        font-style: italic;
+      }
+      .italic {
+        /* italic */
+        font-style: italic;
+      }
+      .org-document-info {
+      }
+      .org-document-info-keyword {
+      }
+      .org-document-title {
+        /* org-document-title */
+        font-weight: bold;
+      }
+      .org-link {
+        /* org-link */
+        color: #6b82a7;
+        background-color: #f1f4f8;
+      }
+      .org-list-dt {
+        /* org-list-dt */
+        font-weight: bold;
+      }
+      .org-meta-line {
+        /* org-meta-line */
+        color: #a49da5;
+        background-color: #f7f7f7;
+        font-style: italic;
+      }
+      .org-superstar-item {
+        /* org-superstar-item */
+        color: #505050;
+      }
+      .org-tag {
+        /* org-tag */
+        font-weight: bold;
+      }
+      .org-verbatim {
+      }
+      .underline {
+        /* underline */
+        text-decoration: underline;
+      }
+
+      a {
+        color: inherit;
+        background-color: inherit;
+        font: inherit;
+        text-decoration: inherit;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    -->
+    </style>
+  </head>
+  <body>
+    <pre>
+<span class="org-meta-line">#+OPTIONS: H:8</span>
+<span class="org-document-info-keyword">#+AUTHOR:</span><span class="org-document-info">
+</span><span class="org-document-info-keyword">#+TITLE:</span> <span class="org-document-title">Publications
+</span><span class="org-meta-line">#+DESCRIPTION: Aviral's Publications</span>
+<span class="org-meta-line">#+include-header: false</span>
+<span class="org-meta-line">#+include-footer: false</span>
+<span class="org-meta-line">#+html_head_extra: &lt;link rel="stylesheet" type="text/css" href="/static/css/publications.css" /&gt;</span>
+<span class="org-meta-line">#+tags: papers</span>
+
+
+<span class="comment">@@</span><span class="org-tag">html:</span>&lt;h1 class="pd-5 bg-black fg-white org-center"&gt;Publications&lt;/h1&gt;<span class="comment">@@</span>
+
+<span class="comment">@@</span><span class="org-tag">html:</span>&lt;div class="publications"&gt;<span class="comment">@@</span>
+
+<span class="comment">@@</span><span class="org-tag">html:</span>&lt;div class="year"&gt;2021&lt;/div&gt;<span class="comment">@@</span>
+
+<span class="org-superstar-item">-</span> <span class="org-link"><span class="org-list-dt"><a href="https://2021.splashcon.org/track/splash-2021-oopsla">*OOPSLA'21*</a></span></span><span class="org-list-dt"> ::</span> <span class="bold">*Promises Are Made to Be Broken*</span> \\
+     <span class="underline">_Aviral Goel_</span>, Jan Je&#269;men, Olivier Fl&#252;ckiger, Seb&#225;stian Krynski, Jan Vitek
+     <span class="comment">@@</span><span class="org-tag">html:</span>&lt;details class='info'&gt;<span class="comment">@@</span>
+     <span class="comment">@@</span><span class="org-tag">html:</span>&lt;summary&gt;<span class="comment">@@</span>
+     <span class="comment">@@</span><span class="org-tag">html:</span>&lt;span class='abstract'&gt;<span class="comment">@@</span>ABSTRACT<span class="comment">@@</span><span class="org-tag">html:</span>&lt;/span&gt;<span class="comment">@@</span>
+     <span class="org-link"><a href="file:static/pdfs/promises-are-made-to-be-broken.pdf">&#11810;PAPER&#11813;</a></span>
+     <span class="org-link"><a href="https://doi.org/10.5281/zenodo.5394235">&#11810;SOFTWARE&#11813;</a></span>
+     <span class="org-link"><a href="https://youtu.be/8L_a7mhYdyM">&#11810;TALK&#11813;</a></span>
+     <span class="org-link"><a href="https://doi.org/10.1145/3485478">&#11810;DOI:10.1145/3485478&#11813;</a></span>
+     <span class="comment">@@</span><span class="org-tag">html:</span>&lt;/summary&gt;<span class="comment">@@</span>
+     <span class="comment">@@</span><span class="org-tag">html:</span>&lt;div&gt;<span class="comment">@@</span>
+         Function calls in the R language do not evaluate their arguments, these are
+         passed to the callee as suspended computations and evaluated if needed. After 25
+         years of experience with the language, there are very few cases where
+         programmers leverage delayed evaluation intentionally and laziness comes at a
+         price in performance and complexity. This paper explores how to evolve the
+         semantics of a lazy language towards strictness-by-default and
+         laziness-on-demand. To provide a migration path, it is necessary to provide
+         tooling for developers to migrate libraries without introducing errors. This
+         paper reports on a dynamic analysis that infers strictness signatures for
+         functions to capture both intentional and accidental laziness. Over 99% of the
+         inferred signatures were correct when tested against clients of the libraries.
+     <span class="comment">@@</span><span class="org-tag">html:</span>&lt;/div&gt;<span class="comment">@@</span>
+     <span class="comment">@@</span><span class="org-tag">html:</span>&lt;/details&gt;<span class="comment">@@</span>
+
+-----
+
+<span class="org-superstar-item">-</span> <span class="org-link"><span class="org-list-dt"><a href="https://2021.splashcon.org/track/splash-2021-oopsla">*OOPSLA'21*</a></span></span><span class="org-list-dt"> ::</span> <span class="bold">*What We Eval in the Shadows*</span> \\
+     <span class="underline">_Aviral Goel_</span>, Pierre Donat-Bouillud, Filip K&#345;ikava, Christoph M. Kirsch, Jan Vitek
+     <span class="comment">@@</span><span class="org-tag">html:</span>&lt;details class='info'&gt;<span class="comment">@@</span>
+     <span class="comment">@@</span><span class="org-tag">html:</span>&lt;summary&gt;<span class="comment">@@</span>
+     <span class="comment">@@</span><span class="org-tag">html:</span>&lt;span class='abstract'&gt;<span class="comment">@@</span>ABSTRACT<span class="comment">@@</span><span class="org-tag">html:</span>&lt;/span&gt;<span class="comment">@@</span>
+     <span class="org-link"><a href="file:static/pdfs/what-we-eval-in-the-shadows.pdf">&#11810;PAPER&#11813;</a></span>
+     <span class="org-link"><a href="https://doi.org/10.5281/zenodo.5415230">&#11810;SOFTWARE&#11813;</a></span>
+     <span class="org-link"><a href="https://youtu.be/aEPd8ijSHuI">&#11810;TALK&#11813;</a></span>
+     <span class="org-link"><a href="https://doi.org/10.1145/3485502">&#11810;DOI:10.1145/3485502&#11813;</a></span>
+     <span class="comment">@@</span><span class="org-tag">html:</span>&lt;/summary&gt;<span class="comment">@@</span>
+         <span class="comment">@@</span><span class="org-tag">html:</span>&lt;div&gt;<span class="comment">@@</span>
+         Most dynamic languages allow users to turn text into code using various
+         functions, often named <span class="org-verbatim">=eval=</span>, with language-dependent semantics. The widespread
+         use of these reflective functions hinders static analysis and prevents compilers
+         from performing optimizations. This paper aims to provide a better sense of why
+         programmers use <span class="org-verbatim">=eval=</span>. Understanding why <span class="org-verbatim">=eval=</span> is used in practice is key to
+         finding ways to mitigate its negative impact. We have reasons to believe that
+         reflective feature usage is language and application domains specific; we focus
+         on data science code written in R and compare our results to previous work that
+         analyzed web programming in JavaScript. We analyze 49,296,059 calls to <span class="org-verbatim">=eval=</span> from
+         240,327 scripts extracted from 15,401 R packages. We find that <span class="org-verbatim">=eval=</span> is indeed in
+         widespread use; R&#8217;s <span class="org-verbatim">=eval=</span> is more pervasive and arguably dangerous than what was
+         previously reported for JavaScript.
+         <span class="comment">@@</span><span class="org-tag">html:</span>&lt;/div&gt;<span class="comment">@@</span>
+    <span class="comment">@@</span><span class="org-tag">html:</span>&lt;/details&gt;<span class="comment">@@</span>
+    
+-----
+
+<span class="org-superstar-item">-</span> <span class="org-link"><span class="org-list-dt"><a href="https://conf.researchr.org/home/dls-2021">*DLS'21*</a></span></span><span class="org-list-dt"> ::</span> <span class="bold">*First-Class Environments in R*</span> \\
+     <span class="underline">_Aviral Goel_</span>, Jan Vitek
+     <span class="comment">@@</span><span class="org-tag">html:</span>&lt;details class='info'&gt;<span class="comment">@@</span>
+     <span class="comment">@@</span><span class="org-tag">html:</span>&lt;summary&gt;<span class="comment">@@</span>
+     <span class="comment">@@</span><span class="org-tag">html:</span>&lt;span class='abstract'&gt;<span class="comment">@@</span>ABSTRACT<span class="comment">@@</span><span class="org-tag">html:</span>&lt;/span&gt;<span class="comment">@@</span>
+     <span class="org-link"><a href="file:static/pdfs/first-class-environments-in-r.pdf">&#11810;PAPER&#11813;</a></span>     
+     <span class="org-link"><a href="https://doi.org/10.1145/3486602.3486768">&#11810;DOI:10.1145/3486602.3486768&#11813;</a></span>
+     <span class="comment">@@</span><span class="org-tag">html:</span>&lt;/summary&gt;<span class="comment">@@</span>
+         <span class="comment">@@</span><span class="org-tag">html:</span>&lt;div&gt;<span class="comment">@@</span>
+         The R programming language is widely used for statistical computing. To enable
+         interactive data exploration and rapid prototyping, R encourages a dynamic
+         programming style. This programming style is supported by features such as
+         first-class environments. Amongst widely used languages, R has the richest
+         interface for programmatically manipulating environments. With the flexibility
+         afforded by reflective operations on first-class environments, come significant
+         challenges for reasoning and optimizing user-defined code. This paper documents
+         the reflective interface used to operate over first-class environment. We
+         explain the rationale behind its design and conduct a large-scale study of how
+         the interface is used in popular libraries
+         <span class="comment">@@</span><span class="org-tag">html:</span>&lt;/div&gt;<span class="comment">@@</span>
+    <span class="comment">@@</span><span class="org-tag">html:</span>&lt;/details&gt;<span class="comment">@@</span>
+
+<span class="comment">@@</span><span class="org-tag">html:</span>&lt;div class="year"&gt;2020&lt;/div&gt;<span class="comment">@@</span>
+
+<span class="org-superstar-item">-</span> <span class="org-link"><span class="org-list-dt"><a href="https://2020.splashcon.org/track/splash-2020-oopsla">*OOPSLA'20*</a></span></span><span class="org-list-dt"> ::</span> <span class="bold">*Designing Types for R, Empirically*</span> \\
+   Alexi Turcotte, <span class="underline">_Aviral Goel_</span>, Filip K&#345;ikava, Jan Vitek
+   <span class="comment">@@</span><span class="org-tag">html:</span>&lt;details class='info'&gt;<span class="comment">@@</span>
+   <span class="comment">@@</span><span class="org-tag">html:</span>&lt;summary&gt;<span class="comment">@@</span>
+   <span class="comment">@@</span><span class="org-tag">html:</span>&lt;span class='abstract'&gt;<span class="comment">@@</span>ABSTRACT<span class="comment">@@</span><span class="org-tag">html:</span>&lt;/span&gt;<span class="comment">@@</span>
+   <span class="org-link"><a href="file:static/pdfs/designing-types-for-r-empirically.pdf">&#11810;PAPER&#11813;</a></span>
+   <span class="org-link"><a href="https://zenodo.org/record/4037278#.X9U4B1OYUUF">&#11810;SOFTWARE&#11813;</a></span>
+   <span class="org-link"><a href="https://youtu.be/GMrLtYg0VGA">&#11810;TALK&#11813;</a></span>
+   <span class="org-link"><a href="https://doi.org/10.1145/3428249">&#11810;DOI:10.1145/3428249&#11813;</a></span>   
+   <span class="comment">@@</span><span class="org-tag">html:</span>&lt;/summary&gt;<span class="comment">@@</span>
+       <span class="comment">@@</span><span class="org-tag">html:</span>&lt;div&gt;<span class="comment">@@</span>
+       The R programming language is widely used in a variety of domains. It was
+       designed to favor an interactive style of programming with minimal syntactic and
+       conceptual overhead. This design is well suited to data analysis, but a bad fit
+       for tools such as compilers or program analyzers. In particular, R has no type
+       annotations, and all operations are dynamically checked at runtime. The starting
+       point for our work are the two questions: <span class="italic">/what expressive power is needed to
+       accurately type R code?/</span> and <span class="italic">/which type system is the R community willing to
+       adopt/</span>? Both questions are difficult to answer without actually experimenting
+       with a type system. The goal of this paper is to provide data that can feed into
+       that design process. To this end, we perform a large corpus analysis to gain
+       insights in the degree of polymorphism exhibited by idiomatic R code and explore
+       potential benefits that the R community could accrue from a simple type system.
+       As a starting point, we infer type signatures for 25,215 functions from 412
+       packages among the most widely used open source R libraries. We then conduct an
+       evaluation on 8,694 clients of these packages, as well as on end-user code from
+       the Kaggle data science competition website.
+       <span class="comment">@@</span><span class="org-tag">html:</span>&lt;/ div&gt;<span class="comment">@@</span>
+   <span class="comment">@@</span><span class="org-tag">html:</span>&lt;/details&gt;<span class="comment">@@</span>
+
+<span class="comment">@@</span><span class="org-tag">html:</span>&lt;div class="year"&gt;2019&lt;/div&gt;<span class="comment">@@</span>
+
+<span class="org-superstar-item">-</span> <span class="org-link"><span class="org-list-dt"><a href="https://2019.splashcon.org/track/splash-2019-oopsla">*OOPSLA'19*</a></span></span><span class="org-list-dt"> ::</span> <span class="bold">*On the Design, Implementation, and Use of Laziness in R*</span> \\
+   <span class="underline">_Aviral Goel_</span>, Jan Vitek
+   <span class="comment">@@</span><span class="org-tag">html:</span>&lt;details class='info'&gt;<span class="comment">@@</span>
+   <span class="comment">@@</span><span class="org-tag">html:</span>&lt;summary&gt;<span class="comment">@@</span>
+   <span class="comment">@@</span><span class="org-tag">html:</span>&lt;span class='abstract'&gt;<span class="comment">@@</span>ABSTRACT<span class="comment">@@</span><span class="org-tag">html:</span>&lt;/span&gt;<span class="comment">@@</span>
+   <span class="org-link"><a href="file:static/pdfs/on-the-design-implementation-and-use-of-laziness-in-r.pdf">&#11810;PAPER&#11813;</a></span>
+   <span class="org-link"><a href="https://zenodo.org/record/3369573#.XaC2c-aYVhE">&#11810;SOFTWARE&#11813;</a></span>
+   <span class="org-link"><a href="https://youtu.be/qLxz9HPP6wI">&#11810;TALK&#11813;</a></span>
+   <span class="org-link"><a href="https://doi.org/10.1145/3360579">&#11810;DOI:10.1145/3360579&#11813;</a></span>   
+   <span class="comment">@@</span><span class="org-tag">html:</span>&lt;/summary&gt;<span class="comment">@@</span>
+       <span class="comment">@@</span><span class="org-tag">html:</span>&lt;div&gt;<span class="comment">@@</span>
+       The R programming language has been lazy for over twenty-five years. This paper
+       presents a review of the design and implementation of call-by-need in R, and a
+       data-driven study of how generations of programmers have put laziness to use in
+       their code. We analyze 16,707 packages and observe the creation of 270.9 B
+       promises. Our data suggests that there is little supporting evidence to assert
+       that programmers use laziness to avoid unnecessary computation or to operate
+       over infinite data structures. For the most part R code appears to have been
+       written without reliance on, and in many cases even knowledge of, delayed
+       argument evaluation. The only significant exception is a small number of
+       packages which leverage call-by-need for meta-programming.
+       <span class="comment">@@</span><span class="org-tag">html:</span>&lt;/ div&gt;<span class="comment">@@</span>
+   <span class="comment">@@</span><span class="org-tag">html:</span>&lt;/details&gt;<span class="comment">@@</span>   
+
+<span class="comment">@@</span><span class="org-tag">html:</span>&lt;div class="year"&gt;2018&lt;/div&gt;<span class="comment">@@</span>
+
+<span class="org-superstar-item">-</span> <span class="org-link"><span class="org-list-dt"><a href="https://popl18.sigplan.org/">*POPL'18*</a></span></span><span class="org-list-dt"> ::</span> <span class="bold">*Correctness of Speculative Optimizations with Dynamic Deoptimization*</span> \\
+   Olivier Fl&#252;ckiger, Gabriel Scherer, Ming-ho Yee, <span class="underline">_Aviral Goel_</span>, Amal Ahmed, Jan Vitek
+   <span class="comment">@@</span><span class="org-tag">html:</span>&lt;details class='info'&gt;<span class="comment">@@</span>
+   <span class="comment">@@</span><span class="org-tag">html:</span>&lt;summary&gt;<span class="comment">@@</span>
+   <span class="comment">@@</span><span class="org-tag">html:</span>&lt;span class='abstract'&gt;<span class="comment">@@</span>ABSTRACT<span class="comment">@@</span><span class="org-tag">html:</span>&lt;/span&gt;<span class="comment">@@</span>
+   <span class="org-link"><a href="file:static/pdfs/correctness-of-speculative-optimizations-with-dynamic-deoptimization.pdf">&#11810;PAPER&#11813;</a></span>
+   <span class="org-link"><a href="https://doi.org/10.1145/3158137">&#11810;DOI:10.1145/3158137&#11813;</a></span>   
+   <span class="comment">@@</span><span class="org-tag">html:</span>&lt;/summary&gt;<span class="comment">@@</span>
+       <span class="comment">@@</span><span class="org-tag">html:</span>&lt;div&gt;<span class="comment">@@</span>
+       High-performance dynamic language implementations make heavy use of speculative
+       optimizations to achieve speeds close to statically compiled languages. These
+       optimizations are typically performed by a just-in-time compiler that generates
+       code under a set of assumptions about the state of the program and its
+       environment. In certain cases, a program may execute code compiled under
+       assumptions that are no longer valid. The implementation must then deoptimize
+       the program on-the-fly; this entails finding semantically equivalent code that
+       does not rely on invalid assumptions, translating program state to that expected
+       by the target code, and transferring control. This paper looks at the
+       interaction between optimization and deoptimization, and shows that reasoning
+       about speculation is surprisingly easy when assumptions are made explicit in the
+       program representation. This insight is demonstrated on a compiler intermediate
+       representation, named <span class="org-verbatim">=sourir=</span>, modeled after the high-level representation for a
+       dynamic language. Traditional compiler optimizations such as constant folding,
+       unreachable code elimination, and function inlining are shown to be correct in
+       the presence of assumptions. Furthermore, the paper establishes the correctness
+       of compiler transformations specific to deoptimization: namely unrestricted
+       deoptimization, predicate hoisting, and assume composition.
+       <span class="comment">@@</span><span class="org-tag">html:</span>&lt;/ div&gt;<span class="comment">@@</span>
+   <span class="comment">@@</span><span class="org-tag">html:</span>&lt;/details&gt;<span class="comment">@@</span>   
+
+<span class="comment">@@</span><span class="org-tag">html:</span>&lt;/div&gt;<span class="comment">@@</span>
+</pre>
+  </body>
+</html>

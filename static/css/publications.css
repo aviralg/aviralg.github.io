@@ -1,0 +1,132 @@
+
+
+/* https://stackoverflow.com/a/44647131 */
+
+div.year {
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5rem;
+}
+
+div.year:before, div.year:after{
+    content: "";
+    flex: 1 1;
+    border-bottom: 5px solid;
+    margin: auto;
+}
+div.year:before {
+    margin-right: 10px
+}
+div.year:after {
+    margin-left: 10px
+}
+
+.publications dl {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.publications dl dt {
+    font-family: 'CascadiaMono';
+    margin-top: 3px;
+    width: 100px;
+    font-size: 0.9rem;
+    padding-left: 10px;
+}
+
+.publications dl dd {
+    font-size: 1rem;
+    flex: 85%;
+    margin-inline-start: 0px;
+    padding-left: 10px;
+}
+
+.publications .info {
+    font-family: 'CascadiaMono';
+    font-size: 0.8rem;
+    margin-top: 2px;
+}
+
+.publications .info .abstract {
+    color: #9E9E9E;
+}
+
+.publications > dl > dd > .info > div {
+    font-family: 'Linux Libertine';
+    font-size: 0.8rem;
+    text-align: justify;
+    margin: 0.5rem 0;
+}
+
+.publications hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+.publications summary > * {
+    margin-right: 15px;
+}
+
+.publications .info summary {
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 576px) {
+    .publications > dl > dt,
+    .publications > dl > dd {
+        /* to center align text */
+        flex: 100%;
+        margin-left: 10px;
+        text-align: left;
+    }
+
+    .publications summary {
+        flex-direction: column;
+    }
+
+    .publications summary > * {
+        margin: auto;
+        flex: 50%;
+    }
+}
+
+/**************************************/
+/* @media (max-width: 768px) {        */
+/*     .publications > dl > dt,       */
+/*     .publications > dl > dd {      */
+/*         flex: 100%;                */
+/*         margin-inline-start: 40px; */
+/*         text-align: left;          */
+/*     }                              */
+/* }                                  */
+/**************************************/
+
+
+/* Tooltip text */
+.cite .org-src-container {
+    visibility: hidden;
+    /****************************/
+    /* width: 120px;            */
+    /* background-color: black; */
+    /* color: #fff;             */
+    /* text-align: center;      */
+    /* padding: 5px 0;          */
+    /****************************/
+    border-radius: 6px;
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    font-size: 0.8rem;
+    font-family: monospace;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.cite:hover .org-src-container {
+    visibility: visible;
+}

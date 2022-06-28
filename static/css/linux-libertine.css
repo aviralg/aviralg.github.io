@@ -1,0 +1,35 @@
+/*********************************************************************************
+* Downloaded from: https://fonts.cdnfonts.com/css/linux-libertine
+*********************************************************************************/
+
+@font-face {
+    font-family: 'Linux Libertine';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Linux Libertine'), url('/static/fonts/LinLibertine_Re-4.1_.8_.woff') format('woff');
+}
+@font-face {
+    font-family: 'Linux Libertine';
+    font-style: italic;
+    font-weight: 400;
+    src: local('Linux Libertine'), url('/static/fonts/LinLibertine_It-4.0_.3_.woff') format('woff');
+}
+@font-face {
+    font-family: 'Linux Libertine';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Linux Libertine'), url('/static/fonts/LinLibertine_Bd-4.0_.2_.woff') format('woff');
+}
+@font-face {
+    font-family: 'Linux Libertine';
+    font-style: italic;
+    font-weight: 700;
+    src: local('Linux Libertine'), url('/static/fonts/LinLibertine_BI-4.0_.3_.woff') format('woff');
+}
+@font-face {
+    font-family: 'Linux Libertine C';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Linux Libertine C'), url('/static/fonts/LinLibertineC_Re-4.0_.1_.woff') format('woff');
+}
+

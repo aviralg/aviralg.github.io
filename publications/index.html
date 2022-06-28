@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2022-06-28 Tue 12:37 -->
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Publications</title>
+<meta name="description" content="Aviral's Publications" />
+<meta name="generator" content="Org Mode" />
+<!-- https://www.everywheremarketer.com/blog/ultimate-guide-to-social-meta-tags-open-graph-and-twitter-cards -->
+<!-- https://www.linkedin.com/help/linkedin/answer/a521928/making-your-website-shareable-on-linkedin?lang=en -->
+<!-- https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/markup -->
+<meta property='og:image' content='/android-chrome-512x512.png'/>
+<meta property='twitter:site' content='@TheAviralGoel'/>
+<meta property='twitter:creator' content='@TheAviralGoel'/>
+<meta property='twitter:image' content='/android-chrome-512x512.png'/>
+<meta property='twitter:image:alt' content="Aviral Goel"/>
+<meta property='twitter:card' content="summary"/>
+
+<!-- https://realfavicongenerator.net/ -->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#b91d47">
+<link rel="shortcut icon" href="/favicon.ico">
+<meta name="msapplication-TileColor" content="#b91d47">
+<meta name="msapplication-config" content="/browserconfig.xml">
+<meta name="theme-color" content="#ffffff">
+
+<link href="/static/css/academicons.min.css" rel="stylesheet"/>
+<script src="/static/js/fontawesomekit.js" crossorigin="anonymous"></script>
+<link href="/static/css/normalize-8.0.1.css" rel="stylesheet" />
+<link href="/static/css/linux-libertine.css" rel="stylesheet">
+<link href="/static/css/cascadia-code.css" rel="stylesheet" />
+<link href="/static/css/twilight-bright.css" rel="stylesheet" />
+<link href="/static/css/main.css" rel="stylesheet" />
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-46114889-2"></script>
+<script>
+ window.dataLayer = window.dataLayer || [];
+ function gtag(){dataLayer.push(arguments);}
+ gtag('js', new Date());
+
+ gtag('config', 'UA-46114889-2');
+</script>
+<link rel="stylesheet" type="text/css" href="/static/css/publications.css" />
+</head>
+<body>
+<div id="preamble" class="status">
+<nav class='navbar'>
+    <a href='/'>HOME</a>
+    <a href='/publications'>PUBLICATIONS</a>
+    <a href='/static/pdfs/cv.pdf'>CV</a>
+    <!--
+         <a href='/projects'>PROJECTS</a>
+         <a href='/notes'>NOTES</a>
+    -->
+</nav>
+</div>
+<div id="content" class="content">
+<p>
+<h1 class="pd-5 bg-black fg-white org-center">Publications</h1>
+</p>
+
+<p>
+<div class="publications">
+</p>
+
+<p>
+<div class="year">2021</div>
+</p>
+
+<dl class="org-dl">
+<dt><a href="https://2021.splashcon.org/track/splash-2021-oopsla"><b>OOPSLA'21</b></a></dt><dd><b>Promises Are Made to Be Broken</b> <br />
+<span class="underline">Aviral Goel</span>, Jan Ječmen, Olivier Flückiger, Sebástian Krynski, Jan Vitek
+<details class='info'>
+<summary>
+<span class='abstract'>ABSTRACT</span>
+<a href="static/pdfs/promises-are-made-to-be-broken.pdf">⸢PAPER⸥</a>
+<a href="https://doi.org/10.5281/zenodo.5394235">⸢SOFTWARE⸥</a>
+<a href="https://youtu.be/8L_a7mhYdyM">⸢TALK⸥</a>
+<a href="https://doi.org/10.1145/3485478">⸢DOI:10.1145/3485478⸥</a>
+</summary>
+<div>
+    Function calls in the R language do not evaluate their arguments, these are
+    passed to the callee as suspended computations and evaluated if needed. After 25
+    years of experience with the language, there are very few cases where
+    programmers leverage delayed evaluation intentionally and laziness comes at a
+    price in performance and complexity. This paper explores how to evolve the
+    semantics of a lazy language towards strictness-by-default and
+    laziness-on-demand. To provide a migration path, it is necessary to provide
+    tooling for developers to migrate libraries without introducing errors. This
+    paper reports on a dynamic analysis that infers strictness signatures for
+    functions to capture both intentional and accidental laziness. Over 99% of the
+    inferred signatures were correct when tested against clients of the libraries.
+</div>
+</details></dd>
+</dl>
+
+<hr />
+
+<dl class="org-dl">
+<dt><a href="https://2021.splashcon.org/track/splash-2021-oopsla"><b>OOPSLA'21</b></a></dt><dd><b>What We Eval in the Shadows</b> <br />
+ <span class="underline">Aviral Goel</span>, Pierre Donat-Bouillud, Filip Křikava, Christoph M. Kirsch, Jan Vitek
+ <details class='info'>
+ <summary>
+ <span class='abstract'>ABSTRACT</span>
+ <a href="static/pdfs/what-we-eval-in-the-shadows.pdf">⸢PAPER⸥</a>
+ <a href="https://doi.org/10.5281/zenodo.5415230">⸢SOFTWARE⸥</a>
+ <a href="https://youtu.be/aEPd8ijSHuI">⸢TALK⸥</a>
+ <a href="https://doi.org/10.1145/3485502">⸢DOI:10.1145/3485502⸥</a>
+ </summary>
+     <div>
+     Most dynamic languages allow users to turn text into code using various
+     functions, often named <code>eval</code>, with language-dependent semantics. The widespread
+     use of these reflective functions hinders static analysis and prevents compilers
+     from performing optimizations. This paper aims to provide a better sense of why
+     programmers use <code>eval</code>. Understanding why <code>eval</code> is used in practice is key to
+     finding ways to mitigate its negative impact. We have reasons to believe that
+     reflective feature usage is language and application domains specific; we focus
+     on data science code written in R and compare our results to previous work that
+     analyzed web programming in JavaScript. We analyze 49,296,059 calls to <code>eval</code> from
+     240,327 scripts extracted from 15,401 R packages. We find that <code>eval</code> is indeed in
+     widespread use; R’s <code>eval</code> is more pervasive and arguably dangerous than what was
+     previously reported for JavaScript.
+     </div>
+</details></dd>
+</dl>
+
+<hr />
+
+<dl class="org-dl">
+<dt><a href="https://conf.researchr.org/home/dls-2021"><b>DLS'21</b></a></dt><dd><b>First-Class Environments in R</b> <br />
+ <span class="underline">Aviral Goel</span>, Jan Vitek
+ <details class='info'>
+ <summary>
+ <span class='abstract'>ABSTRACT</span>
+ <a href="static/pdfs/first-class-environments-in-r.pdf">⸢PAPER⸥</a>     
+ <a href="https://doi.org/10.1145/3486602.3486768">⸢DOI:10.1145/3486602.3486768⸥</a>
+ </summary>
+     <div>
+     The R programming language is widely used for statistical computing. To enable
+     interactive data exploration and rapid prototyping, R encourages a dynamic
+     programming style. This programming style is supported by features such as
+     first-class environments. Amongst widely used languages, R has the richest
+     interface for programmatically manipulating environments. With the flexibility
+     afforded by reflective operations on first-class environments, come significant
+     challenges for reasoning and optimizing user-defined code. This paper documents
+     the reflective interface used to operate over first-class environment. We
+     explain the rationale behind its design and conduct a large-scale study of how
+     the interface is used in popular libraries
+     </div>
+</details></dd>
+</dl>
+
+<p>
+<div class="year">2020</div>
+</p>
+
+<dl class="org-dl">
+<dt><a href="https://2020.splashcon.org/track/splash-2020-oopsla"><b>OOPSLA'20</b></a></dt><dd><b>Designing Types for R, Empirically</b> <br />
+Alexi Turcotte, <span class="underline">Aviral Goel</span>, Filip Křikava, Jan Vitek
+<details class='info'>
+<summary>
+<span class='abstract'>ABSTRACT</span>
+<a href="static/pdfs/designing-types-for-r-empirically.pdf">⸢PAPER⸥</a>
+<a href="https://zenodo.org/record/4037278#.X9U4B1OYUUF">⸢SOFTWARE⸥</a>
+<a href="https://youtu.be/GMrLtYg0VGA">⸢TALK⸥</a>
+<a href="https://doi.org/10.1145/3428249">⸢DOI:10.1145/3428249⸥</a>   
+</summary>
+    <div>
+    The R programming language is widely used in a variety of domains. It was
+    designed to favor an interactive style of programming with minimal syntactic and
+    conceptual overhead. This design is well suited to data analysis, but a bad fit
+    for tools such as compilers or program analyzers. In particular, R has no type
+    annotations, and all operations are dynamically checked at runtime. The starting
+    point for our work are the two questions: <i>what expressive power is needed to
+    accurately type R code?</i> and <i>which type system is the R community willing to
+    adopt</i>? Both questions are difficult to answer without actually experimenting
+    with a type system. The goal of this paper is to provide data that can feed into
+    that design process. To this end, we perform a large corpus analysis to gain
+    insights in the degree of polymorphism exhibited by idiomatic R code and explore
+    potential benefits that the R community could accrue from a simple type system.
+    As a starting point, we infer type signatures for 25,215 functions from 412
+    packages among the most widely used open source R libraries. We then conduct an
+    evaluation on 8,694 clients of these packages, as well as on end-user code from
+    the Kaggle data science competition website.
+    </ div>
+</details></dd>
+</dl>
+
+<p>
+<div class="year">2019</div>
+</p>
+
+<dl class="org-dl">
+<dt><a href="https://2019.splashcon.org/track/splash-2019-oopsla"><b>OOPSLA'19</b></a></dt><dd><b>On the Design, Implementation, and Use of Laziness in R</b> <br />
+<span class="underline">Aviral Goel</span>, Jan Vitek
+<details class='info'>
+<summary>
+<span class='abstract'>ABSTRACT</span>
+<a href="static/pdfs/on-the-design-implementation-and-use-of-laziness-in-r.pdf">⸢PAPER⸥</a>
+<a href="https://zenodo.org/record/3369573#.XaC2c-aYVhE">⸢SOFTWARE⸥</a>
+<a href="https://youtu.be/qLxz9HPP6wI">⸢TALK⸥</a>
+<a href="https://doi.org/10.1145/3360579">⸢DOI:10.1145/3360579⸥</a>   
+</summary>
+    <div>
+    The R programming language has been lazy for over twenty-five years. This paper
+    presents a review of the design and implementation of call-by-need in R, and a
+    data-driven study of how generations of programmers have put laziness to use in
+    their code. We analyze 16,707 packages and observe the creation of 270.9 B
+    promises. Our data suggests that there is little supporting evidence to assert
+    that programmers use laziness to avoid unnecessary computation or to operate
+    over infinite data structures. For the most part R code appears to have been
+    written without reliance on, and in many cases even knowledge of, delayed
+    argument evaluation. The only significant exception is a small number of
+    packages which leverage call-by-need for meta-programming.
+    </ div>
+</details></dd>
+</dl>
+
+<p>
+<div class="year">2018</div>
+</p>
+
+<dl class="org-dl">
+<dt><a href="https://popl18.sigplan.org/"><b>POPL'18</b></a></dt><dd><b>Correctness of Speculative Optimizations with Dynamic Deoptimization</b> <br />
+Olivier Flückiger, Gabriel Scherer, Ming-ho Yee, <span class="underline">Aviral Goel</span>, Amal Ahmed, Jan Vitek
+<details class='info'>
+<summary>
+<span class='abstract'>ABSTRACT</span>
+<a href="static/pdfs/correctness-of-speculative-optimizations-with-dynamic-deoptimization.pdf">⸢PAPER⸥</a>
+<a href="https://doi.org/10.1145/3158137">⸢DOI:10.1145/3158137⸥</a>   
+</summary>
+    <div>
+    High-performance dynamic language implementations make heavy use of speculative
+    optimizations to achieve speeds close to statically compiled languages. These
+    optimizations are typically performed by a just-in-time compiler that generates
+    code under a set of assumptions about the state of the program and its
+    environment. In certain cases, a program may execute code compiled under
+    assumptions that are no longer valid. The implementation must then deoptimize
+    the program on-the-fly; this entails finding semantically equivalent code that
+    does not rely on invalid assumptions, translating program state to that expected
+    by the target code, and transferring control. This paper looks at the
+    interaction between optimization and deoptimization, and shows that reasoning
+    about speculation is surprisingly easy when assumptions are made explicit in the
+    program representation. This insight is demonstrated on a compiler intermediate
+    representation, named <code>sourir</code>, modeled after the high-level representation for a
+    dynamic language. Traditional compiler optimizations such as constant folding,
+    unreachable code elimination, and function inlining are shown to be correct in
+    the presence of assumptions. Furthermore, the paper establishes the correctness
+    of compiler transformations specific to deoptimization: namely unrestricted
+    deoptimization, predicate hoisting, and assume composition.
+    </ div>
+</details></dd>
+</dl>
+
+<p>
+</div>
+</p>
+</div>
+<div id="postamble" class="status">
+<footer class="empty">
+</footer>
+</div>
+</body>
+</html>

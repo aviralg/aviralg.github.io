@@ -1,0 +1,38 @@
+# Created 2022-06-28 Tue 12:37
+#+options: H:8
+#+title: Aviral Goel
+#+author: Aviral Goel
+#+include-header: false
+#+include-footer: false
+#+description: My Biography
+#+keywords: biography
+#+name: fig:aviral
+[[file:./static/images/aviral.jpg]]
+
+
+#+begin_social
+[[mailto:aviral@aviral.io][]]
+[[file:static/pdfs/cv.pdf][]]
+[[https://github.com/aviralg][]]
+[[https://orcid.org/0000-0002-0814-5015][]]
+[[https://dblp.uni-trier.de/pid/209/9875.html][]]
+[[https://scholar.google.com/citations?user=_cEObskAAAAJ][]]
+[[https://www.linkedin.com/in/aviralgoel][]]
+#+end_social
+
+I am a Computer Science Ph.D. candidate at the [[http://prl.ccs.neu.edu/][Programming Research Laboratory]],
+[[https://www.northeastern.edu][Northeastern University]], advised by [[http://janvitek.org/][Professor Jan Vitek]]. I received a Bachelors
+degree in Electronics and Communication Engineering from [[http://www.nsit.ac.in/][Netaji Subhas Institute
+of Technology]].
+
+I am interested in addressing *programming language ecosystem evolution* through
+empirical evaluations and program analysis. I am designing a tool to migrate the
+[[https://www.r-project.org/][R]] language ecosystem from lazy to strict semantics with minimal impact on legacy
+code. By delaying the evaluation of side-effecting and reflective arguments, R
+makes it difficult for users to reason about their programs. My research aims to
+introduce strictness to R functions:
+1. /automatically/: to scale to large codebases, and
+2. /accurately/: to prevent client code from breaking.
+
+
+I live in Malden, Massachusetts. Feel free to contact me at =aviral@aviral.io=.
