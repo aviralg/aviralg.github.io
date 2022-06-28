@@ -229,14 +229,7 @@
 ;; PROJECT CONFIGURATION
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(setq org-publish-project-alist `(("cname"
-                                   :base-directory "cname"
-                                   :publishing-directory "www"
-                                   :base-extension any
-                                   :recursive t
-                                   :publishing-function org-publish-attachment)
-
-                                  ("articles"
+(setq org-publish-project-alist `(("articles"
                                    :base-directory "content"
                                    :publishing-directory "www"
                                    :base-extension "org"
@@ -273,7 +266,14 @@
 
                                   ("icons"
                                    :base-directory "icons"
-                                   :publishing-directory "www/"
+                                   :publishing-directory "www"
+                                   :base-extension any
+                                   :recursive t
+                                   :publishing-function org-publish-attachment)
+
+                                  ("miscellaneous"
+                                   :base-directory "miscellaneous"
+                                   :publishing-directory "www"
                                    :base-extension any
                                    :recursive t
                                    :publishing-function org-publish-attachment)
@@ -292,7 +292,7 @@
                                    :table-of-contents nil)
 
                                   ("all"
-                                   :components ("cname" "articles" "articles-source" "static" "icons" "rss"))))
+                                   :components ("articles" "articles-source" "static" "icons" "miscellaneous" "rss"))))
 
 ;; https://emacs.stackexchange.com/a/57684
 (defun build-site ()
