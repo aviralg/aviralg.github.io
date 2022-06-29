@@ -1,4 +1,4 @@
-# Created 2022-06-28 Tue 14:17
+# Created 2022-06-29 Wed 12:29
 #+options: H:8
 #+title: Publications
 #+description: Aviral's Publications
@@ -14,15 +14,16 @@
 
 
 
+
 - [[https://2021.splashcon.org/track/splash-2021-oopsla][*OOPSLA'21*]] :: *Promises Are Made to Be Broken* \\
      _Aviral Goel_, Jan Ječmen, Olivier Flückiger, Sebástian Krynski, Jan Vitek
 
 
-     ABSTRACT
-     [[file:static/pdfs/promises-are-made-to-be-broken.pdf][⸢PAPER⸥]]
-     [[https://doi.org/10.5281/zenodo.5394235][⸢SOFTWARE⸥]]
-     [[https://youtu.be/8L_a7mhYdyM][⸢TALK⸥]]
-     [[https://doi.org/10.1145/3485478][⸢DOI:10.1145/3485478⸥]]
+     [ABSTRACT]
+     [[file:static/pdfs/promises-are-made-to-be-broken.pdf][ [PAPER] ]]
+     [[https://doi.org/10.5281/zenodo.5394235][ [SOFTWARE] ]]
+     [[https://youtu.be/8L_a7mhYdyM][ [TALK] ]]
+     [[https://doi.org/10.1145/3485478][ [DOI:10.1145/3485478] ]]
 
 
          Function calls in the R language do not evaluate their arguments, these are
@@ -43,11 +44,11 @@
       _Aviral Goel_, Pierre Donat-Bouillud, Filip Křikava, Christoph M. Kirsch, Jan Vitek
  
  
-      ABSTRACT
-      [[file:static/pdfs/what-we-eval-in-the-shadows.pdf][⸢PAPER⸥]]
-      [[https://doi.org/10.5281/zenodo.5415230][⸢SOFTWARE⸥]]
-      [[https://youtu.be/aEPd8ijSHuI][⸢TALK⸥]]
-      [[https://doi.org/10.1145/3485502][⸢DOI:10.1145/3485502⸥]]
+      [ABSTRACT]
+      [[file:static/pdfs/what-we-eval-in-the-shadows.pdf][ [PAPER] ]]
+      [[https://doi.org/10.5281/zenodo.5415230][ [SOFTWARE] ]]
+      [[https://youtu.be/aEPd8ijSHuI][ [TALK] ]]
+      [[https://doi.org/10.1145/3485502][ [DOI:10.1145/3485502] ]]
  
      
           Most dynamic languages allow users to turn text into code using various
@@ -69,9 +70,9 @@
       _Aviral Goel_, Jan Vitek
  
  
-      ABSTRACT
-      [[file:static/pdfs/first-class-environments-in-r.pdf][⸢PAPER⸥]]     
-      [[https://doi.org/10.1145/3486602.3486768][⸢DOI:10.1145/3486602.3486768⸥]]
+      [ABSTRACT]
+      [[file:static/pdfs/first-class-environments-in-r.pdf][ [PAPER] ]]     
+      [[https://doi.org/10.1145/3486602.3486768][ [DOI:10.1145/3486602.3486768] ]]
  
      
           The R programming language is widely used for statistical computing. To enable
@@ -91,11 +92,11 @@
      Alexi Turcotte, _Aviral Goel_, Filip Křikava, Jan Vitek
 
 
-     ABSTRACT
-     [[file:static/pdfs/designing-types-for-r-empirically.pdf][⸢PAPER⸥]]
-     [[https://zenodo.org/record/4037278#.X9U4B1OYUUF][⸢SOFTWARE⸥]]
-     [[https://youtu.be/GMrLtYg0VGA][⸢TALK⸥]]
-     [[https://doi.org/10.1145/3428249][⸢DOI:10.1145/3428249⸥]]   
+     [ABSTRACT]
+     [[file:static/pdfs/designing-types-for-r-empirically.pdf][ [PAPER] ]]
+     [[https://zenodo.org/record/4037278#.X9U4B1OYUUF][ [SOFTWARE] ]]
+     [[https://youtu.be/GMrLtYg0VGA][ [TALK] ]]
+     [[https://doi.org/10.1145/3428249][ [DOI:10.1145/3428249] ]]   
 
     
          The R programming language is widely used in a variety of domains. It was
@@ -121,11 +122,11 @@
      _Aviral Goel_, Jan Vitek
 
 
-     ABSTRACT
-     [[file:static/pdfs/on-the-design-implementation-and-use-of-laziness-in-r.pdf][⸢PAPER⸥]]
-     [[https://zenodo.org/record/3369573#.XaC2c-aYVhE][⸢SOFTWARE⸥]]
-     [[https://youtu.be/qLxz9HPP6wI][⸢TALK⸥]]
-     [[https://doi.org/10.1145/3360579][⸢DOI:10.1145/3360579⸥]]   
+     [ABSTRACT]
+     [[file:static/pdfs/on-the-design-implementation-and-use-of-laziness-in-r.pdf][ [PAPER] ]]
+     [[https://zenodo.org/record/3369573#.XaC2c-aYVhE][ [SOFTWARE] ]]
+     [[https://youtu.be/qLxz9HPP6wI][ [TALK] ]]
+     [[https://doi.org/10.1145/3360579][ [DOI:10.1145/3360579] ]]   
 
     
          The R programming language has been lazy for over twenty-five years. This paper
@@ -145,9 +146,9 @@
      Olivier Flückiger, Gabriel Scherer, Ming-ho Yee, _Aviral Goel_, Amal Ahmed, Jan Vitek
 
 
-     ABSTRACT
-     [[file:static/pdfs/correctness-of-speculative-optimizations-with-dynamic-deoptimization.pdf][⸢PAPER⸥]]
-     [[https://doi.org/10.1145/3158137][⸢DOI:10.1145/3158137⸥]]   
+     [ABSTRACT]
+     [[file:static/pdfs/correctness-of-speculative-optimizations-with-dynamic-deoptimization.pdf][ [PAPER] ]]
+     [[https://doi.org/10.1145/3158137][ [DOI:10.1145/3158137] ]]   
 
     
          High-performance dynamic language implementations make heavy use of speculative

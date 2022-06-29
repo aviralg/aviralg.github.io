@@ -70,13 +70,26 @@ div.year:after {
 }
 
 .publications .info summary {
-    list-style: none;
     cursor: pointer;
     display: flex;
     flex-direction: row;
 }
 
-@media (max-width: 576px) {
+
+/* remove the triangle marker for the disclosure element */
+/* https://stackoverflow.com/a/66814239 */
+details.info > summary {
+    list-style: none;
+}
+details.info > summary::marker, /* Latest Chrome, Edge, Firefox */
+details.info > summary::-webkit-details-marker /* Safari */ {
+    display: none;
+}
+
+
+/* below 520px, a horizontal scroll bar will appear if the following css rule is*/
+/* removed */
+@media (max-width: 520px) {
     .publications > dl > dt,
     .publications > dl > dd {
         /* to center align text */
@@ -86,13 +99,13 @@ div.year:after {
     }
 
     .publications summary {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
 
     .publications summary > * {
-        margin: auto;
-        flex: 50%;
+        flex-basis: 28%;
     }
+
 }
 
 /**************************************/
