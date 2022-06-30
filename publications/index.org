@@ -1,4 +1,4 @@
-# Created 2022-06-29 Wed 12:29
+# Created 2022-06-30 Thu 10:43
 #+options: H:8
 #+title: Publications
 #+description: Aviral's Publications
@@ -6,7 +6,6 @@
 #+include-footer: false
 #+html_head_extra: <link rel="stylesheet" type="text/css" href="/static/css/publications.css" />
 #+tags: papers
-
 
 
 
@@ -71,7 +70,7 @@
  
  
       [ABSTRACT]
-      [[file:static/pdfs/first-class-environments-in-r.pdf][ [PAPER] ]]     
+      [[file:static/pdfs/first-class-environments-in-r.pdf][ [PAPER] ]]
       [[https://doi.org/10.1145/3486602.3486768][ [DOI:10.1145/3486602.3486768] ]]
  
      
@@ -96,7 +95,7 @@
      [[file:static/pdfs/designing-types-for-r-empirically.pdf][ [PAPER] ]]
      [[https://zenodo.org/record/4037278#.X9U4B1OYUUF][ [SOFTWARE] ]]
      [[https://youtu.be/GMrLtYg0VGA][ [TALK] ]]
-     [[https://doi.org/10.1145/3428249][ [DOI:10.1145/3428249] ]]   
+     [[https://doi.org/10.1145/3428249][ [DOI:10.1145/3428249] ]]
 
     
          The R programming language is widely used in a variety of domains. It was
@@ -126,7 +125,7 @@
      [[file:static/pdfs/on-the-design-implementation-and-use-of-laziness-in-r.pdf][ [PAPER] ]]
      [[https://zenodo.org/record/3369573#.XaC2c-aYVhE][ [SOFTWARE] ]]
      [[https://youtu.be/qLxz9HPP6wI][ [TALK] ]]
-     [[https://doi.org/10.1145/3360579][ [DOI:10.1145/3360579] ]]   
+     [[https://doi.org/10.1145/3360579][ [DOI:10.1145/3360579] ]]
 
     
          The R programming language has been lazy for over twenty-five years. This paper
@@ -148,7 +147,7 @@
 
      [ABSTRACT]
      [[file:static/pdfs/correctness-of-speculative-optimizations-with-dynamic-deoptimization.pdf][ [PAPER] ]]
-     [[https://doi.org/10.1145/3158137][ [DOI:10.1145/3158137] ]]   
+     [[https://doi.org/10.1145/3158137][ [DOI:10.1145/3158137] ]]
 
     
          High-performance dynamic language implementations make heavy use of speculative
