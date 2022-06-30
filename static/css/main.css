@@ -17,10 +17,10 @@ body {
     margin: auto;
     font-family: 'Linux Libertine', sans-serif;
     line-height: 1.6;
-    border-top: 10px solid black;
 
     display: flex;
     flex-direction: column;
+    padding: 0 1rem;
 }
 
 p {
@@ -223,39 +223,29 @@ pre.src {
 
 .navbar a {
     flex: 1;
-    font-family: monospace;
-    font-size: 1.5em;
+    font-family: 'Courier', monospace;
+    font-size: 1.25rem;
     margin: 0;
     padding: 0;
     text-decoration: none;
     text-transform: uppercase;
-    color: black;
-    background: white;
+    color: white;
+    background: black;
     border-top: 0;
     border-bottom: 0;
+    font-weight: bold;
 }
 
 .navbar a:hover,
 .navbar a:focus {
-    border-top: 0;
-    border-bottom: 0;
-    background: black;
-    color: white;
+    text-decoration: underline;
 }
 
-@media all and (max-width: 600px) {
-
+@media all and (max-width: 400px) {
     .navbar {
         flex-wrap: wrap;
     }
 
-    .navbar > a {
-        flex-basis: 50%;
-    }
-
-}
-
-@media all and (max-width: 400px) {
     .navbar > a {
         flex-basis: 100%;
     }
@@ -415,7 +405,6 @@ header .breadcrumbs .tags .tag:not(:last-child) {
 
 #content {
     flex: 1 0 auto;
-    padding: 0 0.5rem;
 }
 
 /********************************************************************************
