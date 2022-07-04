@@ -11,12 +11,14 @@ div.year {
 div.year:before, div.year:after{
     content: "";
     flex: 1 1;
-    border-bottom: 5px solid;
+    border-bottom: 2px solid;
     margin: auto;
 }
+
 div.year:before {
     margin-right: 10px
 }
+
 div.year:after {
     margin-left: 10px
 }
