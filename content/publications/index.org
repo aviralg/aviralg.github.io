@@ -39,7 +39,7 @@
      @@html:</div>@@
      @@html:</details>@@
 
------
+@@html:<hr class="sep-tapered-1">@@
 
 - [[https://2021.splashcon.org/track/splash-2021-oopsla][*OOPSLA'21*]] :: *What We Eval in the Shadows* \\
      _Aviral Goel_, Pierre Donat-Bouillud, Filip Křikava, Christoph M. Kirsch, Jan Vitek
@@ -67,7 +67,7 @@
          @@html:</div>@@
     @@html:</details>@@
     
------
+@@html:<hr class="sep-tapered-1">@@
 
 - [[https://conf.researchr.org/home/dls-2021][*DLS'21*]] :: *First-Class Environments in R* \\
      _Aviral Goel_, Jan Vitek
