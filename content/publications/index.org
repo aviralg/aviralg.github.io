@@ -1,17 +1,8 @@
-#+OPTIONS: H:8
-#+AUTHOR:
 #+TITLE: Publications
 #+DESCRIPTION: Aviral's Publications
-#+include-header: false
-#+include-footer: false
 #+html_head_extra: <link rel="stylesheet" type="text/css" href="/static/css/publications.css" />
-#+tags: papers
-
-
-@@html:<h1 class="pd-5 bg-black fg-white org-center">Publications</h1>@@
 
 @@html:<div class="publications">@@
-
 @@html:<div class="year">2021</div>@@
 
 - [[https://2021.splashcon.org/track/splash-2021-oopsla][*OOPSLA'21*]] :: *Promises Are Made to Be Broken* \\

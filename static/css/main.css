@@ -58,6 +58,11 @@ p {
     font-size: 1.5rem;
 }
 
+.sep-solid-5 {
+    height: 5px;
+    border: none;
+    background: black;
+}
 
 .sep-tapered-1 {
     border: none;
@@ -227,21 +232,15 @@ pre.src {
     margin: 0 0 2rem 0;
     font-weight: bold;
     text-align: center;
-    line-height: 2.5rem;
+    line-height: 3rem;
 }
 
 .navbar a {
     flex: 1;
     font-family: 'Courier', monospace;
     font-size: 1.25rem;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    text-transform: uppercase;
     color: white;
     background: black;
-    border-top: 0;
-    border-bottom: 0;
     font-weight: bold;
 }
 
@@ -267,8 +266,6 @@ pre.src {
 header {
     margin: 3rem 0 1rem 0;
     line-height: 1;
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
     padding: 0 1rem;
 }
 

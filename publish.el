@@ -29,12 +29,21 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (setq NAVBAR-TEMPLATE (read-file "templates/navbar.html"))
-(setq HEADER-FULL-TEMPLATE (read-file "templates/header.html"))
-(setq HEADER-EMPTY-TEMPLATE "")
+(setq HEADER-ARTICLE-TEMPLATE (read-file "templates/header-article.html"))
+(setq HEADER-INDEX-TEMPLATE (read-file "templates/header-index.html"))
+(setq HEADER-EMPTY-TEMPLATE (read-file "templates/header-empty.html"))
 (setq FOOTER-FULL-TEMPLATE (read-file "templates/footer-full.html"))
 (setq FOOTER-EMPTY-TEMPLATE (read-file "templates/footer-empty.html"))
 (setq HEAD-TEMPLATE (read-file "templates/head.html"))
+(setq INDEX-ENTRY-TEMPLATE (read-file "templates/index-entry.html"))
+(setq INDEX-CATEGORY-TEMPLATE (read-file "templates/index-category.html"))
+(setq INDEX-SERIES-TEMPLATE (read-file "templates/index-series.html"))
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; CONSTANTS
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(setq BASE-DIRECTORY (expand-file-name "./content"))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; HELPERS
@@ -65,11 +74,10 @@
                      (make-category category "/"))
                "&nbsp;▶&nbsp;"))
 
-(defun interpolate-template (options flag full empty)
+(defun interpolate-template (options template-selector)
   (let* ((metadata (metadata-build options))
-         (include (string= "true" (metadata-get metadata flag "true")))
-         (contents (if include full empty)))
-    (metadata-apply metadata contents)))
+         (template (funcall template-selector metadata)))
+    (metadata-apply metadata template)))
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -112,6 +120,7 @@
          (exported-data (plist-get options :exported-data))
          (input-buffer (plist-get options :input-buffer))
          (input-file (plist-get options :input-file))
+         (relative-path (file-relative-name input-file BASE-DIRECTORY))
          (description (plist-get options :description))
          (series-category (infer-series-category input-file))
          (series (nth 0 series-category))
@@ -121,6 +130,8 @@
     (metadata-add metadata "year" (format-time-string "%Y"))
     (metadata-add metadata "author" "Aviral Goel")
     (metadata-add metadata "subtitle" "")
+    (metadata-add metadata "date" "")
+    (metadata-add metadata "modified" (file-last-modifed-date input-file))
 
     ;; extract properties provided by ox-publish
     (metadata-add metadata "input-buffer" input-buffer)
@@ -128,6 +139,7 @@
     (metadata-add metadata "output-file" (create-output-link input-file))
     (metadata-add metadata "formatted-input-file" (create-source-link input-file))
     (metadata-add metadata "description" description)
+    (metadata-add metadata "homepage" (string= "index.org" relative-path))
 
     ;; extract user supplied org-mode keywords.
     (maphash (lambda (key value)
@@ -152,23 +164,34 @@
 ;; PREAMBLE
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(defun select-header-template (metadata)
+  (let* ((include-header (metadata-get metadata "include-header" "true"))
+         (input-buffer (metadata-get metadata "input-buffer" ""))
+         (include-p (string= "true" include-header))
+         (index-p (string= "index.org" input-buffer))
+         (homepage-p (metadata-get metadata "homepage" nil)))
+    ;;(metadata-print metadata)
+    (cond (homepage-p HEADER-EMPTY-TEMPLATE)
+          (index-p HEADER-INDEX-TEMPLATE)
+          ((not include-p) HEADER-EMPTY-TEMPLATE)
+          (t HEADER-ARTICLE-TEMPLATE))))
+
 (defun create-preamble (options)
   (concat NAVBAR-TEMPLATE
-          (interpolate-template options
-                                "include-header"
-                                HEADER-FULL-TEMPLATE
-                                HEADER-EMPTY-TEMPLATE)))
-
+          (interpolate-template options #'select-header-template)))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; POSTAMBLE
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(defun select-footer-template (metadata)
+  (let* ((include-footer (metadata-get metadata "include-footer" "true"))
+         (include-p (string= "true" include-footer)))
+    (if include-p FOOTER-FULL-TEMPLATE FOOTER-EMPTY-TEMPLATE)))
+
 (defun create-postamble (options)
-  (interpolate-template options
-                        "include-footer"
-                        FOOTER-FULL-TEMPLATE
-                        FOOTER-EMPTY-TEMPLATE))
+  (interpolate-template options #'select-footer-template))
+
 
 
 ;; (if (not (string-suffix-p "content/index.org" (plist-get options :input-file)))
@@ -230,7 +253,7 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (setq org-publish-project-alist `(("articles"
-                                   :base-directory "content"
+                                   :base-directory ,BASE-DIRECTORY
                                    :publishing-directory "www"
                                    :base-extension "org"
                                    :recursive t
