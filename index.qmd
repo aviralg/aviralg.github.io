@@ -1,0 +1,8 @@
+---
+title: "Aviral Goel"
+image: profile.jpg
+about:
+  template: jolla
+---
+
+I am Aviral Goel. I like programming language design and implementation.
