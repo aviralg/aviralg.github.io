@@ -1,16 +1,20 @@
 project:
   type: website
+  resources:
+    - "static"
 
 website:
   title: "Aviral Goel"
+  site-url: http://aviral.io
   navbar:
-    #background: primary
     left:
       - href: blog.qmd
         text: Blog
     right:
       - icon: github
         href: https://github.com/aviralg
+      - icon: linkedin
+        href: https://www.linkedin.com/in/aviralgoel
   search:
     location: navbar
     type: textbox
@@ -23,7 +27,7 @@ website:
 format:
   html:
     theme:
-      - simplex
+      - litera
     css: styles.css
     toc: true
 
