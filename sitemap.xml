@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-    <url>
-        <loc>http://aviral.io/</loc>
-    </url>
+  <url>
+    <loc>http://aviral.io/blog.html</loc>
+    <lastmod>2025-08-05T03:58:30.344Z</lastmod>
+  </url>
+  <url>
+    <loc>http://aviral.io/index.html</loc>
+    <lastmod>2025-08-06T02:33:09.635Z</lastmod>
+  </url>
 </urlset>

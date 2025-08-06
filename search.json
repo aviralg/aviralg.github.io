@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "blog.html",
+    "href": "blog.html",
+    "title": "Aviral Goel",
+    "section": "",
+    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Reading Time (Low to High)\n      \n      \n        Reading Time (High to Low)\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\nDate\nTitle\nReading Time\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Aviral Goel",
+    "section": "",
+    "text": "Hi! I am Aviral Goel. I am interested in programming language design and implementation.\nI design LLVM-based static analysis tools at Apple for C++ and Swift. Previously, I worked at Roblox on the Luau programming language. I contributed to the implementation of Luau’s native compiler and associated tools, designed a sampling profiler to monitor the speedup of native execution over bytecode in production games, investigated opportunities to improve Luau’s native compilation strategy, and, proposed and implemented attribute support for Luau to enable developers to select Luau functions for native compilation or mark them for deprecation.\nI have a Ph.D. in Programming Languages from Northeastern University. For my research, I applied large-scale data-driven approaches to design tools for migrating the R language ecosystem from lazy to strict semantics with minimal impact on legacy code."
+  }
+]
