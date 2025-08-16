@@ -1,18 +1,19 @@
 ---
+title: Blog Posts
 listing:
+  type: table
   contents: posts
-  fields: [date, title, reading-time]    
+  fields: [date, title]
   sort:
     - "date desc"
     - "title desc"
     - "reading-time desc"
-  type: table
   categories: true
-  sort-ui: [title, date, reading-time]
-  filter-ui: true
+  sort-ui: false
+  filter-ui: false
   table-striped: true
   table-hover: true
   feed: true
 page-layout: full
-#title-block-banner: true
+title-block-banner: true
 ---

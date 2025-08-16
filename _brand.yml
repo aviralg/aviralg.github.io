@@ -1,0 +1,30 @@
+meta:
+  name: Aviral Goel
+  link: https://aviral.io/
+
+logo:
+  large: logo.png  
+
+color:
+  primary: black
+  background: white
+  foreground: black
+
+typography:
+  fonts:
+    - family: Libertinus Sans
+      source: google
+    - family: Fira Code
+      source: google
+  base:
+    family: Libertinus Sans
+    #line-height: 1.25
+    #size: 1.2rem
+  headings:
+    family: Libertinus Sans
+    #color: primary
+    #weight: 600
+  monospace:
+    family: Fira Code
+    #size: 0.9em
+

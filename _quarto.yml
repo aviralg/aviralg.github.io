@@ -4,22 +4,30 @@ project:
     - "static"
 
 website:
-  title: "Aviral Goel"
+  title: Aviral Goel
   site-url: http://aviral.io
+  description: Aviral Goel's Website
+  favicon: logo.png
   navbar:
+    title: false
+    collapse: false
     left:
       - href: blog.qmd
-        text: Blog
+        text: BLOG
     right:
+      - icon: envelope
+        href: mailto:goel.aviral@gmail.com
+        aria-label: Email
       - icon: github
         href: https://github.com/aviralg
+        aria-label: Github
       - icon: linkedin
         href: https://www.linkedin.com/in/aviralgoel
-  search:
-    location: navbar
-    type: textbox
-    copy-button: true
-    show-item-context: tree
+        aria-label: Linkedin
+      - icon: rss
+        href: blog.xml
+        aria-label: RSS
+  search: false
   open-graph:
     locale: en_US
     site-name: Aviral Goel
@@ -27,10 +35,9 @@ website:
 format:
   html:
     theme:
-      - litera
-    css: styles.css
+      - theme.scss
     toc: true
-
-language:
-  search-text-placeholder: Search
-
+    code-fold: true
+    highlight-style: printing
+    code-line-numbers: true
+    code-link: true

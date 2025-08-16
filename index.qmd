@@ -1,21 +1,19 @@
 ---
-#title: "Aviral Goel"
+title: "Aviral Goel"
 image: profile.jpg
 about:
   template: jolla
 ---
 
-Hi! I am Aviral Goel. I am interested in programming language design and
-implementation.
+Hi, I am a software engineer. I enjoy working on compilers, virtual machines,
+and static analysis.
 
-I design LLVM-based static analysis tools at Apple for C++ and Swift.
-Previously, I worked at Roblox on the Luau programming language. I contributed
-to the implementation of Luau's native compiler and associated tools, designed a
-sampling profiler to monitor the speedup of native execution over bytecode in
-production games, investigated opportunities to improve Luau's native
-compilation strategy, and, proposed and implemented attribute support for Luau
-to enable developers to select Luau functions for native compilation or mark
-them for deprecation.
+I work at Apple where I design static analysis tools for C++ and
+Swift. Previously, I worked at Roblox on the Luau programming language. I
+contributed to the implementation of Luau's native compiler, designed a sampling
+profiler to monitor the speedup of production Luau games, and implemented new
+language features such as attributes to enable developers to annotate Luau
+functions for native compilation or deprecation.
 
 I have a Ph.D. in Programming Languages from Northeastern University. For my
 research, I applied large-scale data-driven approaches to design tools for
