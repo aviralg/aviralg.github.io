@@ -2,15 +2,162 @@
   {
     "objectID": "blog.html",
     "href": "blog.html",
-    "title": "Aviral Goel",
+    "title": "Blog Posts",
     "section": "",
-    "text": "Order By\n      Default\n      \n        Title\n      \n      \n        Date - Oldest\n      \n      \n        Date - Newest\n      \n      \n        Reading Time (Low to High)\n      \n      \n        Reading Time (High to Low)\n      \n    \n  \n    \n      \n      \n    \n\n\n\n\nDate\nTitle\nReading Time\n\n\n\n\n\nNo matching items"
+    "text": "Date\nTitle\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts-2/markdown-basics/index.html",
+    "href": "posts-2/markdown-basics/index.html",
+    "title": "Markdown Basics",
+    "section": "",
+    "text": "Quarto is based on Pandoc and uses its variation of markdown as its underlying document syntax. Pandoc markdown is an extended and slightly revised version of John Gruber’s Markdown syntax.\nMarkdown is a plain text format that is designed to be easy to write, and, even more importantly, easy to read:\n\nA Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions. – John Gruber\n\nThis document provides examples of the most commonly used markdown syntax. See the full documentation of Pandoc’s Markdown for more in-depth documentation."
+  },
+  {
+    "objectID": "posts-2/markdown-basics/index.html#overview",
+    "href": "posts-2/markdown-basics/index.html#overview",
+    "title": "Markdown Basics",
+    "section": "",
+    "text": "Quarto is based on Pandoc and uses its variation of markdown as its underlying document syntax. Pandoc markdown is an extended and slightly revised version of John Gruber’s Markdown syntax.\nMarkdown is a plain text format that is designed to be easy to write, and, even more importantly, easy to read:\n\nA Markdown-formatted document should be publishable as-is, as plain text, without looking like it’s been marked up with tags or formatting instructions. – John Gruber\n\nThis document provides examples of the most commonly used markdown syntax. See the full documentation of Pandoc’s Markdown for more in-depth documentation."
+  },
+  {
+    "objectID": "posts-2/markdown-basics/index.html#text-formatting",
+    "href": "posts-2/markdown-basics/index.html#text-formatting",
+    "title": "Markdown Basics",
+    "section": "Text Formatting",
+    "text": "Text Formatting\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n*italics*, **bold**, ***bold italics***\nitalics, bold, bold italics\n\n\nsuperscript^2^ / subscript~2~\nsuperscript2 / subscript2\n\n\n~~strikethrough~~\nstrikethrough\n\n\n`verbatim code`\nverbatim code"
+  },
+  {
+    "objectID": "posts-2/markdown-basics/index.html#headings",
+    "href": "posts-2/markdown-basics/index.html#headings",
+    "title": "Markdown Basics",
+    "section": "Headings",
+    "text": "Headings\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n# Heading 1\nHeading 1\n\n\n## Heading 2\nHeading 2\n\n\n### Heading 3\nHeading 3\n\n\n#### Heading 4\nHeading 4\n\n\n##### Heading 5\nHeading 5\n\n\n###### Heading 6\nHeading 6"
+  },
+  {
+    "objectID": "posts-2/markdown-basics/index.html#links-images",
+    "href": "posts-2/markdown-basics/index.html#links-images",
+    "title": "Markdown Basics",
+    "section": "Links & Images",
+    "text": "Links & Images\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n&lt;https://quarto.org&gt;\nhttps://quarto.org\n\n\n[Quarto](https://quarto.org)\nQuarto\n\n\n![Caption](elephant.png)\n\n\n\nCaption\n\n\n\n\n[![Caption](elephant.png)](https://quarto.org)\n\n\n\n[![Caption](elephant.png \"An elephant\")](https://quarto.org)\n\n\n\n[![](elephant.png){fig-alt=\"Alt text\"}](https://quarto.org)"
+  },
+  {
+    "objectID": "posts-2/markdown-basics/index.html#lists",
+    "href": "posts-2/markdown-basics/index.html#lists",
+    "title": "Markdown Basics",
+    "section": "Lists",
+    "text": "Lists\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n* unordered list\n  + sub-item 1\n  + sub-item 2\n    - sub-sub-item 1\n\nunordered list\n\nsub-item 1\nsub-item 2\n\nsub-sub-item 1\n\n\n\n\n\n*   item 2\n\n    Continued (indent 4 spaces)\n\nitem 2\nContinued (indent 4 spaces)\n\n\n\n1. ordered list\n2. item 2\n   i) sub-item 1\n      A.  sub-sub-item 1\n\nordered list\nitem 2\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\n\n1. ordered list\n2. item 2\n\n   ```python\n   print(\"Hello, World!\")\n   ```\n\n   A.  sub-sub-item 1\n\nordered list\nitem 2\nprint(\"Hello, World!\")\n\nsub-sub-item 1\n\n\n\n\n- [ ] Task 1\n- [x] Task 2\n\nTask 1\nTask 2\n\n\n\n(@)  A list whose numbering\n\ncontinues after\n\n(@)  an interruption\n\nA list whose numbering\n\ncontinues after\n\nan interruption\n\n\n\n::: {}\n1. A list\n:::\n\n::: {}\n1. Followed by another list\n:::\n\n\nA list\n\n\n\n\nFollowed by another list\n\n\n\n\nterm\n: definition\n\nterm\n\ndefinition\n\n\n\n\n\nNote that unlike other Markdown renderers (notably Jupyter and GitHub), lists in Quarto require an entire blank line above the list. Otherwise the list will not be rendered in list form, rather it will all appear as normal text along a single line."
+  },
+  {
+    "objectID": "posts-2/markdown-basics/index.html#footnotes",
+    "href": "posts-2/markdown-basics/index.html#footnotes",
+    "title": "Markdown Basics",
+    "section": "Example Footnotes",
+    "text": "Example Footnotes\n\n\nHere is the footnote.↩︎\nHere’s one with multiple blocks.\nSubsequent paragraphs are indented to show that they belong to the previous footnote.\n{ some.code }\nThe whole paragraph can be indented, or just the first line. In this way, multi-paragraph footnotes work like multi-paragraph list items.↩︎\nInlines notes are easier to write, since you don’t have to pick an identifier and move down to type the note.↩︎"
+  },
+  {
+    "objectID": "posts-2/markdown-basics/index.html#tables",
+    "href": "posts-2/markdown-basics/index.html#tables",
+    "title": "Markdown Basics",
+    "section": "Tables",
+    "text": "Tables\n\nMarkdown Syntax\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\n\n\nOutput\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1\n\n\n\nLearn more in the article on Tables."
+  },
+  {
+    "objectID": "posts-2/markdown-basics/index.html#source-code",
+    "href": "posts-2/markdown-basics/index.html#source-code",
+    "title": "Markdown Basics",
+    "section": "Source Code",
+    "text": "Source Code\nUse ``` to delimit blocks of source code:\n```\ncode\n```\nAdd a language to syntax highlight code blocks:\n```python\n1 + 1\n```\nPandoc supports syntax highlighting for over 140 different languages. If your language is not supported then you can use the default language to get a similar visual treatment:\n```default\ncode\n```\nEquivalent to the short form used in the examples above is a longer form that uses the language as a class (i.e. .python) inside braces:\n```{.python}\n1 + 1\n```\nThe longer form allows you to add attributes to the block in a similar way to Divs. Some specific features that use this syntax are Lines Numbers and Code Filename. Here is an example of the latter:\n```{.python filename=\"run.py\"}\ncode\n```\nIf you are creating HTML output there is a wide variety of options available for code block output. See the article on HTML Code for additional details."
+  },
+  {
+    "objectID": "posts-2/markdown-basics/index.html#raw-content",
+    "href": "posts-2/markdown-basics/index.html#raw-content",
+    "title": "Markdown Basics",
+    "section": "Raw Content",
+    "text": "Raw Content\nRaw content can be included directly without Quarto parsing it using Pandoc’s raw attribute. A raw block starts with ```{= followed by a format and closing }, e.g. here’s a raw HTML block:\n```{=html}\n&lt;iframe src=\"https://quarto.org/\" width=\"500\" height=\"400\"&gt;&lt;/iframe&gt;\n```\nFor PDF output use a raw LaTeX block:\n```{=latex}\n\\renewcommand*{\\labelitemi}{\\textgreater}\n```\nAs another example, if you are using the Typst format you can use a raw block to include Typst syntax:\n```{=typst} \n#set text(fill: red)\nThis text is red.\n```\nYou can also include raw content inline:\n Here's some raw inline HTML: `&lt;a&gt;html&lt;/a&gt;`{=html}"
+  },
+  {
+    "objectID": "posts-2/markdown-basics/index.html#equations",
+    "href": "posts-2/markdown-basics/index.html#equations",
+    "title": "Markdown Basics",
+    "section": "Equations",
+    "text": "Equations\nUse $ delimiters for inline math and $$ delimiters for display math. For example:\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\ninline math: $E = mc^{2}$\ninline math: \\(E=mc^{2}\\)\n\n\ndisplay math:\n\n$$E = mc^{2}$$\ndisplay math:\n\\[E = mc^{2}\\]\n\n\n\nIf you want to define custom TeX macros, include them within $$ delimiters enclosed in a .hidden block. For example:\n::: {.hidden}\n$$\n \\def\\RR{{\\bf R}}\n \\def\\bold#1{{\\bf #1}}\n$$\n:::\nFor HTML math processed using MathJax (the default) you can use the \\def, \\newcommand, \\renewcommand, \\newenvironment, \\renewenvironment, and \\let commands to create your own macros and environments."
+  },
+  {
+    "objectID": "posts-2/markdown-basics/index.html#diagrams",
+    "href": "posts-2/markdown-basics/index.html#diagrams",
+    "title": "Markdown Basics",
+    "section": "Diagrams",
+    "text": "Diagrams\nQuarto has native support for embedding Mermaid and Graphviz diagrams. This enables you to create flowcharts, sequence diagrams, state diagrams, Gantt charts, and more using a plain text syntax inspired by markdown.\nFor example, here we embed a flowchart created using Mermaid:\n\n\nCode\n```{mermaid}\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C --&gt; D[Result one]\n  C --&gt; E[Result two]\n```\n\n\n\n\n\nflowchart LR\n  A[Hard edge] --&gt; B(Round edge)\n  B --&gt; C{Decision}\n  C --&gt; D[Result one]\n  C --&gt; E[Result two]\n\n\n\n\n\n\nLearn more in the article on Diagrams."
+  },
+  {
+    "objectID": "posts-2/markdown-basics/index.html#videos",
+    "href": "posts-2/markdown-basics/index.html#videos",
+    "title": "Markdown Basics",
+    "section": "Videos",
+    "text": "Videos\nYou can include videos in documents using the {{&lt; video &gt;}} shortcode. For example, here we embed a YouTube video:\n\nVideos can refer to video files (e.g. MPEG) or can be links to videos published on YouTube, Vimeo, or Brightcove. Learn more in the article on Videos."
+  },
+  {
+    "objectID": "posts-2/markdown-basics/index.html#sec-divs-and-spans",
+    "href": "posts-2/markdown-basics/index.html#sec-divs-and-spans",
+    "title": "Markdown Basics",
+    "section": "Divs and Spans",
+    "text": "Divs and Spans\nYou can add classes, attributes, and other identifiers to regions of content using Divs and Spans. Although the terms Div and Span originate in HTML, the syntax is used in Quarto across output formats. For example, Callout Blocks are specified using the div syntax, and Small Caps are specified using the span syntax, and both work for many formats beyond HTML. You may also use CSS and/or a Filter along with Divs and Spans to provide styling or other behavior within rendered documents beyond what Quarto provides.\n\nDivs\nFor example, here we add the “border” class to a region of content using a div (:::):\n::: {.border}\nThis content can be styled with a border\n:::\nOnce rendered to HTML, Quarto will translate the markdown into:\n&lt;div class=\"border\"&gt;\n  &lt;p&gt;This content can be styled with a border&lt;/p&gt;\n&lt;/div&gt;\nDivs start with a fence containing at least three consecutive colons plus some attributes. The attributes may optionally be followed by another string of consecutive colons. The Div ends with another line containing a string of at least three consecutive colons. The Div should be separated by blank lines from preceding and following blocks. Divs may also be nested. For example\n::::: {#special .sidebar}\n\n::: {.warning}\nHere is a warning.\n:::\n\nMore content.\n:::::\nOnce rendered to HTML, Quarto will translate the markdown into:\n&lt;div id=\"special\" class=\"sidebar\"&gt;\n  &lt;div class=\"warning\"&gt;\n    &lt;p&gt;Here is a warning.&lt;/p&gt;\n  &lt;/div&gt;\n  &lt;p&gt;More content.&lt;/p&gt;\n&lt;/div&gt;\nFences without attributes are always closing fences. Unlike with fenced code blocks, the number of colons in the closing fence need not match the number in the opening fence. However, it can be helpful for visual clarity to use fences of different lengths to distinguish nested divs from their parents.\n\n\nSpans\nA bracketed sequence of inlines, as one would use to begin a link, will be treated as a Span with attributes if it is followed immediately by attributes:\n[This is *some text*]{.class key=\"val\"}\nOnce rendered to HTML, Quarto will translate the markdown into:\n&lt;span class=\"class\" data-key=\"val\"&gt;\n  This is &lt;em&gt;some text&lt;/em&gt;\n&lt;/span&gt;\n\n\nOrdering of Attributes\nBoth divs and spans in Pandoc can have any combination of identifiers, classes, and (potentially many) key-value attributes. In order for these to be recognized by Pandoc, they have to be provided in a specific order: identifiers, classes, and then key-value attributes. Any of these can be omitted, but must follow that order if they are provided. For example, the following is valid:\n[This is good]{#id .class key1=\"val1\" key2=\"val2\"}\nHowever, the following will not be recognized by Pandoc:\n[This does *not* work!]{.class key=\"val\" #id}\nThis ordering restriction applies to both divs and spans. See Pandoc’s documentation on Divs and Spans for additional details."
+  },
+  {
+    "objectID": "posts-2/markdown-basics/index.html#callout-blocks",
+    "href": "posts-2/markdown-basics/index.html#callout-blocks",
+    "title": "Markdown Basics",
+    "section": "Callout Blocks",
+    "text": "Callout Blocks\n\nMarkdown Syntax\n:::{.callout-note}\nNote that there are five types of callouts, including: \n`note`, `tip`, `warning`, `caution`, and `important`.\n:::\n\n\nOutput\n\n\n\n\n\n\nNote\n\n\n\nNote that there are five types of callouts, including note, tip, warning, caution, and important.\n\n\nLearn more in the article on Callout Blocks."
+  },
+  {
+    "objectID": "posts-2/markdown-basics/index.html#other-blocks",
+    "href": "posts-2/markdown-basics/index.html#other-blocks",
+    "title": "Markdown Basics",
+    "section": "Other Blocks",
+    "text": "Other Blocks\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n&gt; Blockquote\n\nBlockquote\n\n\n\n::: {.classname}\nDiv\n:::\n\nDiv\n\n\n\n| Line Block\n|   Spaces and newlines\n|   are preserved\nLine Block\n   Spaces and newlines\n   are preserved"
+  },
+  {
+    "objectID": "posts-2/markdown-basics/index.html#other-spans",
+    "href": "posts-2/markdown-basics/index.html#other-spans",
+    "title": "Markdown Basics",
+    "section": "Other Spans",
+    "text": "Other Spans\nTo create text in small caps, that is underlined, or that is highlighted, use a span with one of the classes .smallcaps, .underline or .mark respectively.\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n[This text is smallcaps]{.smallcaps}\nThis text is smallcaps\n\n\n[This text is underlined]{.underline}\nThis text is underlined\n\n\n[This text is highlighted]{.mark}\nThis text is highlighted\n\n\n\n\n\n\n\n\n\nIn supported formats only\n\n\n\nSupport for these classes comes directly from Pandoc. Not all formats support all of these classes. In particular, .mark is not currently supported in format: pptx."
+  },
+  {
+    "objectID": "posts-2/markdown-basics/index.html#special-characters",
+    "href": "posts-2/markdown-basics/index.html#special-characters",
+    "title": "Markdown Basics",
+    "section": "Special Characters",
+    "text": "Special Characters\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\nendash: --\nendash: –\n\n\nemdash: ---\nemdash: —"
+  },
+  {
+    "objectID": "posts-2/markdown-basics/index.html#keyboard-shortcuts",
+    "href": "posts-2/markdown-basics/index.html#keyboard-shortcuts",
+    "title": "Markdown Basics",
+    "section": "Keyboard Shortcuts",
+    "text": "Keyboard Shortcuts"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Aviral Goel",
     "section": "",
-    "text": "Hi! I am Aviral Goel. I am interested in programming language design and implementation.\nI design LLVM-based static analysis tools at Apple for C++ and Swift. Previously, I worked at Roblox on the Luau programming language. I contributed to the implementation of Luau’s native compiler and associated tools, designed a sampling profiler to monitor the speedup of native execution over bytecode in production games, investigated opportunities to improve Luau’s native compilation strategy, and, proposed and implemented attribute support for Luau to enable developers to select Luau functions for native compilation or mark them for deprecation.\nI have a Ph.D. in Programming Languages from Northeastern University. For my research, I applied large-scale data-driven approaches to design tools for migrating the R language ecosystem from lazy to strict semantics with minimal impact on legacy code."
+    "text": "Hi, I am a software engineer. I enjoy working on compilers, virtual machines, and static analysis.\nI work at Apple where I design static analysis tools for C++ and Swift. Previously, I worked at Roblox on the Luau programming language. I contributed to the implementation of Luau’s native compiler, designed a sampling profiler to monitor the speedup of production Luau games, and implemented new language features such as attributes to enable developers to annotate Luau functions for native compilation or deprecation.\nI have a Ph.D. in Programming Languages from Northeastern University. For my research, I applied large-scale data-driven approaches to design tools for migrating the R language ecosystem from lazy to strict semantics with minimal impact on legacy code."
+  },
+  {
+    "objectID": "posts-2/test-post-2/index.html",
+    "href": "posts-2/test-post-2/index.html",
+    "title": "How are you?",
+    "section": "",
+    "text": "1(define abs\n  (lambda (n)\n2    (if (&gt;= n 0)\n        n\n        (- 0 n))))\n\n(define abs\n  (lambda (n)\n    (if (not (&lt; n 0))\n        n\n        (- 0 n))))\n\n(define abs\n  (lambda (n)\n    (if (or (&gt; n 0) (= n 0))\n        n\n        (- 0 n))))\n\n(define abs\n  (lambda (n)\n    (if (= n 0)\n        0\n        (if (&lt; n 0)\n            (- 0 n)\n            n))))\n\n(define abs\n  (lambda (n)\n    ((if (&gt;= n 0) + -)\n     0\n     n)))\n\n1\n\nTake penguins, and then,\n\n2\n\nadd new columns for the bill ratio and bill area.\n\n\nMy favorite search engine is Duck Duck Go."
+  },
+  {
+    "objectID": "posts-2/test-post/index.html",
+    "href": "posts-2/test-post/index.html",
+    "title": "Toward a Unified Theory of High-Energy Metaphysics: Silly String Theory",
+    "section": "",
+    "text": "1(define abs\n  (lambda (n)\n2    (if (&gt;= n 0)\n        n\n        (- 0 n))))\n\n(define abs\n  (lambda (n)\n    (if (not (&lt; n 0))\n        n\n        (- 0 n))))\n\n(define abs\n  (lambda (n)\n    (if (or (&gt; n 0) (= n 0))\n        n\n        (- 0 n))))\n\n(define abs\n  (lambda (n)\n    (if (= n 0)\n        0\n        (if (&lt; n 0)\n            (- 0 n)\n            n))))\n\n(define abs\n  (lambda (n)\n    ((if (&gt;= n 0) + -)\n     0\n     n)))\n\n1\n\nTake penguins, and then,\n\n2\n\nadd new columns for the bill ratio and bill area.\n\n\nMy favorite search engine is Duck Duck Go."
   }
 ]

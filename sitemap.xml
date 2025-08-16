@@ -2,10 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>http://aviral.io/blog.html</loc>
-    <lastmod>2025-08-05T03:58:30.344Z</lastmod>
+    <lastmod>2025-08-16T01:45:31.458Z</lastmod>
+  </url>
+  <url>
+    <loc>http://aviral.io/posts-2/markdown-basics/index.html</loc>
+    <lastmod>2025-08-15T04:58:11.028Z</lastmod>
   </url>
   <url>
     <loc>http://aviral.io/index.html</loc>
-    <lastmod>2025-08-06T02:33:09.635Z</lastmod>
+    <lastmod>2025-08-15T03:53:36.738Z</lastmod>
+  </url>
+  <url>
+    <loc>http://aviral.io/posts-2/test-post-2/index.html</loc>
+    <lastmod>2025-08-15T04:54:10.494Z</lastmod>
+  </url>
+  <url>
+    <loc>http://aviral.io/posts-2/test-post/index.html</loc>
+    <lastmod>2025-08-14T02:10:44.486Z</lastmod>
   </url>
 </urlset>
